@@ -16,10 +16,14 @@
     }
     &__content {
         @include flex();
+        flex-wrap: wrap;
         .content__slider {
             width: 70%;
             @include flex();
             flex-direction: column;
+            @media #{$info-500} {
+                width: 100%;
+            }
             .slider__top {
                 &:first-child {
                     .slick-dots {
@@ -35,6 +39,10 @@
             }
         }
         .content__right {
+            width: 30%;
+            @media #{$info-500} {
+                display: none;
+            }
             padding-left: 10px;
         }
     }
