@@ -1,0 +1,41 @@
+.product {
+    padding: 10px;
+    .container {
+        background-color: #ffffff;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    &__header {
+        @include flex();
+        margin-bottom: 20px;
+        .header__title {
+            @include flex();
+            flex-direction: column;
+            margin-left: 10px;
+        }
+    }
+    &__content {
+        @include flex();
+        .content__slider {
+            width: 70%;
+            @include flex();
+            flex-direction: column;
+            .slider__top {
+                &:first-child {
+                    .slick-dots {
+                        li {
+                            display: none;
+                        }
+                    }
+                }
+                @include flex();
+                .top__item {
+                    width: 50%;
+                }
+            }
+        }
+        .content__right {
+            padding-left: 10px;
+        }
+    }
+}

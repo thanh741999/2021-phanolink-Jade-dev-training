@@ -9,7 +9,7 @@ $color-default-lighter: #c2c2c2;
 $color-default-darker: #acacac;
 $color-default-darkest: #000;
 $color-default-dark: #111111;
-
+$color-main: #01ADAB;
 // Primary colors
 $color-primary: #EE295F;
 
@@ -47,8 +47,9 @@ $hsize: $size/2;
 //$info-phone: "only screen and (max-width : 640px)";
 
 $info-tablet-horizontal: "only screen and (max-width : 1160px)";
-$info-tablet-vertical: "only screen and (max-width : 900px)";
+$info-tablet-vertical: "only screen and (max-width : 991px)";
 $info-phone: "only screen and (max-width : 767px)";
+$info-500: "only screen and (max-width: 500px)";
 $info-phone-4: "only screen and (max-width : 320px)";
 
 $primary-green: #0eb493;
