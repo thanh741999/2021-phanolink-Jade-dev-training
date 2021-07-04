@@ -1,5 +1,5 @@
-.medicine {
-    padding: 25px 0;
+.medicine,.main-section {
+    padding: 20px 10px;
     .container {
         padding-top: 19.5px;
         background-color: #ffffff;
@@ -7,7 +7,7 @@
     &__header {
         margin-bottom: 19px;
         span {
-            margin-right: 8px;
+            margin-right: 10px;
             color: #505050;
             @include font-size(22px);
             font-family: UTM-intel-Bold;

@@ -12,6 +12,15 @@
             @include flex();
             flex-direction: column;
             margin-left: 10px;
+            h4 {
+                color: #505050;
+                @include font-size(22px);
+                font-family: UTM-intel-Bold;
+            }
+            p {
+                @include font-size (18px);
+                color: #777777;
+            }
         }
     }
     &__content {
