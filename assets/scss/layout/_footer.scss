@@ -97,7 +97,7 @@
         }
         .contact__group {
             width: 25%;
-            @media #{$info-phone} {
+            @media #{$info-tablet-vertical} {
                 width: 50%;
                 margin-bottom: 20px;
             }
@@ -105,16 +105,11 @@
                 width: 100%;
             }
             .address {
+                padding-right: 40px;
                 @include font-size(14px);
                 h5 {
                     font-family: UTM-intel-Bold;
                 }
-            }
-        }
-        .contact__support {
-            padding-left: 40px;
-            @media #{$info-phone} {
-                padding-left: 0;
             }
             .group__title {
                     text-transform: uppercase;
