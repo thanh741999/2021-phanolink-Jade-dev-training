@@ -1,53 +1,60 @@
 .online {
-    padding-top: 17px;
-    padding-bottom: 37.7px;
-    background-color: #ffffff;
-    h4 {
-        color: #505050;
-        @include font-size(22px);
-        font-family: UTM-intel-Bold;
+  padding-top: 17px;
+  padding-bottom: 37.7px;
+  background-color: #ffffff;
+
+  h4 {
+    color: #505050;
+    @include font-size(22px);
+    font-family: UTM-intel-Bold;
+  }
+
+  p {
+    color: #777777;
+    @include font-size(12px);
+  }
+
+  &__content {
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 36.8px;
+
+    .content__item {
+      padding-top: 15px;
+      width: (100% / 3);
+      text-align: center;
+      border-right: 1px solid #D1D1D1;
+      @media #{$info-phone} {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+      @media #{$info-500} {
+        width: 100%;
+        border-right: unset;
+      }
+
+      &:last-child {
+        border-right: unset;
+      }
+
+      .item__title {
+        margin: 16px 0;
+      }
     }
-    p {
-        color: #777777;
-        @include font-size(12px);
-    }
-    &__content {
-        @include flex();
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-top: 30px;
-        padding-bottom: 36.8px;
-        .content__item {
-            padding-top: 15px;
-            width: (100% / 3);
-            text-align: center;
-            border-right: 1px solid #D1D1D1;
-            @media #{$info-phone} {
-                width: 50%;
-                margin-bottom: 20px;
-            }
-            @media #{$info-500} {
-                width: 100%;
-                border-right: unset;
-            }
-            &:last-child {
-                border-right: unset;
-            }
-            .item__title {
-                margin: 16px 0;
-            }
-        }
-    }
-    button {
-        display: block;
-        text-align: center;
-        background-color: #FA434E;
-        color: #ffffff;
-        @include font-size(15px);
-        font-family: UTM-intel-Bold;
-        border-radius: 5px;
-        padding: 6px 15px 9px;
-        margin: 0 auto;
-    }
+  }
+
+  button {
+    display: block;
+    text-align: center;
+    background-color: #FA434E;
+    color: #ffffff;
+    @include font-size(15px);
+    font-family: UTM-intel-Bold;
+    border-radius: 5px;
+    padding: 6px 15px 9px;
+    margin: 0 auto;
+  }
 }

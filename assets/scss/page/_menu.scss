@@ -1,38 +1,41 @@
 .menu {
-    @include flex();
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 30px;
-    &__item {
-        width: calc(100%/5);
-        height: 160px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        text-align: center;
-        position: relative;
-        @media #{$info-tablet-vertical} {
-            width: calc(100%/3);
-            margin-bottom: 15px;
-        }
-        @media #{$info-phone} {
-            width: calc(100%/2);
-        }
-        @media #{$info-500} {
-            width: 100%;
-        }
-        .item__content {
-            @include center-inside-element();
-            color: #FFFFFF;
-            @include font-size(16.79px);
-            font-family: UTM-intel-Bold;
-            text-align: center;
-            display: block;
-            img {
-                display: block;
-                margin: 0 auto;
-            }
-        }
+  @include flex();
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 30px;
+
+  &__item {
+    width: calc(100% / 5);
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    @media #{$info-tablet-vertical} {
+      width: calc(100% / 3);
+      margin-bottom: 15px;
     }
+    @media #{$info-phone} {
+      width: calc(100% / 2);
+    }
+    @media #{$info-500} {
+      width: 100%;
+    }
+
+    .item__content {
+      @include center-inside-element();
+      color: #FFFFFF;
+      @include font-size(16.79px);
+      font-family: UTM-intel-Bold;
+      text-align: center;
+      display: block;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
 }

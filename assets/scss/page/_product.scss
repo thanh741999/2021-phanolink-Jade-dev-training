@@ -1,58 +1,69 @@
 .product {
-    padding: 10px;
-    .container {
-        background-color: #ffffff;
-        padding-top: 20px;
-        padding-bottom: 30px;
+  padding: 10px;
+
+  .container {
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  &__header {
+    @include flex();
+    margin-bottom: 20px;
+
+    .header__title {
+      @include flex();
+      flex-direction: column;
+      margin-left: 10px;
+
+      h4 {
+        color: #505050;
+        @include font-size(22px);
+        font-family: UTM-intel-Bold;
+      }
+
+      p {
+        @include font-size(18px);
+        color: #777777;
+      }
     }
-    &__header {
+  }
+
+  &__content {
+    @include flex();
+    flex-wrap: wrap;
+
+    .content__slider {
+      width: 70%;
+      @include flex();
+      flex-direction: column;
+      @media #{$info-500} {
+        width: 100%;
+      }
+
+      .slider__top {
+        &:first-child {
+          .slick-dots {
+            li {
+              display: none;
+            }
+          }
+        }
+
         @include flex();
-        margin-bottom: 20px;
-        .header__title {
-            @include flex();
-            flex-direction: column;
-            margin-left: 10px;
-            h4 {
-                color: #505050;
-                @include font-size(22px);
-                font-family: UTM-intel-Bold;
-            }
-            p {
-                @include font-size (18px);
-                color: #777777;
-            }
+
+        .top__item {
+          width: 50%;
         }
+      }
     }
-    &__content {
-        @include flex();
-        flex-wrap: wrap;
-        .content__slider {
-            width: 70%;
-            @include flex();
-            flex-direction: column;
-            @media #{$info-500} {
-                width: 100%;
-            }
-            .slider__top {
-                &:first-child {
-                    .slick-dots {
-                        li {
-                            display: none;
-                        }
-                    }
-                }
-                @include flex();
-                .top__item {
-                    width: 50%;
-                }
-            }
-        }
-        .content__right {
-            width: 30%;
-            @media #{$info-500} {
-                display: none;
-            }
-            padding-left: 10px;
-        }
+
+    .content__right {
+      width: 30%;
+      @media #{$info-500} {
+        display: none;
+      }
+      padding-left: 10px;
     }
+  }
 }

@@ -1,51 +1,57 @@
 .banner {
-    padding: 24px 0;
-    background-color: #FFFFFF;
-    &__content {
-        @include flex();
-        flex-wrap: wrap;
-        .content__left {
-            width: 75%;
-            @media screen and (max-width: 1200px) {
-                width: 100%;
-                margin-bottom: 20px;
-                padding-right: 0;
-            }
-            padding-right: 25px;
-            .left__item {
-                // display: none;
-                height: 300px;
-                background-position: center center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 5px;
-            }
-        }
-        .content__right {
-            width: 25%;
-            @include flex();
-            flex-wrap: wrap;
-            @media screen and (max-width: 1200px) {
-                width: 100%;
-                justify-content: space-between;
-                align-items: center;
-            }
-            .right__item {
-                padding: 0 28px;
-                width: 50%;
-                @media screen and (max-width: 1200px) {
-                    width: 25%;
-                    p {
-                        max-width: unset;
-                    }
-                }
-                @media #{$info-500} {
-                    width: 50%;
-                    text-align: center;
-                }
-                p {
-                }
-            }
-        }
+  padding: 24px 0;
+  background-color: #FFFFFF;
+
+  &__content {
+    @include flex();
+    flex-wrap: wrap;
+
+    .content__left {
+      width: 75%;
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 0;
+      }
+      padding-right: 25px;
+
+      .left__item {
+        // display: none;
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+      }
     }
+
+    .content__right {
+      width: 25%;
+      @include flex();
+      flex-wrap: wrap;
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .right__item {
+        padding: 0 28px;
+        width: 50%;
+        @media screen and (max-width: 1200px) {
+          width: 25%;
+          p {
+            max-width: unset;
+          }
+        }
+        @media #{$info-500} {
+          width: 50%;
+          text-align: center;
+        }
+
+        p {
+        }
+      }
+    }
+  }
 }

@@ -1,51 +1,61 @@
 .trademark {
-    padding-top: 25px;
-    padding-bottom: 40px;
-    .container {
-        background-color: #ffffff;
-        padding-bottom: 35px;
-        position: relative;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  .container {
+    background-color: #ffffff;
+    padding-bottom: 35px;
+    position: relative;
+  }
+
+  &__header {
+    padding-top: 22px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #E5E5E4;
+
+    span {
+      margin-left: 10px;
+      @include font-size(21.99px);
+      font-family: UTM-intel-Bold;
     }
-    &__header {
-        padding-top: 22px;
-        padding-bottom: 21px;
-        border-bottom: 1px solid #E5E5E4;
-        span {
-            margin-left: 10px;
-            @include font-size(21.99px);
-            font-family: UTM-intel-Bold;
-        }
+  }
+
+  &__content {
+    padding-top: 76px;
+    @include flex();
+
+    .content__item {
     }
-    &__content {
-        padding-top: 76px;
-        @include flex();
-        .content__item {
-        }
-        // custom slick carousel
-        .slick-slide {
-            img {
-                margin: 0 auto;
-            }
-        }
-    }
+
     // custom slick carousel
-    &__prev {
-        left: -25px;
-        img {
-            transform: rotate(180deg);
-        }
+    .slick-slide {
+      img {
+        margin: 0 auto;
+      }
     }
-    &__next {
-        right: -25px;
+  }
+
+  // custom slick carousel
+  &__prev {
+    left: -25px;
+
+    img {
+      transform: rotate(180deg);
     }
-    button {
-        background-color: unset;
-        position: absolute;
-        top: 70%;
-        transform: translateY(-50%);
-        @media #{$info-phone} {
-            display: none;
-        }
+  }
+
+  &__next {
+    right: -25px;
+  }
+
+  button {
+    background-color: unset;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    @media #{$info-phone} {
+      display: none;
     }
-    
+  }
+
 }
