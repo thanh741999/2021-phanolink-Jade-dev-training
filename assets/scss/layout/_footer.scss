@@ -1,0 +1,157 @@
+.footer {
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    &__top {
+        @include flex();
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .top__item {
+            width: 25%;
+            @media #{$info-phone} {
+                width: 50%;
+                border-right: unset;
+            }
+            @media #{$info-500} {
+                width: 100%;
+            }
+            @include flex();
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-right: 1.8px solid #E5E5E4;
+            padding-bottom: 20px;
+            &:last-child {
+                border-right: unset;
+                position: relative;
+                .message__icon {
+                    position: absolute;
+                    top: -55px;
+                    right: 20px;
+                }
+            }
+            span {
+                @include font-size(16px);
+                display: block;
+                width: 78px;
+            }
+        }
+    }
+    &__line {
+        padding: 22px 0;
+        background-color: $color-main;
+        color: #FFFFFF;
+        .line__content {
+            @include flex();
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            span {
+                @include font-size(18px);
+                @media screen and (max-width: 1200px){
+                    font-size: .7rem;
+                }
+                @media #{$info-phone} {
+                    width: 40%;
+                    font-size: 1rem;
+                    margin-bottom: 20px;
+                }
+                @media #{$info-500} {
+                    width: 100%;
+                }
+            }
+            .content__item {
+                background-color: #FFFFFF;
+                border-radius: 30px;
+                padding: 0 18px 8px;
+                color: #757575;
+                @media #{$info-phone} {
+                    width: 60%;
+                    margin-bottom: 20px;
+                }
+                @media #{$info-500} {
+                    width: 88%;
+                }
+                &:last-child {
+                    padding: 6px 18px 8px;
+                }
+                .item--red {
+                    color: #EA4036;
+                    @include font-size(24.82px);
+                    font-family: UTM-intel-Bold;
+                }
+                span {
+                    vertical-align: bottom;
+                }
+            }
+        }
+    }
+    &__contact {
+        padding-top: 72px;
+        padding-bottom: 82px;
+        @include flex();
+        flex-wrap: wrap;
+        a {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contact__group {
+            width: 25%;
+            @media #{$info-tablet-vertical} {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+            @media #{$info-500} {
+                width: 100%;
+            }
+            .address {
+                padding-right: 40px;
+                @include font-size(14px);
+                h5 {
+                    font-family: UTM-intel-Bold;
+                }
+            }
+            .group__title {
+                    text-transform: uppercase;
+                    color: #595959;
+                    @include font-size(18px);
+                    font-family: UTM-intel-Bold;
+                    margin-bottom: 30px;
+            }
+            ul {
+                    padding-left: 10px;
+                    li {
+                        margin-bottom: 10px;
+                        span {
+                            @include font-size(14px);
+                            color: #595959;
+                            margin-left: 3px;
+                        }
+                    }
+            }
+            &:last-child {
+                padding-left: 0;
+                ul {
+                     @include flex();
+                    li {
+                        margin-right: 9.6px;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom {
+        border-top: 1px solid #707070;
+        @include flex();
+        justify-content: space-between;
+        align-items: center;
+        p {
+            @include font-size(10px);
+            color: #595959;
+            font-family: UTM-intel-Bold;
+            sup , span {
+                @include font-size(11.43px)
+            }
+        }
+    }
+}
