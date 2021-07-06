@@ -37,7 +37,7 @@
       }
     }
   }
-  &__middle {
+  &__middle, .scroll__content {
     @include flex();
     align-items: center;
     justify-content: space-between;
@@ -243,14 +243,15 @@
       }
     }
     .nav__bar {
-      position: absolute;
+      position: fixed;
       top: 21%;
       left: 0;
-      height: 92vh;
+      height: 80vh;
       width: 0;
       padding: 15px 10px;
       background-color: $color-main;
       display: none;
+      overflow: scroll;
       .bar__control {
         border-bottom: 1px solid #838383;
         padding-bottom: 10px;
@@ -294,7 +295,7 @@
     }
     .change {
       display: block;
-      width: 35%;
+      width: 30%;
       z-index: 2;
       @media screen and (max-width: 350px) {
         width: 45%;

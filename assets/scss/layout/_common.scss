@@ -64,4 +64,45 @@ button , input {
 }
 main {
     background-color: #EBEBEB;
+    padding-bottom: 76px;
 }
+// ===== custom header responsive 767px =====
+.header {
+  // header on scroll
+  @media #{$info-phone} {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+  &--scroll {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    display: none;
+  }
+  // end header scroll
+  .sub__header {
+    .change {
+      .sidebar__item {
+        padding-top: 15px;
+        border-top: 1px solid #838383;
+         .sidebar__list {
+           padding: 10px 0 0 0;
+           li {
+             color: #FFFFFF;
+             margin-bottom: 10px;
+             .sub__list {
+               padding: 10px 0 0 15px;
+             }
+           }
+         }
+        .sidebar__title {
+          font-size: 1.2rem;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+// ===== end custom ======

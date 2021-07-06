@@ -161,4 +161,19 @@ $(document).ready(function () {
             // instead of a settings object
         ]
     });
+
+    // scroll change header 
+    $(window).scroll(function(e) {
+        const scroll_top = document.documentElement.scrollTop;
+        const header_width = $('#header').innerWidth();
+        const header_hight = $('#header').innerHeight();
+        console.log(header_width);
+        console.log(scroll_top);
+        if (scroll_top >= header_hight && header_width >= 767) {
+            $('.header--scroll').css('display','block');
+        }
+        else {
+            $('.header--scroll').css('display','none');
+        }
+    })
 })

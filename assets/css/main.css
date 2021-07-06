@@ -7566,6 +7566,46 @@ button, input {
 
 main {
   background-color: #EBEBEB;
+  padding-bottom: 76px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+}
+
+.header--scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  display: none;
+}
+
+.header .sub__header .change .sidebar__item {
+  padding-top: 15px;
+  border-top: 1px solid #838383;
+}
+
+.header .sub__header .change .sidebar__item .sidebar__list {
+  padding: 10px 0 0 0;
+}
+
+.header .sub__header .change .sidebar__item .sidebar__list li {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.header .sub__header .change .sidebar__item .sidebar__list li .sub__list {
+  padding: 10px 0 0 15px;
+}
+
+.header .sub__header .change .sidebar__item .sidebar__title {
+  font-size: 1.2rem;
+  color: #FFFFFF;
 }
 
 .header {
@@ -7629,7 +7669,7 @@ main {
   font-family: UTM-intel-Bold;
 }
 
-.header__middle {
+.header__middle, .header .scroll__content {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -7643,56 +7683,56 @@ main {
 }
 
 @media only screen and (max-width: 767px) {
-  .header__middle {
+  .header__middle, .header .scroll__content {
     display: none;
   }
 }
 
-.header__middle .middle__logo {
+.header__middle .middle__logo, .header .scroll__content .middle__logo {
   margin-right: 30px;
 }
 
-.header__middle .middle__search {
+.header__middle .middle__search, .header .scroll__content .middle__search {
   width: 55%;
   position: relative;
   margin-right: 16px;
 }
 
-.header__middle .middle__search input {
+.header__middle .middle__search input, .header .scroll__content .middle__search input {
   width: 100%;
   padding: 7.5px 18px 11.7px;
   border-radius: 5px;
 }
 
-.header__middle .middle__search input::-webkit-input-placeholder {
+.header__middle .middle__search input::-webkit-input-placeholder, .header .scroll__content .middle__search input::-webkit-input-placeholder {
   color: #838383;
   font-size: 14.39px;
   font-size: 0.89938rem;
   font-family: UTM-intel-italic;
 }
 
-.header__middle .middle__search input:-moz-placeholder {
+.header__middle .middle__search input:-moz-placeholder, .header .scroll__content .middle__search input:-moz-placeholder {
   color: #838383;
   font-size: 14.39px;
   font-size: 0.89938rem;
   font-family: UTM-intel-italic;
 }
 
-.header__middle .middle__search input::-moz-placeholder {
+.header__middle .middle__search input::-moz-placeholder, .header .scroll__content .middle__search input::-moz-placeholder {
   color: #838383;
   font-size: 14.39px;
   font-size: 0.89938rem;
   font-family: UTM-intel-italic;
 }
 
-.header__middle .middle__search input:-ms-input-placeholder {
+.header__middle .middle__search input:-ms-input-placeholder, .header .scroll__content .middle__search input:-ms-input-placeholder {
   color: #838383;
   font-size: 14.39px;
   font-size: 0.89938rem;
   font-family: UTM-intel-italic;
 }
 
-.header__middle .middle__search .search__btn {
+.header__middle .middle__search .search__btn, .header .scroll__content .middle__search .search__btn {
   position: absolute;
   right: 0;
   top: 0;
@@ -7702,20 +7742,20 @@ main {
   border-top-right-radius: 5px;
 }
 
-.header__middle .middle__search .search__btn span {
+.header__middle .middle__search .search__btn span, .header .scroll__content .middle__search .search__btn span {
   font-size: 13.29px;
   font-size: 0.83062rem;
   color: #838383;
   font-family: UTM-intel-Bold;
 }
 
-.header__middle .middle__btn {
+.header__middle .middle__btn, .header .scroll__content .middle__btn {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
 }
 
-.header__middle .middle__btn .btn__item {
+.header__middle .middle__btn .btn__item, .header .scroll__content .middle__btn .btn__item {
   background-color: #FFFFFF;
   padding: 6.6px 8px 6.5px;
   border-radius: 5px;
@@ -7729,11 +7769,11 @@ main {
           align-items: center;
 }
 
-.header__middle .middle__btn .btn__item:first-child {
+.header__middle .middle__btn .btn__item:first-child, .header .scroll__content .middle__btn .btn__item:first-child {
   margin-right: 10px;
 }
 
-.header__middle .middle__btn .btn__item .item__bard {
+.header__middle .middle__btn .btn__item .item__bard, .header .scroll__content .middle__btn .btn__item .item__bard {
   display: block;
   position: absolute;
   right: -10px;
@@ -7747,11 +7787,11 @@ main {
   line-height: 20px;
 }
 
-.header__middle .middle__btn .btn__item img {
+.header__middle .middle__btn .btn__item img, .header .scroll__content .middle__btn .btn__item img {
   margin-right: 8px;
 }
 
-.header__middle .middle__btn .btn__item span {
+.header__middle .middle__btn .btn__item span, .header .scroll__content .middle__btn .btn__item span {
   color: #838383;
   font-size: 13.29px;
   font-size: 0.83062rem;
@@ -7962,14 +8002,15 @@ main {
 }
 
 .header .sub__header .nav__bar {
-  position: absolute;
+  position: fixed;
   top: 21%;
   left: 0;
-  height: 92vh;
+  height: 80vh;
   width: 0;
   padding: 15px 10px;
   background-color: #01ADAB;
   display: none;
+  overflow: scroll;
 }
 
 .header .sub__header .nav__bar .bar__control {
@@ -8028,7 +8069,7 @@ main {
 
 .header .sub__header .change {
   display: block;
-  width: 35%;
+  width: 30%;
   z-index: 2;
 }
 
@@ -16394,7 +16435,6 @@ html, body {
 
 .trademark {
   padding-top: 25px;
-  padding-bottom: 40px;
 }
 
 .trademark .container {
@@ -16495,6 +16535,12 @@ html, body {
   width: 20%;
 }
 
+@media only screen and (max-width: 767px) {
+  .main__sidebar {
+    display: none;
+  }
+}
+
 .main__sidebar .sidebar__item {
   background-color: #FFFFFF;
   padding-top: 20px;
@@ -16503,6 +16549,12 @@ html, body {
 
 .main__sidebar .sidebar__item:last-child {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .main__sidebar .sidebar__item:last-child {
+    display: none;
+  }
 }
 
 .main__sidebar .sidebar__item .sidebar__title {
@@ -16552,5 +16604,206 @@ html, body {
   font-size: 12px;
   font-size: 0.75rem;
   font-family: UTM-intel;
+}
+
+.main__section {
+  width: 80%;
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main__section {
+    width: 100%;
+  }
+}
+
+.main__section .section__slider {
+  margin-bottom: 20px;
+}
+
+.main__section .section__slider .slider__item {
+  height: 300px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.main__section .section__filter {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 25px;
+}
+
+.main__section .section__filter span {
+  color: #505050;
+  margin-right: 15px;
+}
+
+.main__section .section__filter button {
+  background-color: #FFFFFF;
+  padding: 3px 11px 6px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .main__section .section__filter button {
+    margin-bottom: 10px;
+  }
+}
+
+.main__section .section__filter button a {
+  color: #505050;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.main__section .section__filter button.active {
+  background-color: #FA434E;
+}
+
+.main__section .section__filter button.active a {
+  color: #FFFFFF;
+}
+
+.main__section .section__content {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #FFFFFF;
+}
+
+.main__section .section__content .content__item {
+  width: calc(100% / 4);
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-right: 1px solid #E5E5E4;
+  border-top: 1px solid #E5E5E4;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main__section .section__content .content__item {
+    width: calc(100% / 3);
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .main__section .section__content .content__item {
+    width: calc(100% / 2);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main__section .section__content .content__item {
+    width: 100%;
+    border-right: unset;
+    text-align: center;
+  }
+}
+
+.main__section .section__content .content__item:last-child {
+  border-right: unset;
+}
+
+@media only screen and (max-width: 991px) {
+  .main__section .section__content .content__item:last-child {
+    border-right: 1px solid #E5E5E4;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main__section .section__content .content__item:last-child {
+    border-right: unset;
+  }
+}
+
+.main__section .section__content .content__item:nth-child(3) {
+  text-align: center;
+}
+
+.main__section .section__content .content__item .item__bouns {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.main__section .section__content .content__item .item__bouns img {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.main__section .section__content .content__item .item__info {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.main__section .section__content .content__item .item__info p {
+  color: #020202;
+  font-size: 16.09px;
+  font-size: 1.00562rem;
+}
+
+.main__section .section__content .content__item .item__info span {
+  display: block;
+  color: #E42F43;
+  font-size: 16.76px;
+  font-size: 1.0475rem;
+  font-family: UTM-intel-Bold;
+  margin-bottom: 5px;
+}
+
+.main__section .section__content .content__item .item__info .old-price {
+  color: #AAAAAA;
+  font-size: 12.74px;
+  font-size: 0.79625rem;
+  text-decoration: line-through;
+}
+
+.main__section .section__content .content__item .sale {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.main__section .section__pagination {
+  text-align: right;
+}
+
+.main__section .section__pagination .pagination li a {
+  font-size: 15.75px;
+  font-size: 0.98438rem;
+  font-family: Myriad-Pro-Regular;
+  color: #808081;
+  background-color: #EBEBEB;
+  border: unset;
+  padding: 0 6px;
+  border-radius: 5px;
+}
+
+.main__section .section__pagination .pagination li:last-child a {
+  border: 1px solid #808081;
+}
+
+.main__section .section__pagination .pagination .disabled a {
+  background-color: #01ADAB;
+  color: #FFFFFF;
+}
+
+.main__section .section__seen {
+  background-color: #FFFFFF;
+}
+
+.main__section .section__seen h4 {
+  padding: 13px 20px 15px;
+  color: #505050;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-family: UTM-intel-Bold;
 }
 /*# sourceMappingURL=main.css.map */
