@@ -35,7 +35,7 @@
       background-color: #FFFFFF;
       padding-top: 20px;
       margin-bottom: 17px;
-      &:last-child {
+      &:nth-child(2) {
         margin-bottom: 0;
         @media #{$info-tablet-vertical} {
           display: none;

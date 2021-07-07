@@ -7570,6 +7570,18 @@ main {
 }
 
 @media only screen and (max-width: 767px) {
+  main {
+    padding-top: 137px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  main {
+    padding-top: 203px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .header {
     position: fixed;
     z-index: 2;
@@ -16547,12 +16559,12 @@ html, body {
   margin-bottom: 17px;
 }
 
-.main__sidebar .sidebar__item:last-child {
+.main__sidebar .sidebar__item:nth-child(2) {
   margin-bottom: 0;
 }
 
 @media only screen and (max-width: 991px) {
-  .main__sidebar .sidebar__item:last-child {
+  .main__sidebar .sidebar__item:nth-child(2) {
     display: none;
   }
 }
@@ -16805,5 +16817,27 @@ html, body {
   font-size: 15px;
   font-size: 0.9375rem;
   font-family: UTM-intel-Bold;
+}
+
+.main__section p {
+  color: #808081;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 28px;
+}
+
+.main__section p span {
+  color: #434343;
+  font-family: UTM-intel-Bold;
+}
+
+.main__section .section__notfound {
+  background-color: #ffffff;
+  padding: 45px 0 50px 0;
+  text-align: center;
+}
+
+.main__section .section__notfound p {
+  color: #505050;
 }
 /*# sourceMappingURL=main.css.map */

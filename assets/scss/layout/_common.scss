@@ -65,6 +65,12 @@ button , input {
 main {
     background-color: #EBEBEB;
     padding-bottom: 76px;
+    @media #{$info-phone} {
+      padding-top: 137px;
+    }
+    @media screen and (max-width: 440px) {
+      padding-top: 203px;
+    }
 }
 // ===== custom header responsive 767px =====
 .header {
@@ -73,6 +79,9 @@ main {
     position: fixed;
     z-index: 2;
     width: 100%;
+  }
+  @media screen and (max-width: 400px)  {
+    
   }
   &--scroll {
     position: fixed;

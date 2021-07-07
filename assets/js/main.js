@@ -167,8 +167,6 @@ $(document).ready(function () {
         const scroll_top = document.documentElement.scrollTop;
         const header_width = $('#header').innerWidth();
         const header_hight = $('#header').innerHeight();
-        console.log(header_width);
-        console.log(scroll_top);
         if (scroll_top >= header_hight && header_width >= 767) {
             $('.header--scroll').css('display','block');
         }
