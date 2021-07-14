@@ -1,23 +1,22 @@
 .hot {
-  padding: 10px;
-
-  .container {
-    background-color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-  }
+  padding: 20px 0;
+  background-color: #ffffff;
 
   &__header {
     @include flex();
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-
-    span {
-      @include font-size(22px);
-      font-family: UTM-intel-Bold;
-      color: #505050;
+    padding: 0 33.5px;
+    .header__title {
+      @include flex();
+      align-items: center;
+      span {
+        @include font-size(22px);
+        font-family: UTM-intel-Bold;
+        color: #505050;
+        margin-left: 10px;
+      }
     }
 
     a {

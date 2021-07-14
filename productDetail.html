@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Language" content="en-us"/>
+    <title>Product Detail</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<!--============= header ===============-->
+    <header class="header" id="header">
+        <div class="container header__top">
+            <div class="header__top__hot header__top--group">
+                <img src="assets/img/fire2x.png" alt="fire">
+                <p class="title"> Khuyến mãi HOT</p>
+            </div>
+            <div class="header__top__nofication header__top--group">
+                <img src="assets/img/message2x.png" alt="nofication">
+                <div class="text">
+                    <p class="title">Thông báo</p>
+                    <span>của tôi</span>
+                </div>
+            </div>
+            <div class="header__top__login header__top--group">
+                <img src="assets/img/login2x.png" alt="login">
+                <div class="text">
+                    <p class="title">Đăng nhập </p>
+                    <span>Tài khoản</span>
+                </div>
+            </div>
+        </div>
+        <div class="container header__middle">
+            <h1 class="middle__logo"> <a href="index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
+            <form action="" class="middle__search">
+                <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+                <button class="search__btn">
+                    <img src="assets/img/search2x.png" alt="search">
+                    <span>Tìm Kiếm</span>
+                </button>
+            </form>
+            <div class="middle__btn">
+                <button class="btn__item">
+                    <img src="assets/img/toa2x.png" alt="toa">
+                    <span>Tạo toa thuốc</span>
+                </button>
+                <button class="btn__item">
+                    <img src="assets/img/cart2x.png" alt="cart">
+                    <span>Giỏ hàng</span>
+                    <span class="item__bard">69</span>
+                </button>
+            </div>
+        </div>
+        <div class="container header__bottom">
+            <ul>
+                <li class="bottom__item">
+                    <img src="assets/img/menu2x.png" alt="menu">
+                    <a>DANH MỤC SẢN PHẨM</a>
+                </li>
+                <li class="bottom__item">
+                    <img src="assets/img/fire-red2x.png" alt="fire">
+                    <a>KHUYẾN MÃI HOT</a>
+                </li>
+                <li class="bottom__item">
+                    <img src="assets/img/localtion2x.png" alt="location">
+                    <a>HỆ THỐNG NHÀ THUỐC</a>
+                </li>
+                <li class="bottom__item">
+                    <img src="assets/img/heart2x.png" alt="heart">
+                    <a>GÓC SỨC KHỎE</a>
+                </li>
+                <li class="bottom__item">
+                    <img src="assets/img/home2x.png" alt="home">
+                    <a>GIỚI THIỆU</a>
+                </li>
+                <li class="bottom__item">
+                    <img src="assets/img/question2x.png" alt="question">
+                    <a>HƯỚNG DẪN</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Sub header 767px responsive -->
+        <div class="container sub__header">
+            <h1><img src="assets/img/Logo.png" alt="logo"></h1>
+            <div class="header__nav">
+                <button class="nav__burger"><img src="assets/img/menu2x.png" alt="menu"></button>
+                <form action="" class="nav__search">
+                    <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+                    <button class="search__btn">
+                        <img src="assets/img/search2x.png" alt="search">
+                        <span>Tìm Kiếm</span>
+                    </button>
+                </form>
+                <div class="nav__btn">
+                    <button class="btn__item">
+                        <img src="assets/img/toa2x.png" alt="toa">
+                        <span>Tạo toa thuốc</span>
+                    </button>
+                    <button class="btn__item">
+                        <img src="assets/img/cart2x.png" alt="cart">
+                        <span>Giỏ hàng</span>
+                        <span class="item__bard">69</span>
+                    </button>
+                </div>
+            </div>
+            <div class="nav__bar">
+                <div class="bar__control">
+                    <div class="control__item">
+                        <img src="assets/img/fire2x.png" alt="fire">
+                        <p class="title"> Khuyến mãi HOT</p>
+                    </div>
+                    <div class="control__item">
+                        <img src="assets/img/message2x.png" alt="nofication">
+                        <div class="text">
+                            <p class="title">Thông báo</p>
+                            <span>của tôi</span>
+                        </div>
+                    </div>
+                    <div class="control__item">
+                        <img src="assets/img/login2x.png" alt="login">
+                        <div class="text">
+                            <p class="title">Đăng nhập </p>
+                            <span>Tài khoản</span>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="nav__item">
+                        <img src="assets/img/menu2x.png" alt="menu">
+                        <a>DANH MỤC SẢN PHẨM</a>
+                    </li>
+                    <li class="nav__item">
+                        <img src="assets/img/fire-red2x.png" alt="fire">
+                        <a>KHUYẾN MÃI HOT</a>
+                    </li>
+                    <li class="nav__item">
+                        <img src="assets/img/localtion2x.png" alt="location">
+                        <a>HỆ THỐNG NHÀ THUỐC</a>
+                    </li>
+                    <li class="nav__item">
+                        <img src="assets/img/heart2x.png" alt="heart">
+                        <a>GÓC SỨC KHỎE</a>
+                    </li>
+                    <li class="nav__item">
+                        <img src="assets/img/home2x.png" alt="home">
+                        <a>GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav__item">
+                        <img src="assets/img/question2x.png" alt="question">
+                        <a>HƯỚNG DẪN</a>
+                    </li>
+                </ul>
+                <div class="sidebar__item">
+                    <h4 class="sidebar__title">Danh Mục Sản Phẩm</h4>
+                    <ul class="sidebar__list">
+                        <li class="list--active">
+                            <i class="fas fa-angle-right"></i>
+                            Mẹ & bé
+                            <ul class="sub__list">
+                                <li>Sữa bột</li>
+                                <li>Chăm sóc em bé</li>
+                                <li>Tã giấy & khăn ướt em bé</li>
+                            </ul>
+                        </li>
+                        <li>Thực phẩm chức năng</li>
+                        <li>Chăm sóc cá nhân</li>
+                        <li>Chăm sóc sức khỏe</li>
+                        <li>Tủ thuốc gia đình</li>
+                        <li>Chăm sóc phụ nữ</li>
+                        <li>Chăm sóc sắc đẹp</li>
+                        <li>Sức khỏe giới tính</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header scroll -->
+    <header class="header--scroll header">
+        <div class="container scroll__content">
+            <h1 class="middle__logo"> <a href="./index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
+            <form action="" class="middle__search">
+                <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+                <button class="search__btn">
+                    <img src="assets/img/search2x.png" alt="search">
+                    <span>Tìm Kiếm</span>
+                </button>
+            </form>
+            <div class="middle__btn">
+                <button class="btn__item">
+                    <img src="assets/img/toa2x.png" alt="toa">
+                    <span>Tạo toa thuốc</span>
+                </button>
+                <button class="btn__item">
+                    <img src="assets/img/cart2x.png" alt="cart">
+                    <span>Giỏ hàng</span>
+                    <span class="item__bard">69</span>
+                </button>
+            </div>
+        </div>
+    </header>
+<!-- =========== End header ============= -->
+<!--============== Main =============-->
+    <main>
+        <section class="path">
+            <div class="container">
+                <ul class="path__content">
+                    <li>Trang chủ</li>
+                    <li><i class="fas fa-angle-right"></i> Mẹ và bé</li>
+                    <li><i class="fas fa-angle-right"></i> Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng</li>
+                </ul>
+            </div>
+        </section>
+        <section class="cart container">
+            <div class="cart__img">
+                <div class="img__main">
+                    <img src="./assets/img/decine__icon-4-2x.png" alt="medicine4">
+                </div>
+                <ul class="img__list">
+                    <li><img src="./assets/img/decine__icon-4-2x.png" alt="medicine4"></li>
+                    <li><img src="./assets/img/decine__icon-4-2x.png" alt="medicine4"></li>
+                    <li><img src="./assets/img/decine__icon-4-2x.png" alt="medicine4"></li>
+                </ul>
+            </div>
+            <div class="cart__info">
+                <div class="info__item info__top">
+                    <h2>Thực Phẩm Chức Năng Bảo Vệ Sức Khỏe Solgar Vegetarian COQ-10 60mg Chai</h2>
+                    <div class="top__group">
+                        <p class="group__band">Thương hiệu: <a>Blackmores</a></p>
+                        <p class="group__code">SKU: <span>TP002455</span></p>
+                    </div>
+                </div>
+                <div class="info__item info__description">
+                    <p>Trọng lượng: <span> 300 g</span></p>
+                    <p>Kích thước: <span> 15 x 15 x 15 cm</span></p>
+                    <p>Quy cách: <span> Chai 60 viên</span></p>
+                    <p>Xuất xứ: <span> USA</span></p>
+                </div>
+                <div class="info__item info__status">
+                    <p class="status__price">Giá: <b>1.160.000đ</b></p>
+                    <p class="status__state">Tình trạng: <b>Còn Hàng</b></p>
+                    <div class="status__buy">
+                        <p>Số lượng</p>
+                        <div class="buy__quantity">
+                            <button class="minus"><i class="fas fa-minus"></i></button>
+                            <input type="text" value="1">
+                            <button class="plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="buy__btn">
+                            <img src="./assets/img/cart--white2x.png" alt="cart">
+                            CHỌN MUA
+                        </button>
+                        <button class="buy__like">
+                            <img src="./assets/img/heart--white2x.png" alt="heart">
+                        </button>
+                    </div>
+                </div>
+                <div class="info__item info__tag">
+                    <p>Danh mục: <b>Chăm sóc cá nhân, Chăm sóc răng miệng</b> </p>
+                    <p>tags: <b>#USA, #Backmore, #Solgar</b></p>
+                </div>
+            </div>
+            <div class="cart__benefit">
+                <h5>QUYỀN LỢI KHÁCH HÀNG</h5>
+                <div class="benefit__content">
+                    <div class="content__item percent">
+                        <img src="./assets/img/percent--benefit.png" alt="percent">
+                        <span>Sản phẩm chính hãng</span>
+                    </div>
+                    <div class="content__item">
+                        <img src="./assets/img/express--benefit.png" alt="express">
+                        <span>Giao hàng toàn quốc</span>
+                    </div>
+                    <div class="content__item mobile">
+                        <img src="./assets/img/mobile--benefit.png" alt="mobilephone">
+                        <span>Thanh toán linh hoạt</span>
+                    </div>
+                    <div class="content__item mobile">
+                        <img src="./assets/img/gift--benefit.png" alt="gift">
+                        <span>Tích điểm đổi quà</span>
+                    </div>
+                    <div class="content__item telephone">
+                        <img src="./assets/img/telephone2x.png" alt="telephone">
+                        <span>Dược sĩ tư vấn</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product container">
+            <div class="product__info">
+                <h4>Thông tin sản phẩm</h4>
+                <div class="info__content">
+                    <h5>*** CHIA SẺ TỪ CHUYÊN GIA</h5>
+                    <div class="content__item content__share">
+                        <p>- Ho là một triệu chứng mà nhiều người mắc phải. Hiện nay, trên thị trường có rất nhiều loại thuốc giảm ho, trị ho từ dạng siro, dạng viên nén và viêm ngậm. Trong đó, viêm ngậm được khá nhiều người ưa dùng vì dễ dùng, tiện lợi, và hiệu quả nhanh chóng. Tuy nhiên, sử dụng viêm ngậm ho cũng tiềm ẩn nhiều nguy hại nếu lạm dụng</p>
+                        <p>- Viêm ngậm chỉ có tác dụng hỗ trợ điều trị và giảm ho tạm thời</p>
+                        <p>- Viêm ngậm không có tác dụng điều trị ho tận gốc, vì vậy nếu chỉ sử dụng viêm ngậm mà không khám và điều trị thì bạn sẽ bỏ qua cơ hội trị bệnh kịp thời.</p>
+                        <p>- Người bị ho dễ bị lệ thuộc vào viêm ngậm.</p>
+                        <p>- Đờm có nguy cơ bị tích lại họng do viêm ngậm không có tác dụng điều trị tận gốc, từ đó có thể tiến triển thành bệnh viêm họng mãn tính, viêm đường hô hấp.</p>
+                        <p>- Viêm ngậm có thể gây ra những tác dụng phụ ảnh hưởng đến sức khỏe cho người bị hen suyễn, phụ nữ mang thai và trẻ dưới 6 tuổi.</p>
+                    </div>
+                    <div class="content__item content__note">
+                        <p>* Thực phẩm này không phải là thuốc, không có chức năng thay thế thuốc chữa bệnh.</p>
+                        <p>** Gọi ngay <strong>1800 6768</strong> để Dược sĩ Phanolink phục vụ bạn.</p>
+                    </div>
+                    <div class="content__item content__intro">
+                        <p class="content__title">
+                            GIỚI THIỆU
+                        </p>
+                        <p>- Thực Phẩm Bảo Vệ Sức Khỏe Cozz Candy có tác dụng giảm ho, giảm đau rát họng, làm ấm họng. Đồng thời sản phẩm giúp bạn có hơi thở thơm mát.</p>
+                    </div>
+                    <div class="content__item content__contain">
+                        <p class="content__title">THÀNH PHẦN</p>
+                        <p>- Hàm lượng 1 viên Thực Phẩm Bảo Vệ Sức Khỏe Cozz Candy:</p>
+                        <div class="contain__item">
+                            <p>+ Eucalyptol…………….0.6mg.</p>
+                            <p>+ Tinh dầu gừng………0.6mg.</p>
+                            <p>+ Tinh dầu tần…………0.5mg.</p>
+                            <p>+ Tinh dầu quế………..1mg.</p>
+                            <p>+ Menthol……………….7mg.</p>
+                            <p>+ Đường saccharose, mạch nha</p>
+                        </div>
+                    </div>
+                    <div class="content__item content__use">
+                        <p class="content__title">CÔNG DỤNG</p>
+                        <p>- Hỗ trợ giảm ho, đau rát họng, khan tiếng.</p>
+                        <p>- Làm ấm họng, giúp bạn có hơi thở thơm mát.</p>
+                    </div>
+                    <div class="content__item content__costumer">
+                        <p class="content__title">ĐỐI TƯỢNG KHUYÊN DÙNG</p>
+                        <p>- Người lớn, trẻ em trên 6 tuổi.</p>
+                        <p>- Phụ nữ mang thai và trẻ dưới 6 tuổi, người đái tháo đường cẩn trọng khi dùng.</p>
+                    </div>
+                    <div class="content__item content__manual">
+                        <p class="content__title">HƯỚNG DẪN SỬ DỤNG</p>
+                        <p>- Người lớn, trẻ trên 6 tuổi: có thể ngậm nhiều lần trong ngày. Mỗi lần 1 viên, tối đa 20 viên/ngày.</p>
+                    </div>
+                    <div class="content__item content__carefull">
+                        <p class="content__title">THẬN TRỌNG</p>
+                        <p>- Không ngậm quá liều lượng khuyến cáo.</p>
+                        <p>- Sản phẩm không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</p>
+                    </div>
+                    <div class="content__item content__preservation">
+                        <p class="content__title">BẢO QUẢN</p>
+                        <p>- Nơi khô ráo, tránh ánh nắng trực tiếp, không quá 30 độ C </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main container">
+            <div class="main__section main__product">
+                <div class="section__seen">
+                    <h4>SẢN PHẨM TƯƠNG TỰ</h4>
+                    <div class="medicine__content">
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>999.000đ</span>
+                            <span class="old-price">800.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                    </div>
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-2-2x.png" alt="medicine2">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>246.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-3-2x.png" alt="medicine3">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>999.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-4-2x.png" alt="medicine4">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>246.000đ</span>
+                            <span class="old-price">345.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-5-2x.png" alt="medicine5">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>999.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="section__seen">
+                    <h4>SẢN PHẨM BẠN ĐÃ XEM</h4>
+                    <div class="medicine__content">
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>999.000đ</span>
+                            <span class="old-price">800.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                    </div>
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-2-2x.png" alt="medicine2">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>246.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-3-2x.png" alt="medicine3">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>999.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-4-2x.png" alt="medicine4">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>246.000đ</span>
+                            <span class="old-price">345.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <img src="./assets/img/decine__icon-5-2x.png" alt="medicine5">
+                        <div class="item__info">
+                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                            <span>999.000đ</span>
+                        </div>
+                        <div class="item__bouns">
+                            <img src="./assets/img/ship2x.png" alt="ship">
+                            <img src="./assets/img/gift-green.png" alt="gift">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>  
+    </main>
+<!--============== End Main ==========-->
+<!-- =========== footer ================-->
+    <footer class="footer" id="footer">
+    <div class="container footer__top">
+        <div class="top__item">
+            <img src="assets/img/percent2x.png" alt="percent">
+            <span>Sản phẩm chính hãng</span>
+        </div>
+        <div class="top__item">
+            <img src="assets/img/car2x.png" alt="car">
+            <span>Giao hàng toàn quốc</span>
+        </div>
+        <div class="top__item">
+            <img src="assets/img/phone2x.png" alt="phone">
+            <span>Thanh toán linh hoạt</span>
+        </div>
+        <div class="top__item">
+            <img src="assets/img/gift2x.png" alt="gift">
+            <span>Tích điểm đổi quà</span>
+            <img src="assets/img/message_icon.png" alt="message" class="message__icon">
+        </div>
+    </div>
+    <div class="footer__line">
+        <div class="container line__content">
+            <span>BẠN ĐANG CẦN ĐƯỢC TƯ VẤN</span>
+            <div class="content__item">
+                <img src="assets/img/telephone2x.png" alt="telephone">
+                <span>Gọi ngay <span class="item--red">1800 6768</span>(miễn phí)</span>
+            </div>
+            <span>NHẬP EMAIL NHẬN MÃ GIẢM GIÁ</span>
+            <div class="content__item">
+                <img src="assets/img/mail2x.png" alt="mail">
+                <span>Nhập email của bạn</span>
+            </div>
+        </div>
+    </div>
+    <div class="container footer__contact">
+        <div class="contact__address contact__group">
+            <a href=""><img src="assets/img/logo_green2x.png" alt="logo"></a>
+            <div class="address">
+                <h5>CÔNG TY CỔ PHẦN DƯỢC PHẨM PHANO</h5>
+                <address>Địa chỉ: 31 Hồ Biểu Chánh, P.12, Q.Phú Nhuận, TP.HCM</address>
+                <p>MST: 0304860663</p>
+                <p>Email: cskh@phanolink.com</p>
+                <p>Tel: 1800 6768</p>
+            </div>
+        </div>
+        <div class="contact__group contact__support">
+            <h4 class="group__title">HỖ TRỢ KHÁCH HÀNG</h4>
+            <ul>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách đổi trả</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách giao hàng</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách bảo mật</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Hướng dẫn thanh toán</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Hướng dẫn đặt hàng</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Giải quyết phản hồi</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Giấy phép kinh doanh</span></li>
+            </ul>
+        </div>
+        <div class="contact__group contact__support">
+            <h4 class="group__title">TÀI KHOẢN</h4>
+            <ul>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Đăng ký</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Đăng nhập</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Kiểm tra đơn hàng</span></li>
+            </ul>
+        </div>
+        <div class="contact__group contact__support">
+            <h4 class="group__title">KẾT NỐI VỚI CHÚNG TÔI</h4>
+            <ul>
+                <li><img src="assets/img/zalo2x.png" alt="zalo"></li>
+                <li><img src="assets/img/fb2x.png" alt="facebook"></li>
+                <li><img src="assets/img/gg-plus2x.png" alt="google"></li>
+                <li><img src="assets/img/youtube2x.png" alt="youtube"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer__bottom">
+        <p><sup>&copy</sup> <span>2019</span> - Bản quyền thuộc về Công ty CP Dược Phẩm Phano</p>
+        <img src="assets/img/bct_icon2x.png" alt="certification">
+    </div>
+</footer>
+<!-- =========== End footer ============ -->
+</body>
+<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
+</html>

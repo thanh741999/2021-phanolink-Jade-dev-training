@@ -4,26 +4,42 @@
   align-items: center;
   justify-content: center;
   padding: 25px 30px;
+  background-color: unset;
 
   &__item {
-    width: calc(100% / 5);
-    height: 160px;
+    width: calc(100% / 5 - 20px);
+    height: 147px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     text-align: center;
     position: relative;
+    margin: 0 10px;
+    border-radius: 10px;
+    @include flex();
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    p {
+      @include font-size(16.79px);
+      color: #FFFFFF;
+    }
     @media #{$info-tablet-vertical} {
-      width: calc(100% / 3);
+      width: calc(100% / 3 - 20px);
       margin-bottom: 15px;
     }
-    @media #{$info-phone} {
-      width: calc(100% / 2);
-    }
     @media #{$info-500} {
-      width: 100%;
+      width: calc(100% / 2 - 20px);
     }
-
+    @media screen and (max-width: 375px) {
+      height: 120px;
+    }
     .item__content {
       @include center-inside-element();
       color: #FFFFFF;

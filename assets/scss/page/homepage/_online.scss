@@ -1,17 +1,18 @@
 .online {
-  padding-top: 17px;
-  padding-bottom: 37.7px;
+  padding: 17px 10px 38px 34px;
   background-color: #ffffff;
 
-  h4 {
-    color: #505050;
-    @include font-size(22px);
-    font-family: UTM-intel-Bold;
-  }
+  &__header {
+    h4 {
+      color: #505050;
+      @include font-size(22px);
+      font-family: UTM-intel-Bold;
+    }
 
-  p {
-    color: #777777;
-    @include font-size(12px);
+    p {
+      color: #777777;
+      @include font-size(12px);
+    }
   }
 
   &__content {
@@ -23,25 +24,27 @@
     padding-bottom: 36.8px;
 
     .content__item {
-      padding-top: 15px;
+      padding: 20px;
       width: (100% / 3);
       text-align: center;
-      border-right: 1px solid #D1D1D1;
       @media #{$info-phone} {
-        width: 50%;
-        margin-bottom: 20px;
-      }
-      @media #{$info-500} {
         width: 100%;
-        border-right: unset;
-      }
-
-      &:last-child {
-        border-right: unset;
+        border-bottom: 2px solid #E5E5E4;
+        &:last-child {
+          border-bottom: unset;
+        }
       }
 
       .item__title {
         margin: 16px 0;
+      }
+    }
+    .content__middle {
+      border-left: 1px solid #E5E5E4;
+      border-right: 1px solid #E5E5E4;
+      @media #{$info-phone} {
+        border-left: unset;
+        border-right: unset;
       }
     }
   }
@@ -56,5 +59,8 @@
     border-radius: 5px;
     padding: 6px 15px 9px;
     margin: 0 auto;
+    img {
+      margin-right: 10px;
+    }
   }
 }

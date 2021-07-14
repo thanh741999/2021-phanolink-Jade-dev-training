@@ -1,16 +1,12 @@
 .product {
-  padding: 10px;
-
-  .container {
-    background-color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-
+  padding: 20px 0 30px;
+  background-color: #ffffff;
+  
   &__header {
     @include flex();
     margin-bottom: 20px;
-
+    align-items: center;
+    padding: 0 20px;
     .header__title {
       @include flex();
       flex-direction: column;
@@ -32,38 +28,51 @@
   &__content {
     @include flex();
     flex-wrap: wrap;
-
+    position: relative;
+    padding-bottom: 40px;
+    @media  #{$info-phone} {
+      padding-bottom: 25px;
+      justify-content: space-around;
+    }
     .content__slider {
       width: 70%;
       @include flex();
       flex-direction: column;
       @media #{$info-500} {
-        width: 100%;
+        width: 50%;
       }
-
-      .slider__top {
-        &:first-child {
-          .slick-dots {
-            li {
-              display: none;
-            }
-          }
-        }
-
+      .slider__list {
         @include flex();
-
-        .top__item {
-          width: 50%;
+        flex-wrap: wrap;
+        position: unset;
+        .list__item {
+          @include flex();
+          align-items: center;
+          flex-wrap: wrap;
+          .top__item {
+            width: 50%;
+            @media #{$info-500} {
+              width: 100%;
+              &:nth-child(3) {
+              display: none;
+              }
+              &:nth-child(4) {
+                display: none;
+              }
+            }
+            
+          }
         }
       }
     }
 
     .content__right {
       width: 30%;
-      @media #{$info-500} {
-        display: none;
-      }
       padding-left: 10px;
+      @media #{$info-500} {
+        width: 42%;
+        padding-left: 0;
+      }
     }
   }
 }
