@@ -1,16 +1,10 @@
-.medicine, .main-section {
-  padding: 20px 10px;
-
-  .container {
-    padding-top: 19.5px;
-    background-color: #ffffff;
-  }
-
+.medicine {
+  background-color: #ffffff;
   &__header {
     margin-bottom: 19px;
-
+    padding: 20px 0 0 38px;
     span {
-      margin-right: 10px;
+      margin-left: 10px;
       color: #505050;
       @include font-size(22px);
       font-family: UTM-intel-Bold;
@@ -20,25 +14,29 @@
   &__content {
     @include flex();
     flex-wrap: wrap;
-
+    @media screen and (max-width: 390px) {
+      flex-flow: row;
+      overflow: scroll;
+      width: 250px;
+      margin: 0 auto;
+    }
     .content__item {
       width: calc(100% / 5);
       position: relative;
-      padding-top: 40px;
-      padding-bottom: 20px;
-      border-right: 1px solid #E5E5E4;
-      border-top: 1px solid #E5E5E4;
-      padding-left: 20px;
+      padding: 40px 20px 20px;
+      outline: 1px solid #E5E5E4;
+      @media screen and (max-width: 1200px) {
+          width: calc(100% / 4);
+      }
       @media #{$info-tablet-vertical} {
         width: calc(100% / 3);
       }
-      @media #{$info-phone} {
+      @media screen and (max-width: 580px) {
         width: calc(100% / 2);
       }
-      @media #{$info-500} {
-        width: 100%;
-        border-right: unset;
-        text-align: center;
+      @media screen and (max-width: 390px) {
+        min-width: 250px;
+        border: 2px solid #E5E5E4;
       }
 
       &:last-child {
@@ -50,21 +48,34 @@
           border-right: unset;
         }
       }
-
-      &:nth-child(3) {
-        text-align: center;
-      }
-
-      .item__bouns {
-        position: absolute;
-        top: 20px;
-        right: 10px;
-
-        img {
-          display: block;
-          margin-bottom: 8px;
+      .item__img {
+        @include flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        .sale {
+          position: absolute;
+          top: 0;
+          left: 10px;
+        }
+        .ship {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+        .gift {
+          position: absolute;
+          top: 60px;
+          right: 10px;
+        }
+        .img__size {
+          height: 120px;
+          img {
+              height: 100%;
+            }
         }
       }
+      
 
       .item__info {
         text-align: left;
@@ -90,11 +101,7 @@
         }
       }
 
-      .sale {
-        position: absolute;
-        top: 0;
-        left: 10px;
-      }
+      
     }
   }
 }

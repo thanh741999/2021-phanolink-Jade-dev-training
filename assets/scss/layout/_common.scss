@@ -1,6 +1,7 @@
 a {
   &:hover {
     text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -24,6 +25,14 @@ img {
 }
 button , input {
   border: unset;
+  padding: 0;
+}
+section {
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .container {
   &::before, &::after {
@@ -68,8 +77,8 @@ main {
     @media #{$info-phone} {
       padding-top: 137px;
     }
-    @media screen and (max-width: 440px) {
-      padding-top: 203px;
+    @media screen and (max-width: 430px) {
+      padding-top: 134px;
     }
 }
 // ===== custom header responsive 767px =====
@@ -80,15 +89,11 @@ main {
     z-index: 2;
     width: 100%;
   }
-  @media screen and (max-width: 400px)  {
-    
-  }
   &--scroll {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 3;
-    display: none;
   }
   // end header scroll
   .sub__header {

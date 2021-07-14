@@ -55,6 +55,8 @@ main {
                 }
             }
         }
+
+        // cart info status
         &__info {
             width: calc(42% - 15px);
             background-color: #ffffff;
@@ -230,6 +232,9 @@ main {
                 }
             }
         }
+        // end 
+
+        // benefit
         &__benefit {
             padding: 23px 15px;
             background-color: #ffffff;
@@ -333,6 +338,7 @@ main {
                 }
             }
         }
+        // end
     }
     // product detail
     .product {

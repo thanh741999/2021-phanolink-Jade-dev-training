@@ -14,6 +14,7 @@ $(document).ready(function () {
         nextArrow: false,
         autoplay: true,
         autoplaySpeed: 2000,
+        dots: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -81,9 +82,9 @@ $(document).ready(function () {
         ]
     });
     // ======== product carousel=======
-    $('.slider__top').slick({
+    $('.slider__list').slick({
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: false,
         nextArrow: false,
@@ -92,17 +93,9 @@ $(document).ready(function () {
         dots: true,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            },
-            {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             },
@@ -168,10 +161,14 @@ $(document).ready(function () {
         const header_width = $('#header').innerWidth();
         const header_hight = $('#header').innerHeight();
         if (scroll_top >= header_hight && header_width >= 767) {
-            $('.header--scroll').css('display','block');
+            $('.header__top').addClass("header--hidden");
+            $('.header__bottom').addClass("header--hidden");
+            $('.header').addClass("header--scroll");
         }
         else {
-            $('.header--scroll').css('display','none');
+            $('.header__top').removeClass("header--hidden");
+            $('.header__bottom').removeClass("header--hidden");
+            $('.header').removeClass("header--scroll");
         }
     })
 })
