@@ -39,7 +39,7 @@
             <form action="" class="middle__search">
                 <input type="text" placeholder="Bạn đang tìm thuốc gì...">
                 <button class="search__btn">
-                    <img src="assets/img/search2x.png" alt="search">
+                    <i class="fas fa-search"></i>
                     <span>Tìm Kiếm</span>
                 </button>
             </form>
@@ -55,7 +55,7 @@
                 </button>
             </div>
         </div>
-        <div class="container header__bottom">
+        <nav class="container header__bottom">
             <ul>
                 <li class="bottom__item">
                     <img src="assets/img/menu2x.png" alt="menu">
@@ -82,7 +82,7 @@
                     <a>HƯỚNG DẪN</a>
                 </li>
             </ul>
-        </div>
+        </nav>
         <!-- Sub header 767px responsive -->
         <div class="container sub__header">
             <h1><img src="assets/img/Logo.png" alt="logo"></h1>
@@ -178,31 +178,9 @@
             </div>
         </div>
     </header>
-    <!-- Header scroll -->
-    <header class="header--scroll header">
-        <div class="container scroll__content">
-            <h1 class="middle__logo"> <a href="./index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
-            <form action="" class="middle__search">
-                <input type="text" placeholder="Bạn đang tìm thuốc gì...">
-                <button class="search__btn">
-                    <img src="assets/img/search2x.png" alt="search">
-                    <span>Tìm Kiếm</span>
-                </button>
-            </form>
-            <div class="middle__btn">
-                <button class="btn__item">
-                    <img src="assets/img/toa2x.png" alt="toa">
-                    <span>Tạo toa thuốc</span>
-                </button>
-                <button class="btn__item">
-                    <img src="assets/img/cart2x.png" alt="cart">
-                    <span>Giỏ hàng</span>
-                    <span class="item__bard">69</span>
-                </button>
-            </div>
-        </div>
-    </header>
 <!-- =========== End header ============= -->
+
+
 <!--============== Main =============-->
     <main>
         <section class="path">
@@ -227,36 +205,114 @@
                         <p class="header__price">Giá</p>
                         <p class="header__quantity">Số lượng</p>
                     </div>
-                    <div class="table__item">
-                        <div class="item__info">
-                            <img src="./assets/img/cart-img-01.png" alt="decine">
-                            <div class="info__description">
-                                <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
-                                <button>Xóa</button>
+                    <div class="table__content">
+                        <div class="table__item">
+                            <div class="item__info">
+                                <img src="./assets/img/cart-img-01.png" alt="decine">
+                                <div class="info__description">
+                                    <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
+                                    <button>Xóa</button>
+                                </div>
+                            </div>
+                            <div class="item__price">
+                                <b>
+                                    800.000đ
+                                </b>
+                                <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
+                            </div>
+                            <div class="item__quantity">
+                                <form action="">
+                                    <button class="minus"><i class="fas fa-minus"></i></button>
+                                    <input type="text" value="1">
+                                    <button class="plus"><i class="fas fa-plus"></i></button>
+                                </form>
                             </div>
                         </div>
-                        <div class="item__price">
-                            <b>
-                                800.000đ
-                            </b>
-                            <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
+                        <div class="table__item">
+                            <div class="item__info">
+                                <img src="./assets/img/cart-img-01.png" alt="decine">
+                                <div class="info__description">
+                                    <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
+                                    <button>Xóa</button>
+                                </div>
+                            </div>
+                            <div class="item__price">
+                                <b>
+                                    800.000đ
+                                </b>
+                                <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
+                            </div>
+                            <div class="item__quantity">
+                                <form action="">
+                                    <button class="minus"><i class="fas fa-minus"></i></button>
+                                    <input type="text" value="1">
+                                    <button class="plus"><i class="fas fa-plus"></i></button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="item__quantity">
-                            <button class="minus"><i class="fas fa-minus"></i></button>
-                            <input type="text" value="1">
-                            <button class="plus"><i class="fas fa-plus"></i></button>
+                        <div class="table__item">
+                            <div class="item__info">
+                                <img src="./assets/img/cart-img-01.png" alt="decine">
+                                <div class="info__description">
+                                    <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
+                                    <button>Xóa</button>
+                                </div>
+                            </div>
+                            <div class="item__price">
+                                <b>
+                                    800.000đ
+                                </b>
+                                <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
+                            </div>
+                            <div class="item__quantity">
+                                <form action="">
+                                    <button class="minus"><i class="fas fa-minus"></i></button>
+                                    <input type="text" value="1">
+                                    <button class="plus"><i class="fas fa-plus"></i></button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="content__sidebar">
-
+                <div class="sidebar__voucher">
+                    <h2>Mã Giảm Giá:</h2>
+                        <form action="" class="voucher__form">
+                            <input type="text" placeholder="Nhập mã giảm giá....">
+                            <button>ÁP DỤNG</button>
+                        </form>
+                </div>
+                <div class="sidebar__price">
+                    <div class="price__discount">
+                        <div class="discount__item">
+                            Tạm Tính:
+                            <span>1.080.000 đ</span>
+                        </div>
+                        <div class="discount__item">
+                            Giảm Giá:
+                            <span>80.000 đ</span>
+                        </div>
+                    </div>
+                    <div class="price__total">
+                        Thành Tiền:
+                        <div class="total">
+                            <b>1.000.000 đ</b>
+                            <span>(Đã bao gồm VAT nếu có)</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="sidebar__btn">
+                    <a href="">TIẾN HÀNH ĐẶT HÀNG</a>
+                </button>
             </div>
         </section>
     </main>
 <!--============== End Main ==========-->
+
+
 <!-- =========== footer ================-->
-    <footer class="footer" id="footer">
+<footer class="footer" id="footer">
     <div class="container footer__top">
         <div class="top__item">
             <img src="assets/img/percent2x.png" alt="percent">
@@ -278,15 +334,21 @@
     </div>
     <div class="footer__line">
         <div class="container line__content">
-            <span>BẠN ĐANG CẦN ĐƯỢC TƯ VẤN</span>
             <div class="content__item">
-                <img src="assets/img/telephone2x.png" alt="telephone">
-                <span>Gọi ngay <span class="item--red">1800 6768</span>(miễn phí)</span>
+                <span>BẠN ĐANG CẦN ĐƯỢC TƯ VẤN</span>
+                <div class="item__support">
+                    <img src="assets/img/telephone2x.png" alt="telephone">
+                    <span>Gọi ngay <span class="item--red">1800 6768</span>(miễn phí)</span>
+                </div>
             </div>
-            <span>NHẬP EMAIL NHẬN MÃ GIẢM GIÁ</span>
             <div class="content__item">
-                <img src="assets/img/mail2x.png" alt="mail">
-                <span>Nhập email của bạn</span>
+                <span>NHẬP EMAIL NHẬN MÃ GIẢM GIÁ</span>
+                <form class="item__form">
+                    <button>
+                        <img src="assets/img/mail2x.png" alt="mail">
+                    </button>
+                    <input type="text" placeholder="Nhập email của bạn">
+                </form>
             </div>
         </div>
     </div>
@@ -301,7 +363,7 @@
                 <p>Tel: 1800 6768</p>
             </div>
         </div>
-        <div class="contact__group contact__support">
+        <div class="contact__support contact__group">
             <h4 class="group__title">HỖ TRỢ KHÁCH HÀNG</h4>
             <ul>
                 <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách đổi trả</span></li>
@@ -313,7 +375,7 @@
                 <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Giấy phép kinh doanh</span></li>
             </ul>
         </div>
-        <div class="contact__group contact__support">
+        <div class="contact__account contact__group">
             <h4 class="group__title">TÀI KHOẢN</h4>
             <ul>
                 <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Đăng ký</span></li>
@@ -321,7 +383,7 @@
                 <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Kiểm tra đơn hàng</span></li>
             </ul>
         </div>
-        <div class="contact__group contact__support">
+        <div class="contact__social contact__group">
             <h4 class="group__title">KẾT NỐI VỚI CHÚNG TÔI</h4>
             <ul>
                 <li><img src="assets/img/zalo2x.png" alt="zalo"></li>
@@ -332,7 +394,7 @@
         </div>
     </div>
     <div class="container footer__bottom">
-        <p><sup>&copy</sup> <span>2019</span> - Bản quyền thuộc về Công ty CP Dược Phẩm Phano</p>
+        <p> <span>&copy 2019</span> - Bản quyền thuộc về Công ty CP Dược Phẩm Phano</p>
         <img src="assets/img/bct_icon2x.png" alt="certification">
     </div>
 </footer>
