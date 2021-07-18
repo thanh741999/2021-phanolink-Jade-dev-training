@@ -1,0 +1,235 @@
+main {
+    .location-line {
+        .state__item:first-child {
+            .circle::before {
+                background-color: $color-main;
+            }
+        }
+    }
+    .cart-location {
+        .location__header {
+            p {
+                padding: 17px 0;
+                transform: translateY(-6px);
+                @media #{$info-phone} {
+                    transform: translateY(-9px);
+                }
+            }
+        }
+        .location__content {
+            .content__item {
+                padding: 18px 25px 22px;
+                border-top: 1px solid #E5E5E4;
+                @include flex();
+                justify-content: space-between;
+                align-items: flex-start;
+                @media #{$info-500} {
+                    display: block;
+                }
+                .item__info {
+                    h2 {
+                    @include flex();
+                    align-items: center;
+                    @include font-size(14px);
+                    font-weight: bold;
+                    margin: 0 0 10px;
+                        i {
+                            color: $color-main;
+                            margin: 0 5px 0 4px;
+                        }
+                        span {
+                            @include font-size(12px);
+                            color: $color-main;
+                        }
+                    }
+                    p {
+                        margin-bottom: 8px;
+                        color: #808081;
+                        @include font-size(14px);
+                        span {
+                            color: #434343;
+                        }
+                    }
+                    button {
+                        color: #ffffff;
+                        font-weight: bold;
+                        @include font-size(13.29px);
+                        padding: 8px 20px 12px 18px;
+                        border-radius: 5px;
+                        background-color: #808081;
+                        @media #{$info-500} {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    button.active {
+                        background-color: $color-main;
+                    }
+                }
+                .item__btn {
+                    color: $color-main;
+                    background-color: unset;
+                    @include font-size(14px);
+                    
+                }
+            }
+        }
+    }
+}
+
+// ===== custom modal ===== 
+.modal {
+    .modal-dialog {
+        .modal-content {
+            padding: 0 40px;
+            .modal-header {
+                border: unset;
+                text-align: center;
+                h2 {
+                    display: inline-block;
+                    background-color: $color-main;
+                    color: #ffffff;
+                    @include font-size(22px);
+                    font-weight: bold;
+                    padding: 12px 18px 12px 20px;
+                    transform: translateY(-20px);
+                    position: relative;
+                    &::before {
+                        content: "";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        top: 0;
+                        left: -8px;
+                        border-bottom: 5px solid #016B68;
+                        border-left: 5px solid transparent;
+                        border-right: 3px solid #016B68;
+                    }
+                }
+                button {
+                    background-color: unset;
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+            }
+            .modal-body {
+                margin-bottom: 20px;
+                form {
+                    overflow-y: scroll;
+                    .form__group {
+                        margin-bottom: 14px;
+                        label {
+                            width: 100%;
+                            color: #434343;
+                            @include font-size(16px);
+                            margin-bottom: 5px;
+                            font-weight: 400;
+                            span {
+                                color: #EA4036;
+                                @include font-size(14px);
+                            }
+                        }
+                        input {
+                            width: 100%;
+                            border: 1px solid #E2E3E4;
+                            border-radius: 5px;
+                            padding: 6px 18px 10px;
+                            outline: unset;
+                            @include placeholder {
+                                color: #808081;
+                                @include font-size(14.39px);
+                            }
+                        }
+                        textarea {
+                            resize: unset;
+                            width: 100%;
+                            padding: 10px 20px;
+                            border: 1px solid #E2E3E4;
+                        }
+                    }
+                    .form__select {
+                        position: relative;
+                        i {
+                            position: absolute;
+                            bottom: 12px;
+                            right: 10px;
+                            cursor: pointer;
+                        }
+                        .dropdown-menu {
+                            width: 100%;
+                            padding: 10px 15px;
+                            li {
+                                margin-bottom: 5px;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .address {
+                    span {
+                        color: #434343;
+                        @include font-size(14px);
+                        margin-bottom: 10px;
+                        display: inline-block
+                    }
+                    &__btn {
+                        @include flex();
+                        align-items: center;
+                        border: 1px solid #E2E3E4;
+                        border-radius: 5px;
+                        margin-bottom: 18px;
+                        button {
+                            width: 50%;
+                            background-color: unset;
+                            @include font-size(14.39px);
+                            padding: 10px 0;
+                            text-align: center;
+                        }
+                        .house {
+                            color: #ffffff;
+                            background-color: #808081;
+                            border-bottom-left-radius: 5px;
+                            border-top-left-radius: 5px;
+                            @include font-size(16px);
+                            font-weight: bold;
+                        }
+                    }
+                    form {
+                        label {
+                            color: $color-main;
+                            @include font-size(16px);
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .modal-footer {
+                border: unset;
+                button {
+                    width: 100%;
+                    background-color: $color-main;
+                    color: #ffffff;
+                    @include font-size(18px);
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    margin-bottom: 12px;
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+                p {
+                    text-align: right;
+                    @include font-size(14.39px);
+                    span {
+                        color: #EA4036;
+                    }
+                }
+            }
+        }
+    }
+}
