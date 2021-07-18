@@ -83,6 +83,30 @@
                 </li>
             </ul>
         </nav>
+        <!-- ======header scrolll======= -->
+        <div class="header--scroll">
+            <div class="header__middle container">
+                <h1 class="middle__logo"> <a href="index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
+                <form action="" class="middle__search">
+                    <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+                    <button class="search__btn">
+                        <i class="fas fa-search"></i>
+                        <span>Tìm Kiếm</span>
+                    </button>
+                </form>
+                <div class="middle__btn">
+                    <button class="btn__item">
+                        <img src="assets/img/toa2x.png" alt="toa">
+                        <span>Tạo toa thuốc</span>
+                    </button>
+                    <button class="btn__item">
+                        <img src="assets/img/cart2x.png" alt="cart">
+                        <span>Giỏ hàng</span>
+                        <span class="item__bard">69</span>
+                    </button>
+                </div>
+            </div>
+        </div>
         <!-- Sub header 767px responsive -->
         <div class="container sub__header">
             <h1><img src="assets/img/Logo.png" alt="logo"></h1>
@@ -191,20 +215,140 @@
                 </ul>
             </div>
         </section>
-        <section class="main__content container">
-            <div class="content__cart cart__empty">
-                <h2 class="cart__header">
-                    <p class="active">
-                        GIỎ HÀNG
-                        <b>(8 Sản Phẩm)</b>
-                    </p>
-                </h2>
-                <div class="cart__content">
-                    <p>Không có sản phẩm nào trong giỏ hàng của bạn.</p>
-                    <a href=""> <i class="fas fa-angle-left"></i> <b>Tiếp Tục Mua Sắm</b></a>
+        <div class="container">
+            <section class="line-state">
+                <div class="state__item">
+                    <p>Đăng Nhập</p>
+                    <span class="circle active">
+                        1
+                    </span>
                 </div>
-            </div>
-        </section>
+                <div class="state__item">
+                    <p>Đăng Nhập</p>
+                    <span class="circle">
+                        2
+                    </span>
+                </div>
+                <div class="state__item">
+                    <p>Đăng Nhập</p>
+                    <span class="circle">
+                        3
+                    </span>
+                </div>
+            </section>
+            <section class="main__content">
+                <div class="content__cart">
+                    <h2 class="cart__header">
+                        <p class="active" status="login">
+                            ĐĂNG NHẬP
+                            <span>Đã là thành viên Phanolink</span>
+                        </p>
+                        <p status="register">
+                            ĐĂNG KÝ
+                            <span>Dành cho khách hàng mới</span>
+                        </p>
+                    </h2>
+                    <div class="cart__login">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum </p>
+                        <form action="" class="login__form">
+                            <div class="form__input">
+                                <label for="user__login">Email / SĐT</label>
+                                <input type="text" id="user__login" placeholder="Nhập Email hoặc số điện thoại">
+                                <label for="password__login">Mật Khẩu</label>
+                                <input type="text" id="password__login" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                                <span>Quên mật khẩu? Nhấn vào <a href="">đây</a> </span>
+                            </div>
+                            <div class="form__btn">
+                                <button>Đăng nhập</button>
+                                <button class="btn--fb">Đăng nhập bằng Facebook</button>
+                                <button class="btn--gg">Đăng nhập bằng Google</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="cart__register">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum </p>
+                        <form action="" class="register__form">
+                            <div class="form__input">
+                                <div class="input__name">
+                                    <label for="user__login">Họ tên</label>
+                                    <input type="text" id="user__login" placeholder="Nhập họ tên">
+                                </div>
+                                <div class="input__mail">
+                                    <label for="user__login">Email</label>
+                                    <input type="text" id="user__login" placeholder="Nhập Email">
+                                </div>
+                                <div class="input__password">
+                                    <label for="password__login">Mật Khẩu</label>
+                                    <input type="text" id="password__login" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                                </div>
+                                <div class="input__phone">
+                                    <label for="user__login">Số điện thoại</label>
+                                    <input type="text" id="user__login" placeholder="Nhập số điện thoại">
+                                </div>
+                            </div>
+                            <div class="form__btn">
+                                <div class="btn__checkbox">
+                                    <input type="checkbox"> Nhận các thông tin và chương trình khuyến mãi qua email
+                                </div>
+                                <button>Đăng ký</button>
+                                <button class="btn--fb">Đăng ký bằng Facebook</button>
+                                <button class="btn--gg">Đăng ký bằng Google</button>
+                                <span>Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo điều kiện sử dụng và chính sách của <a href="">PHANOLINK</a> </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="content__sidebar">
+                    <div class="sidebar__bill">
+                        <div class="bill__header">
+                            <h4>Đơn Hàng (3 Sản Phẩm)</h4>
+                            <button>Sửa</button>
+                        </div>
+                        <div class="bill__product">
+                            <div class="product__info">
+                                <div class="info__quantity">
+                                    <span>1x</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                                </div>
+                                <span>
+                                    800.000đ
+                                </span>
+                            </div>
+                            <div class="product__info">
+                                <div class="info__quantity">
+                                    <span>1x</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                                </div>
+                                <span>
+                                    800.000đ
+                                </span>
+                            </div>
+                            <div class="product__info">
+                                <div class="info__quantity">
+                                    <span>1x</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                                </div>
+                                <span>
+                                    800.000đ
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bill__ship">
+                            <p>Tạm Tính <span>800.000đ</span> </p>
+                            <p>Phí Vận Chuyển <span>800.000đ</span></p>
+                        </div>
+                        <div class="bill__total">
+                            <span>Thành Tiền</span>
+                            <div class="total__price">
+                                <b>800.000đ</b>
+                                <p>(Đã bao gồm VAT nếu có)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
     </main>
 <!--============== End Main ==========-->
 

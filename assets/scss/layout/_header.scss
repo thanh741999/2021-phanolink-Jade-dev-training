@@ -1,6 +1,6 @@
 .header {
   background-color: $color-main;
-  padding: 12px;
+  padding: 10px 0;
   &__top {
     text-align: right;
     @include flex();
@@ -139,12 +139,16 @@
      display: grid;
      grid-template-columns: 1fr 1fr 1.2fr 1fr 1fr 1fr;
      .bottom__item {
+       @include flex();
+       align-items: center;
+       justify-content: center;
         a {
           text-transform: uppercase;
           @include font-size(15.75px);
           font-family: UTM-intel-Bold;
           color: #FFFFFF;
           cursor: pointer;
+          margin-left: 5px;
           @media  screen and (max-width: 1200px) {
             font-size: .6rem;
           }
@@ -164,8 +168,16 @@
       }
     }
   }
-  &--hidden {
+  // ===== header-scroll======
+  &--scroll{
+    background-color: $color-main;
     display: none;
+    .container {
+      @include flex();
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 15px;
+    }
   }
   // header-responsive
   .sub__header {

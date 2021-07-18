@@ -7632,7 +7632,7 @@ main {
 
 .header {
   background-color: #01ADAB;
-  padding: 12px;
+  padding: 10px 0;
 }
 
 .header__top {
@@ -7864,6 +7864,18 @@ main {
       grid-template-columns: 1fr 1fr 1.2fr 1fr 1fr 1fr;
 }
 
+.header__bottom ul .bottom__item {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header__bottom ul .bottom__item a {
   text-transform: uppercase;
   font-size: 15.75px;
@@ -7871,6 +7883,7 @@ main {
   font-family: UTM-intel-Bold;
   color: #FFFFFF;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -7893,8 +7906,22 @@ main {
   z-index: 2;
 }
 
-.header--hidden {
+.header--scroll {
+  background-color: #01ADAB;
   display: none;
+}
+
+.header--scroll .container {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 15px;
 }
 
 .header .sub__header {
@@ -17882,24 +17909,34 @@ main .product__info .info__content .content__contain .contain__item {
   margin-bottom: 26px;
 }
 
-.main__content .content__cart h2 span {
+.main__content .content__cart h2 p {
   width: 160px;
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
   font-weight: bold;
   text-align: center;
-  display: inline-block;
-  color: #ffffff;
-  background-color: #01ADAB;
   font-size: 14px;
   font-size: 0.875rem;
+  padding: 8px 0 12px;
+  display: inline-block;
+  color: #808081;
+}
+
+.main__content .content__cart h2 p b {
+  display: block;
+  color: #EA4036;
+  margin-top: 5px;
+}
+
+.main__content .content__cart h2 p.active {
+  background-color: #01ADAB;
+  color: #ffffff;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  padding: 8px 0 12px;
   position: relative;
 }
 
-.main__content .content__cart h2 span::before {
+.main__content .content__cart h2 p.active::before {
   content: "";
   height: 0;
   width: 0;
@@ -17908,12 +17945,6 @@ main .product__info .info__content .content__contain .contain__item {
   left: -5px;
   border-bottom: 5px solid #016B68;
   border-left: 5px solid transparent;
-}
-
-.main__content .content__cart h2 span b {
-  display: block;
-  color: #EA4036;
-  margin-top: 5px;
 }
 
 .main__content .content__cart .cart__table {
@@ -18314,5 +18345,429 @@ main .main__content .cart__empty .cart__content a {
   main .main__content .cart__empty .cart__content a {
     font-size: 1rem;
   }
+}
+
+main .line-state {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: unset;
+  width: 650px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px) {
+  main .line-state {
+    width: 625px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main .line-state {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  main .line-state {
+    width: 240px;
+  }
+}
+
+main .line-state .state__item {
+  text-align: center;
+}
+
+main .line-state .state__item p {
+  color: #434343;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+
+main .line-state .state__item .circle {
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  background-color: #808081;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+main .line-state .state__item .circle::before {
+  content: "";
+  height: 5px;
+  width: 270px;
+  background-color: #808081;
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  margin-top: -2.5px;
+}
+
+@media only screen and (max-width: 767px) {
+  main .line-state .state__item .circle::before {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  main .line-state .state__item .circle::before {
+    width: 75px;
+  }
+}
+
+main .line-state .state__item .active {
+  background-color: #01ADAB;
+}
+
+main .line-state .state__item:last-child .circle::before {
+  display: none;
+}
+
+main .main__content .content__cart .cart__header {
+  text-align: center;
+}
+
+main .main__content .content__cart .cart__header p {
+  cursor: pointer;
+}
+
+main .main__content .content__cart .cart__header span {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  font-size: 0.6875rem;
+}
+
+main .main__content .content__cart .cart__login, main .main__content .content__cart .cart__register {
+  max-width: 468px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 520px) {
+  main .main__content .content__cart .cart__login, main .main__content .content__cart .cart__register {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+}
+
+main .main__content .content__cart .cart__login p, main .main__content .content__cart .cart__register p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #434343;
+  line-height: 24px;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input, main .main__content .content__cart .cart__login .register__form .form__input, main .main__content .content__cart .cart__register .login__form .form__input, main .main__content .content__cart .cart__register .register__form .form__input {
+  margin-bottom: 41px;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input label, main .main__content .content__cart .cart__login .register__form .form__input label, main .main__content .content__cart .cart__register .login__form .form__input label, main .main__content .content__cart .cart__register .register__form .form__input label {
+  width: 100%;
+  color: #434343;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input input, main .main__content .content__cart .cart__login .register__form .form__input input, main .main__content .content__cart .cart__register .login__form .form__input input, main .main__content .content__cart .cart__register .register__form .form__input input {
+  width: 100%;
+  padding: 8px 18px 12px;
+  outline: unset;
+  border-radius: 6px;
+  border: 1px solid #E2E3E4;
+  margin-bottom: 8px;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input input::-webkit-input-placeholder, main .main__content .content__cart .cart__login .register__form .form__input input::-webkit-input-placeholder, main .main__content .content__cart .cart__register .login__form .form__input input::-webkit-input-placeholder, main .main__content .content__cart .cart__register .register__form .form__input input::-webkit-input-placeholder {
+  color: #808081;
+  font-size: 14.39px;
+  font-size: 0.89938rem;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input input:-moz-placeholder, main .main__content .content__cart .cart__login .register__form .form__input input:-moz-placeholder, main .main__content .content__cart .cart__register .login__form .form__input input:-moz-placeholder, main .main__content .content__cart .cart__register .register__form .form__input input:-moz-placeholder {
+  color: #808081;
+  font-size: 14.39px;
+  font-size: 0.89938rem;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input input::-moz-placeholder, main .main__content .content__cart .cart__login .register__form .form__input input::-moz-placeholder, main .main__content .content__cart .cart__register .login__form .form__input input::-moz-placeholder, main .main__content .content__cart .cart__register .register__form .form__input input::-moz-placeholder {
+  color: #808081;
+  font-size: 14.39px;
+  font-size: 0.89938rem;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input input:-ms-input-placeholder, main .main__content .content__cart .cart__login .register__form .form__input input:-ms-input-placeholder, main .main__content .content__cart .cart__register .login__form .form__input input:-ms-input-placeholder, main .main__content .content__cart .cart__register .register__form .form__input input:-ms-input-placeholder {
+  color: #808081;
+  font-size: 14.39px;
+  font-size: 0.89938rem;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input input:nth-child(2), main .main__content .content__cart .cart__login .register__form .form__input input:nth-child(2), main .main__content .content__cart .cart__register .login__form .form__input input:nth-child(2), main .main__content .content__cart .cart__register .register__form .form__input input:nth-child(2) {
+  margin-bottom: 14px;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input span, main .main__content .content__cart .cart__login .register__form .form__input span, main .main__content .content__cart .cart__register .login__form .form__input span, main .main__content .content__cart .cart__register .register__form .form__input span {
+  color: #434343;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__input span a, main .main__content .content__cart .cart__login .register__form .form__input span a, main .main__content .content__cart .cart__register .login__form .form__input span a, main .main__content .content__cart .cart__register .register__form .form__input span a {
+  color: #EA4036;
+  font-weight: bold;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__btn, main .main__content .content__cart .cart__login .register__form .form__btn, main .main__content .content__cart .cart__register .login__form .form__btn, main .main__content .content__cart .cart__register .register__form .form__btn {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-bottom: 53px;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__btn .btn__checkbox, main .main__content .content__cart .cart__login .register__form .form__btn .btn__checkbox, main .main__content .content__cart .cart__register .login__form .form__btn .btn__checkbox, main .main__content .content__cart .cart__register .register__form .form__btn .btn__checkbox {
+  color: #808081;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 12px;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__btn button, main .main__content .content__cart .cart__login .register__form .form__btn button, main .main__content .content__cart .cart__register .login__form .form__btn button, main .main__content .content__cart .cart__register .register__form .form__btn button {
+  background-color: #01ADAB;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 11px;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__btn button:last-child, main .main__content .content__cart .cart__login .register__form .form__btn button:last-child, main .main__content .content__cart .cart__register .login__form .form__btn button:last-child, main .main__content .content__cart .cart__register .register__form .form__btn button:last-child {
+  margin-bottom: 0;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__btn .btn--fb, main .main__content .content__cart .cart__login .register__form .form__btn .btn--fb, main .main__content .content__cart .cart__register .login__form .form__btn .btn--fb, main .main__content .content__cart .cart__register .register__form .form__btn .btn--fb {
+  background-color: #3B5998;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__btn .btn--gg, main .main__content .content__cart .cart__login .register__form .form__btn .btn--gg, main .main__content .content__cart .cart__register .login__form .form__btn .btn--gg, main .main__content .content__cart .cart__register .register__form .form__btn .btn--gg {
+  background-color: #E94A32;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__btn span, main .main__content .content__cart .cart__login .register__form .form__btn span, main .main__content .content__cart .cart__register .login__form .form__btn span, main .main__content .content__cart .cart__register .register__form .form__btn span {
+  color: #434343;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+main .main__content .content__cart .cart__login .login__form .form__btn span a, main .main__content .content__cart .cart__login .register__form .form__btn span a, main .main__content .content__cart .cart__register .login__form .form__btn span a, main .main__content .content__cart .cart__register .register__form .form__btn span a {
+  color: #EA4036;
+  font-weight: bold;
+}
+
+main .main__content .content__cart .cart__register {
+  display: none;
+}
+
+main .main__content .content__sidebar .sidebar__bill {
+  background-color: #ffffff;
+  padding: 15px 25px;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__header {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__header h4 {
+  color: #505050;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__header button {
+  color: #838383;
+  font-size: 14.39px;
+  font-size: 0.89938rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  background-color: unset;
+  border: 1px solid #EBEBEB;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__product {
+  padding: 15px 0;
+  border-top: 1px solid #E2E3E4;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__product .product__info {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  main .main__content .content__sidebar .sidebar__bill .bill__product .product__info {
+    font-size: 1.2rem;
+  }
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__product .product__info:last-child {
+  margin-bottom: 0px;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__product .product__info .info__quantity {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__product .product__info .info__quantity span {
+  color: #505050;
+  margin-top: -4px;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__product .product__info .info__quantity p {
+  color: #838383;
+  line-height: 16.8px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .main__content .content__sidebar .sidebar__bill .bill__product .product__info .info__quantity p {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main .main__content .content__sidebar .sidebar__bill .bill__product .product__info .info__quantity p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  main .main__content .content__sidebar .sidebar__bill .bill__product .product__info .info__quantity p {
+    font-size: .8rem;
+  }
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__product .product__info span {
+  color: #838383;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__ship {
+  padding: 15px 0;
+  border-top: 1px solid #E2E3E4;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__ship p {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #505050;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__ship p:first-child {
+  margin-bottom: 5px;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__ship p span {
+  color: #838383;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__total {
+  padding: 15px 0;
+  border-top: 1px solid #E2E3E4;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__total span {
+  color: #505050;
+  font-weight: bold;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__total .total__price {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__total .total__price b {
+  color: #FA434E;
+  font-size: 24.29px;
+  font-size: 1.51812rem;
+}
+
+main .main__content .content__sidebar .sidebar__bill .bill__total .total__price p {
+  color: #505050;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=main.css.map */

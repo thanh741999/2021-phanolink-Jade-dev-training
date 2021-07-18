@@ -13,18 +13,26 @@
             h2 {
                 margin-left: 27px;
                 margin-bottom: 26px;
-                span {
+                p {
                     width: 160px;
                     transform: translateY(-4px);
                     font-weight: bold;
                     text-align: center;
-                    display: inline-block;
-                    color: #ffffff;
-                    background-color: $color-main;
                     @include font-size(14px);
+                    padding: 8px 0 12px;
+                    display: inline-block;
+                    color: #808081;
+                    b {
+                        display: block;
+                        color: #EA4036;
+                        margin-top: 5px;
+                    }
+                }
+                p.active {
+                    background-color: $color-main;
+                    color: #ffffff;
                     border-bottom-left-radius: 8px;
                     border-bottom-right-radius: 8px;
-                    padding: 8px 0 12px;
                     position: relative;
                     &::before {
                         content: "";
@@ -36,12 +44,8 @@
                         border-bottom: 5px solid #016B68;
                         border-left: 5px solid transparent;
                     }
-                    b {
-                        display: block;
-                        color: #EA4036;
-                        margin-top: 5px;
-                    }
-                }
+
+                } 
             }
             .cart__table {
                 padding: 0 25px;

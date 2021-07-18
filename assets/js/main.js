@@ -161,14 +161,29 @@ $(document).ready(function () {
         const header_width = $('#header').innerWidth();
         const header_hight = $('#header').innerHeight();
         if (scroll_top >= header_hight && header_width >= 767) {
-            $('.header__top').addClass("header--hidden");
-            $('.header__bottom').addClass("header--hidden");
-            $('.header').addClass("header--scroll");
+            $('.header--scroll').css('display','block');
         }
         else {
-            $('.header__top').removeClass("header--hidden");
-            $('.header__bottom').removeClass("header--hidden");
-            $('.header').removeClass("header--scroll");
+            $('.header--scroll').css('display','none');
         }
     })
+
+
+    // ========= cart ========
+
+    // ======== login and register ======
+    $('.cart__header p').click(function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        let status = $(this).attr('status');
+        if (status === 'register') {
+            $('.cart__register').css('display','block');
+            $('.cart__login').css('display','none');
+
+        }
+        else {
+            $('.cart__register').css('display','none');
+            $('.cart__login').css('display','block');
+        }
+    })
+
 })
