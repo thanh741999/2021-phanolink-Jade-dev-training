@@ -1,0 +1,107 @@
+.medicine {
+  background-color: #ffffff;
+  &__header {
+    padding: 20px 38px;
+    span {
+      margin-left: 10px;
+      color: #505050;
+      @include font-size(22px);
+      font-family: UTM-intel-Bold;
+    }
+  }
+
+  &__content {
+    @include flex();
+    flex-wrap: wrap;
+    @media screen and (max-width: 390px) {
+      flex-flow: row;
+      overflow: scroll;
+      width: 250px;
+      margin: 0 auto;
+      padding: 5px 0;
+    }
+    .content__item {
+      width: calc(100% / 5);
+      position: relative;
+      padding: 40px 20px 20px;
+      outline: 1px solid #E5E5E4;
+      @media screen and (max-width: 1200px) {
+          width: calc(100% / 4);
+      }
+      @media #{$info-tablet-vertical} {
+        width: calc(100% / 3);
+      }
+      @media screen and (max-width: 580px) {
+        width: calc(100% / 2);
+      }
+      @media screen and (max-width: 390px) {
+        min-width: 250px;
+        border: 2px solid #E5E5E4;
+      }
+
+      &:last-child {
+        border-right: unset;
+        @media #{$info-tablet-vertical} {
+          border-right: 1px solid #E5E5E4;
+        }
+        @media #{$info-500} {
+          border-right: unset;
+        }
+      }
+      .item__img {
+        @include flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        .sale {
+          position: absolute;
+          top: 0;
+          left: 10px;
+        }
+        .ship {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+        .gift {
+          position: absolute;
+          top: 60px;
+          right: 10px;
+        }
+        .img__size {
+          height: 120px;
+          img {
+              height: 100%;
+            }
+        }
+      }
+      
+
+      .item__info {
+        text-align: left;
+        margin-top: 15px;
+
+        p {
+          color: #020202;
+          @include font-size(16.09px);
+        }
+
+        span {
+          display: block;
+          color: #E42F43;
+          @include font-size(16.76px);
+          font-family: UTM-intel-Bold;
+          margin-bottom: 5px;
+        }
+
+        .old-price {
+          color: #AAAAAA;
+          @include font-size(12.74px);
+          text-decoration: line-through;
+        }
+      }
+
+      
+    }
+  }
+}

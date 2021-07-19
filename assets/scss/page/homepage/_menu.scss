@@ -1,0 +1,51 @@
+.menu {
+  @include flex();
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 30px;
+  background-color: unset;
+  margin: 0 -15px;
+  &__item {
+    width: calc(100% / 5 - 20px);
+    height: 147px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    margin: 0 10px;
+    border-radius: 10px;
+    @include flex();
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    p {
+      @include font-size(16.79px);
+      color: #FFFFFF;
+    }
+    @media #{$info-tablet-vertical} {
+      width: calc(100% / 3 - 20px);
+      margin-bottom: 15px;
+    }
+    @media #{$info-500} {
+      width: calc(100% / 2 - 20px);
+    }
+    @media screen and (max-width: 375px) {
+      height: 120px;
+    }
+    .item__content {
+      @include center-inside-element();
+      color: #FFFFFF;
+      @include font-size(16.79px);
+      font-family: UTM-intel-Bold;
+      text-align: center;
+      display: block;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

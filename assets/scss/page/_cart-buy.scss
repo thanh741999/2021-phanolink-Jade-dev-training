@@ -1,0 +1,77 @@
+main {
+    .buy-line {
+        .state__item:nth-child(2) {
+            .circle::before {
+                background-color: $color-main;
+            }
+        }
+    }
+    .cart-buy {
+        .buy__header {
+            p {
+                width: auto;
+                padding: 17px;
+                transform: translateY(-6px);
+                @media #{$info-phone} {
+                    transform: translateY(-9px);
+                }
+            }
+            p.error {
+                background-color: #EA4036;
+                color: #ffffff;
+                &::before {
+                    content: "";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    top: 0;
+                    left: -5px;
+                    border-bottom: 5px solid #8E2926;
+                    border-left: 5px solid transparent;
+                }
+            }
+        }
+        .buy__content {
+            width: 340px;
+            margin: 0 auto;
+            @media #{$info-500} {
+                padding: 0 30px;
+            }
+            @media screen and (max-width: 400px) {
+                width: auto;
+                font-size: .8rem;
+                padding: 0 15px;
+            }
+            .buy__form {
+                .form__group {
+                    margin-bottom: 19px;
+                    label {
+                        font-weight: 400;
+                        color: #838383;
+                        @include font-size(16px);
+                        margin-left: 8px;
+                    }
+                }
+            }
+            button {
+                    width: 100%;
+                    background-color: #EA4036;
+                    border-radius: 6px;
+                    text-align: center;
+                    @include font-size(16px);
+                    font-weight: bold;
+                    color: #ffffff;
+                    padding: 10px 0;
+                    margin-bottom: 10px;
+            }
+            p {
+                @include font-size(12px);
+                color: #808081;
+                text-align: center;
+                @media #{$info-tablet-vertical} {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

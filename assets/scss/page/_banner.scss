@@ -1,0 +1,78 @@
+.banner {
+  padding: 24px 0;
+  background-color: #FFFFFF;
+
+  &__content {
+    @include flex();
+    flex-wrap: wrap;
+
+    .content__left {
+      width: calc(100% / 12 * 9);
+      padding-right: 25px;
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 0;
+      }
+      .left__item {
+        border-radius: 5px;
+      }
+      // custom slick dots
+      .slick-dots {
+        bottom: 10px;
+        left: 35%;
+        @media #{$info-phone} {
+          display: none;
+        }
+        li {
+          height: 1.5px;
+          width: 23px;
+          background-color: #0099A8;
+          border-radius: unset;
+          opacity: .5;
+        }
+        .slick-active {
+          background-color: #FFFFFF;
+          opacity: 1;
+        }
+      }
+    }
+
+    .content__right {
+      width: 25%;
+      @include flex();
+      align-items: center;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .right__item {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 15px;
+        img {
+          @media screen and (max-width: 550px) {
+            height: 68px;
+          }
+        }
+        p {
+          color: #777777;
+          @include font-size(16.9px);
+        }
+        @media screen and (max-width: 1200px) {
+          width: 25%;
+          p {
+            max-width: unset;
+          }
+        }
+        @media #{$info-500} {
+          width: 50%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -14,14 +14,1030 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/main.css">
-
 </head>
 <body>
+<!--============= header ===============-->
+<header class="header">
+    <div class="container header__top">
+        <div class="header__top__hot header__top--group">
+            <img src="assets/img/fire2x.png" alt="fire">
+            <p class="title"> Khuyến mãi HOT</p>
+        </div>
+        <div class="header__top__nofication header__top--group">
+            <img src="assets/img/message2x.png" alt="nofication">
+            <div class="text">
+                <p class="title">Thông báo</p>
+                <span>của tôi</span>
+            </div>
+        </div>
+        <div class="header__top__login header__top--group">
+            <img src="assets/img/login2x.png" alt="login">
+            <div class="text">
+                <p class="title">Đăng nhập </p>
+                <span>Tài khoản</span>
+            </div>
+        </div>
+    </div>
+    <div class="container header__middle">
+        <h1 class="middle__logo"><a href="index.html"><img src="assets/img/Logo.png" alt="logo"></a></h1>
+        <form action="" class="middle__search">
+            <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+            <button class="search__btn">
+                <img src="assets/img/search2x.png" alt="search">
+                <span>Tìm Kiếm</span>
+            </button>
+        </form>
+        <div class="middle__btn">
+            <button class="btn__item">
+                <a href="">
+                    <img src="assets/img/toa2x.png" alt="toa">
+                    <span>Tạo toa thuốc</span>
+                </a>
+            </button>
+            <button class="btn__item">
+                <a href="cart.html">
+                    <img src="assets/img/cart2x.png" alt="cart">
+                    <span>Giỏ hàng</span>
+                    <span class="item__bard">69</span>
+                </a>
+            </button>
+        </div>
+    </div>
+    <div class="container header__bottom">
+        <ul>
+            <li class="bottom__item">
+                <img src="assets/img/menu2x.png" alt="menu">
+                <a>DANH MỤC SẢN PHẨM</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/fire-red2x.png" alt="fire">
+                <a>KHUYẾN MÃI HOT</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/localtion2x.png" alt="location">
+                <a>HỆ THỐNG NHÀ THUỐC</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/heart2x.png" alt="heart">
+                <a>GÓC SỨC KHỎE</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/home2x.png" alt="home">
+                <a>GIỚI THIỆU</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/question2x.png" alt="question">
+                <a>HƯỚNG DẪN</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Sub header 767px responsive -->
+    <div class="container sub__header">
+        <h1><img src="assets/img/Logo.png" alt="logo"></h1>
+        <div class="header__nav">
+            <button class="nav__burger"><img src="assets/img/menu2x.png" alt="menu"></button>
+            <form action="" class="nav__search">
+                <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+                <button class="search__btn">
+                    <img src="assets/img/search2x.png" alt="search">
+                    <span>Tìm Kiếm</span>
+                </button>
+            </form>
+            <div class="nav__btn">
+                <button class="btn__item">
+                    <img src="assets/img/toa2x.png" alt="toa">
+                    <span>Tạo toa thuốc</span>
+                </button>
+                <button class="btn__item">
+                    <img src="assets/img/cart2x.png" alt="cart">
+                    <span>Giỏ hàng</span>
+                    <span class="item__bard">69</span>
+                </button>
+            </div>
+        </div>
+        <div class="nav__bar">
+            <div class="bar__control">
+                <div class="control__item">
+                    <img src="assets/img/fire2x.png" alt="fire">
+                    <p class="title"> Khuyến mãi HOT</p>
+                </div>
+                <div class="control__item">
+                    <img src="assets/img/message2x.png" alt="nofication">
+                    <div class="text">
+                        <p class="title">Thông báo</p>
+                        <span>của tôi</span>
+                    </div>
+                </div>
+                <div class="control__item">
+                    <img src="assets/img/login2x.png" alt="login">
+                    <div class="text">
+                        <p class="title">Đăng nhập </p>
+                        <span>Tài khoản</span>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li class="nav__item">
+                    <img src="assets/img/menu2x.png" alt="menu">
+                    <a>DANH MỤC SẢN PHẨM</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/fire-red2x.png" alt="fire">
+                    <a>KHUYẾN MÃI HOT</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/localtion2x.png" alt="location">
+                    <a>HỆ THỐNG NHÀ THUỐC</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/heart2x.png" alt="heart">
+                    <a>GÓC SỨC KHỎE</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/home2x.png" alt="home">
+                    <a>GIỚI THIỆU</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/question2x.png" alt="question">
+                    <a>HƯỚNG DẪN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- =========== End header ============= -->
 
 
+<main>
+    <!-- ===============Banner ================== -->
+    <section class="banner">
+        <div class="container banner__content">
+            <div class="content__left">
+                <div class="left__item">
+                    <img src="./assets/img/banner-img.png" alt="slider">
+                </div>
+                <div class="left__item">
+                    <img src="./assets/img/banner-img.png" alt="slider">
+                </div>
+                <div class="left__item">
+                    <img src="./assets/img/banner-img.png" alt="slider">
+                </div>
+                <div class="left__item">
+                    <img src="./assets/img/banner-img.png" alt="slider">
+                </div>
+                <div class="left__item">
+                    <img src="./assets/img/banner-img.png" alt="slider">
+                </div>
+                <div class="left__item">
+                    <img src="./assets/img/banner-img.png" alt="slider">
+                </div>
+                <div class="left__item">
+                    <img src="./assets/img/banner-img.png" alt="slider">
+                </div>
+                <div class="left__item">
+                    <img src="./assets/img/banner-img.png" alt="slider">
+                </div>
+            </div>
+            <div class="content__right">
+                <div class="right__item">
+                    <img src="./assets/img/banner_icon1-2x.png" alt="banner">
+                    <p>Dược sĩ <br> tư vấn</p>
+                </div>
+                <div class="right__item">
+                    <img src="./assets/img/banner_icon2-2x.png" alt="banner">
+                    <p>Sản phẩm <br> chính hãng</p>
+                </div>
+                <div class="right__item">
+                    <img src="./assets/img/banner_icon3-2x.png" alt="banner">
+                    <p>Giao hàng <br> toàn quốc</p>
+                </div>
+                <div class="right__item">
+                    <img src="./assets/img/banner_icon4-2x.png" alt="banner">
+                    <p>Tích lũy <br> đổi quà</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============End Banner =============== -->
+    <div class="main__home container">
+    <!-- ============Menu========== -->
+    <section class="menu">
+        <a href="#medicine" class="menu__item" style="background-image: url(./assets/img/control_page-1-2x.png);">
+                <img src="./assets/img/thuoc-2x.png" alt="iconmedicine">
+                <p>Thuốc Không Kê Đơn</p> 
+        </a>
+        <a href="#food" class="menu__item" style="background-image: url(./assets/img/control_page-2-2x.png);">
+                <img src="./assets/img/thucpham-2x.png" alt="iconfood">
+                <p>Thực Phẩm Chức Năng</p> 
+        </a>
+        <a href="#consumers" class="menu__item" style="background-image: url(./assets/img/control_page-3-2x.png);">
+                <img src="./assets/img/tieudung-2x.png" alt="icontieudung">
+                <p>Hàng Tiêu Dùng</p>
+        </a>
+        <a href="#headlth" class="menu__item" style="background-image: url(./assets/img/control_page-4-2x.png);">
+                <img src="./assets/img/mypham-2x.png" alt="controlmypham">
+                <p>Mỹ Phẩm</p>
+        </a>
+        <a href="#trademark" class="menu__item" style="background-image: url(./assets/img/control_page-5-2x.png);">
+                <img src="./assets/img/yte-2x.png" alt="controlyte">
+                <p>Dụng Cụ Y Tế</p>
+        </a>
+    </section>
+    <!-- ============End Menu============ -->
+
+    <!-- =============Online ===============-->
+    <section class="online">
+        <div class="online__header">
+            <h4>Mua Thuốc Theo Toa Trực Tuyến</h4>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web
+            designs.</p>
+        </div>
+        <div class="online__content">
+            <div class="content__item">
+                <img src="./assets/img/online-mobile-phone.png" alt="mobile phone">
+                <h4 class="item__title">CHỤP HÌNH <br> TOA THUỐC</h4>
+                <p>Và tải ảnh lên website hoặc <br>ứng dụng Jio Health.</p>
+            </div>
+            <div class="content__item content__middle">
+                <img src="./assets/img/online-message.png" alt="message">
+                <h4 class="item__title">DƯỢC SĨ <br> TƯ VẤN</h4>
+                <p>Các dược sĩ kinh nghiệm sẽ gọi<br> điện tư vấn và xác nhận đơn thuốc.</p>
+            </div>
+            <div class="content__item">
+                <img src="./assets/img/online-item-ship.png" alt="item ship">
+                <h4 class="item__title">GIAO HÀNG NHANH <br> TRONG 4H</h4>
+                <p>Trong khu vực nội thành Thành <br> Phố Hồ Chí Minh</p>
+            </div>
+        </div>
+        <button><img src="./assets/img/toa--white2x.png" alt="toa">Tạo toa thuốc ngay</button>
+    </section>
+    <!-- =============End Online ============== -->
+
+    <!-- ============= Hot sale =============== -->
+    <section class="hot">
+            <div class="hot__header">
+                <div class="header__title">
+                    <img src="./assets/img/hot-icon-fire.png" alt="fire">
+                    <span>Khuyến Mãi Hot</span>
+                </div>
+                <a class="header__more">
+                    Xem tất cả
+                    <img src="./assets/img/arrow-right2x.png" alt="arrowright">
+                </a>
+            </div>
+            <div class="hot__slider">
+                <div class="slider__item">
+                    <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/img/hot-sale-slide-2-2x.png" alt="hotsale">
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                </div>
+            </div>
+    </section>
+    <!-- =============End Hot sale============== -->
+
+    <!-- =============Product star ============-->
+    <section class="product">
+            <div class="product__header">
+                <img src="./assets/img/product_star2x.png" alt="star">
+                <div class="header__title">
+                    <h4>Sản Phẩm Nổi Bật</h4>
+                    <p>Lorem ipsum, or lipsum as it is sometimes known</p>
+                </div>
+            </div>
+            <div class="product__content">
+                <div class="content__slider">
+                    <div class="slider__list">
+                        <div class="list__item">
+                            <div class="top__item">
+                                <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                            </div>
+                            <div class="top__item">
+                                <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                            </div>
+                            <div class="top__item">
+                                <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                            </div>
+                            <div class="top__item">
+                                <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                            </div>
+                        </div>
+                         <div class="list__item">
+                            <div class="top__item">
+                                <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                            </div>
+                            <div class="top__item">
+                                <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                            </div>
+                            <div class="top__item">
+                                <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                            </div>
+                            <div class="top__item">
+                                <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__right">
+                    <img src="./assets/img/product__right2x.png" alt="advertise">
+                </div>
+            </div>
+    </section>
+    <!-- =============End Product =============== -->
+
+    <!-- ============Medicine============= -->
+    <section class="medicine" id="medicine">
+            <div class="medicine__header">
+                <img src="./assets/img/thuoc-green2x.png" alt="thuoc">
+                <span>Thuốc Không Kê Toa</span>
+            </div>
+            <div class="medicine__content">
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-2-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-3-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-4-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-5-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-2-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-3-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-4-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-5-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ============End Medicine============ -->
+
+    <!-- ============Food============== -->
+    <section class="food" id="food">
+            <div class="medicine__header">
+                <img src="./assets/img/thucpham-green2x.png" alt="food">
+                <span>Thực Phẩm Chức Năng</span>
+            </div>
+            <div class="medicine__content">
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-2-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-3-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-4-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-5-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-2-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-3-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-4-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-5-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ============End Food ============= -->
+
+    <!-- ============CONSUMERS=========== -->
+    <section class="consumers" id="consumers">
+            <div class="medicine__header">
+                <img src="./assets/img/consumers2x.png" alt="">
+                <span>Hàng Tiêu Dùng</span>
+            </div>
+            <div class="medicine__content">
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-2-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-3-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-4-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-5-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-2-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-3-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <img src="./assets/img/sale2x.png" alt="sale" class="sale">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-4-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+                <div class="content__item">
+                    <div class="item__img">
+                        <div class="img__size">
+                            <img src="./assets/img/decine__icon-5-2x.png" alt="medicine1">
+                        </div>
+                        <img src="./assets/img/ship2x.png" alt="ship" class="ship">
+                        <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                    </div>
+                    <div class="item__info">
+                        <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
+                        <span>999.000đ</span>
+                        <span class="old-price">800.000đ</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ============End CONSUMERS=========== -->
+
+    <!-- ===========HEADLTH============= -->
+    <section class="headlth" id="headlth">
+            <div class="headlth__header">
+                <p>Góc Sức Khỏe</p>
+                <a href="">Xem tất cả<img src="./assets/img/arrow-right2x.png" alt="arrowright"></a>
+            </div>
+            <div class="headlth__content">
+                <div class="content__main">
+                    <div class="main__item">
+                        <div class="item__img">
+                            <img src="./assets/img/headlthy-left-icon-1-2x.png" alt="headlthy1">
+                        </div>
+                        <div class="item__text">
+                            <h4>Lorem ipsum dolor sit amet,</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet </p>
+                        </div>
+                    </div>
+                    <div class="main__item">
+                        <div class="item__img">
+                            <img src="./assets/img/headlthy-left-icon-2-2x.png" alt="headlthy2">
+                        </div>
+                        <div class="item__text">
+                            <h4>Lorem ipsum dolor sit amet,</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet </p>
+                        </div>
+                    </div>
+                    <div class="main__item">
+                        <div class="item__img">
+                            <img src="./assets/img/headlthy-left-icon-3-2x.png" alt="headlthy3">
+                        </div>
+                        <div class="item__text">
+                            <h4>Lorem ipsum dolor sit amet,</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__right">
+                    <h4 class="right__title">Bài Viết Hay Nên Đọc</h4>
+                    <div class="right__item">
+                        <img src="./assets/img/headlth_number-1-2x.png" alt="number1">
+                        <div class="item__text">
+                            <h4>Lorem ipsum dolor sit amet, </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. Duis autem vel eum iriure dolor in hendrerit in </p>
+                        </div>
+                    </div>
+                    <div class="right__item">
+                        <img src="./assets/img/headlth_number-2-2x.png" alt="number2">
+                        <div class="item__text">
+                            <h4>Lorem ipsum dolor sit amet, </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. Duis autem vel eum iriure dolor in hendrerit in </p>
+                        </div>
+                    </div>
+                    <div class="right__item">
+                        <img src="./assets/img/headlth_number-3-2x.png" alt="number3">
+                        <div class="item__text">
+                            <h4>Lorem ipsum dolor sit amet, </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. Duis autem vel eum iriure dolor in hendrerit in </p>
+                        </div>
+                    </div>
+                    <div class="right__item">
+                        <img src="./assets/img/headlth_number-4-2x.png" alt="number4">
+                        <div class="item__text">
+                            <h4>Lorem ipsum dolor sit amet, </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. Duis autem vel eum iriure dolor in hendrerit in </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ===========End HEADLTH ==============-->
+
+    <!-- ===========HOT TradeMark=============-->
+    <section class="trademark" id="trademark">
+            <div class="trademark__header">
+                <img src="./assets/img/trademark_icon2x.png" alt="trademark">
+                <span>THƯƠNG HIỆU NỔI BẬT</span>
+            </div>
+            <div class="trademark__content">
+                <div class="content__item">
+                    <img src="./assets/img/backmore2x.png" alt="backmore">
+                </div>
+                <div class="content__item">
+                    <img src="./assets/img/Hiruscar2x.png" alt="Hiruscar">
+                </div>
+                <div class="content__item">
+                    <img src="./assets/img/onetouch2x.png" alt="onetouch">
+                </div>
+                <div class="content__item">
+                    <img src="./assets/img/durex2x.png" alt="durex">
+                </div>
+                <div class="content__item">
+                    <img src="./assets/img/zettoc2x.png" alt="zettoc">
+                </div>
+                <div class="content__item">
+                    <img src="./assets/img/backmore2x.png" alt="backmore">
+                </div>
+                <div class="content__item">
+                    <img src="./assets/img/Hiruscar2x.png" alt="hiruscar">
+                </div>
+                <div class="content__item">
+                    <img src="./assets/img/onetouch2x.png" alt="onetouch">
+                </div>
+                <div class="content__item">
+                    <img src="./assets/img/durex2x.png" alt="durex">
+                </div>
+                <div class="content__item">
+                    <img src="./assets/img/zettoc2x.png" alt="zettoc">
+                </div>
+            </div>
+            <button class="trademark__prev"><img src="./assets/img/arrow-right2x.png" alt="arrowleft"></button>
+            <button class="trademark__next"><img src="./assets/img/arrow-right2x.png" alt="arrowright"></button>
+    </section>
+    <!-- ===========END HOT TRADEMARK===========  -->
+    </div>
+
+</main>
+<!-- =========== footer ================-->
+<footer class="footer" id="footer">
+    <div class="container footer__top">
+        <div class="top__item">
+            <img src="assets/img/percent2x.png" alt="percent">
+            <span>Sản phẩm chính hãng</span>
+        </div>
+        <div class="top__item">
+            <img src="assets/img/car2x.png" alt="car">
+            <span>Giao hàng toàn quốc</span>
+        </div>
+        <div class="top__item">
+            <img src="assets/img/phone2x.png" alt="phone">
+            <span>Thanh toán linh hoạt</span>
+        </div>
+        <div class="top__item">
+            <img src="assets/img/gift2x.png" alt="gift">
+            <span>Tích điểm đổi quà</span>
+            <img src="assets/img/message_icon.png" alt="message" class="message__icon">
+        </div>
+    </div>
+    <div class="footer__line">
+        <div class="container line__content">
+            <div class="content__item">
+                <span>BẠN ĐANG CẦN ĐƯỢC TƯ VẤN</span>
+                <div class="item__support">
+                    <img src="assets/img/telephone2x.png" alt="telephone">
+                    <span>Gọi ngay <span class="item--red">1800 6768</span>(miễn phí)</span>
+                </div>
+            </div>
+            <div class="content__item">
+                <span>NHẬP EMAIL NHẬN MÃ GIẢM GIÁ</span>
+                <form class="item__form">
+                    <button>
+                        <img src="assets/img/mail2x.png" alt="mail">
+                    </button>
+                    <input type="text" placeholder="Nhập email của bạn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container footer__contact">
+        <div class="contact__address contact__group">
+            <a href=""><img src="assets/img/logo_green2x.png" alt="logo"></a>
+            <div class="address">
+                <h5>CÔNG TY CỔ PHẦN DƯỢC PHẨM PHANO</h5>
+                <address>Địa chỉ: 31 Hồ Biểu Chánh, P.12, Q.Phú Nhuận, TP.HCM</address>
+                <p>MST: 0304860663</p>
+                <p>Email: cskh@phanolink.com</p>
+                <p>Tel: 1800 6768</p>
+            </div>
+        </div>
+        <div class="contact__support contact__group">
+            <h4 class="group__title">HỖ TRỢ KHÁCH HÀNG</h4>
+            <ul>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách đổi trả</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách giao hàng</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách bảo mật</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Hướng dẫn thanh toán</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Hướng dẫn đặt hàng</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Giải quyết phản hồi</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Giấy phép kinh doanh</span></li>
+            </ul>
+        </div>
+        <div class="contact__account contact__group">
+            <h4 class="group__title">TÀI KHOẢN</h4>
+            <ul>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Đăng ký</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Đăng nhập</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Kiểm tra đơn hàng</span></li>
+            </ul>
+        </div>
+        <div class="contact__social contact__group">
+            <h4 class="group__title">KẾT NỐI VỚI CHÚNG TÔI</h4>
+            <ul>
+                <li><img src="assets/img/zalo2x.png" alt="zalo"></li>
+                <li><img src="assets/img/fb2x.png" alt="facebook"></li>
+                <li><img src="assets/img/gg-plus2x.png" alt="google"></li>
+                <li><img src="assets/img/youtube2x.png" alt="youtube"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer__bottom">
+        <p> <span>&copy 2019</span> - Bản quyền thuộc về Công ty CP Dược Phẩm Phano</p>
+        <img src="assets/img/bct_icon2x.png" alt="certification">
+    </div>
+</footer>
+<!-- =========== End footer ============ -->
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -29,6 +1045,7 @@
 
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

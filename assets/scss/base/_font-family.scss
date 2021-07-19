@@ -1,0 +1,26 @@
+@import 'font-awesome/variables';
+@import 'font-awesome/mixins';
+@font-face {
+    font-family: 'UTM-intel';
+    src: url('#{$fa-font-path}/UTM-Neo-Sans-Intel.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UTM-intel-Bold';
+    src: url('#{$fa-font-path}/UTM-Neo-Sans-IntelBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UTM-intel-italic';
+    src: url('#{$fa-font-path}/UTM-Neo-Sans-Intel_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: Myriad-Pro-Regular;
+    src: url('#{$fa-font-path}/Myriad-Pro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

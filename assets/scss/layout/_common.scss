@@ -1,0 +1,122 @@
+a {
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+ul, ol, p {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+button , input {
+  border: unset;
+  padding: 0;
+}
+section {
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.container {
+  &::before, &::after {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.slick-dots {
+  list-style-type: none;
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .slick-active {
+    background-color:#36B88C;
+  }
+
+  li {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    background-color: #969696;
+    transition: background-color 0.3s linear;
+    margin-right: 10px;
+  }
+
+  button {
+    display: none;
+  }
+}
+main {
+    background-color: #EBEBEB;
+    padding-bottom: 76px;
+    @media #{$info-phone} {
+      padding-top: 137px;
+    }
+    @media screen and (max-width: 430px) {
+      padding-top: 134px;
+    }
+}
+// ===== custom header responsive 767px =====
+.header {
+  // header on scroll
+  @media #{$info-phone} {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+  &--scroll {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  // end header scroll
+  .sub__header {
+    .change {
+      .sidebar__item {
+        padding-top: 15px;
+        border-top: 1px solid #838383;
+         .sidebar__list {
+           padding: 10px 0 0 0;
+           li {
+             color: #FFFFFF;
+             margin-bottom: 10px;
+             .sub__list {
+               padding: 10px 0 0 15px;
+             }
+           }
+         }
+        .sidebar__title {
+          font-size: 1.2rem;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+// ===== end custom ======
