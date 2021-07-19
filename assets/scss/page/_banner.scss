@@ -21,6 +21,9 @@
       .slick-dots {
         bottom: 10px;
         left: 35%;
+        @media #{$info-phone} {
+          display: none;
+        }
         li {
           height: 1.5px;
           width: 23px;
@@ -49,10 +52,15 @@
       .right__item {
         width: 50%;
         text-align: center;
+        margin-bottom: 15px;
         img {
           @media screen and (max-width: 550px) {
             height: 68px;
           }
+        }
+        p {
+          color: #777777;
+          @include font-size(16.9px);
         }
         @media screen and (max-width: 1200px) {
           width: 25%;

@@ -1,17 +1,25 @@
 .online {
   padding: 17px 10px 38px 34px;
   background-color: #ffffff;
-
+  @media #{$info-phone} {
+    padding: 17px 15px 38px;
+  }
   &__header {
     h4 {
       color: #505050;
       @include font-size(22px);
       font-family: UTM-intel-Bold;
+      @media #{$info-500} {
+        margin-bottom: 8px;
+      }
     }
 
     p {
       color: #777777;
       @include font-size(12px);
+      @media #{$info-500} {
+        font-size: .9rem;
+      }
     }
   }
 

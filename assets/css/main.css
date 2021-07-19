@@ -7798,18 +7798,21 @@ main {
   padding: 6.6px 8px 6.5px;
   border-radius: 5px;
   position: relative;
+}
+
+.header__middle .middle__btn .btn__item a {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  width: 145px;
+  width: 130px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 @media only screen and (max-width: 991px) {
-  .header__middle .middle__btn .btn__item {
-    width: 120px;
+  .header__middle .middle__btn .btn__item a {
+    width: 110px;
   }
 }
 
@@ -8089,14 +8092,16 @@ main {
 
 .header .sub__header .nav__bar {
   position: fixed;
-  top: 21%;
+  top: 20%;
   left: 0;
   height: 80vh;
   width: 0;
+  opacity: 0;
   padding: 15px 10px;
   background-color: #01ADAB;
-  display: none;
   overflow: scroll;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .header .sub__header .nav__bar .bar__control {
@@ -8136,6 +8141,12 @@ main {
 
 .header .sub__header .nav__bar ul .nav__item {
   margin-bottom: 15px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .sub__header .nav__bar ul .nav__item a {
@@ -8145,6 +8156,7 @@ main {
   font-family: UTM-intel-Bold;
   color: #FFFFFF;
   cursor: pointer;
+  margin-left: 8px;
 }
 
 @media only screen and (max-width: 320px) {
@@ -8154,9 +8166,9 @@ main {
 }
 
 .header .sub__header .change {
-  display: block;
-  width: 30%;
+  width: 50%;
   z-index: 2;
+  opacity: 1;
 }
 
 @media screen and (max-width: 350px) {
@@ -8378,13 +8390,24 @@ main {
 }
 
 .footer__contact {
-  padding-top: 72px;
-  padding-bottom: 82px;
+  padding: 72px 0 82px;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer__contact {
+    padding: 72px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer__contact {
+    padding: 72px 15px 20px;
+  }
 }
 
 .footer__contact a {
@@ -8602,6 +8625,12 @@ main {
   left: 35%;
 }
 
+@media only screen and (max-width: 767px) {
+  .banner__content .content__left .slick-dots {
+    display: none;
+  }
+}
+
 .banner__content .content__left .slick-dots li {
   height: 1.5px;
   width: 23px;
@@ -8642,12 +8671,19 @@ main {
 .banner__content .content__right .right__item {
   width: 50%;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 550px) {
   .banner__content .content__right .right__item img {
     height: 68px;
   }
+}
+
+.banner__content .content__right .right__item p {
+  color: #777777;
+  font-size: 16.9px;
+  font-size: 1.05625rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -16150,6 +16186,12 @@ html, body {
   padding: 17px 20px 50px;
 }
 
+@media only screen and (max-width: 767px) {
+  .headlth {
+    padding: 17px 20px;
+  }
+}
+
 .headlth__header {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -16331,8 +16373,14 @@ html, body {
   font-family: UTM-intel-italic;
 }
 
+@media screen and (max-width: 375px) {
+  .headlth__content .content__right .right__item .item__text p {
+    font-size: .8rem;
+    margin-bottom: 8px;
+  }
+}
+
 .hot {
-  padding: 20px 0;
   background-color: #ffffff;
 }
 
@@ -16346,8 +16394,13 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
-  padding: 0 33.5px;
+  padding: 15px 33.5px;
+}
+
+@media screen and (max-width: 375px) {
+  .hot__header {
+    padding: 15px 20px;
+  }
 }
 
 .hot__header .header__title {
@@ -16357,6 +16410,10 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hot__header .header__title img {
+  height: 40px;
 }
 
 .hot__header .header__title span {
@@ -16377,10 +16434,15 @@ html, body {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
+  padding-bottom: 25px;
 }
 
 .hot__slider .slider__item {
   width: calc(100% / 3);
+}
+
+.hot__slider .slick-dots {
+  margin-bottom: 15px;
 }
 
 .medicine {
@@ -16388,8 +16450,7 @@ html, body {
 }
 
 .medicine__header {
-  margin-bottom: 19px;
-  padding: 20px 0 0 38px;
+  padding: 20px 38px;
 }
 
 .medicine__header span {
@@ -16417,6 +16478,7 @@ html, body {
     overflow: scroll;
     width: 250px;
     margin: 0 auto;
+    padding: 5px 0;
   }
 }
 
@@ -16548,6 +16610,7 @@ html, body {
           justify-content: center;
   padding: 25px 30px;
   background-color: unset;
+  margin: 0 -15px;
 }
 
 .menu__item {
@@ -16573,14 +16636,6 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-}
-
-.menu__item:last-child {
-  margin-right: 0;
-}
-
-.menu__item:first-child {
-  margin-left: 0;
 }
 
 .menu__item p {
@@ -16633,6 +16688,12 @@ html, body {
   background-color: #ffffff;
 }
 
+@media only screen and (max-width: 767px) {
+  .online {
+    padding: 17px 15px 38px;
+  }
+}
+
 .online__header h4 {
   color: #505050;
   font-size: 22px;
@@ -16640,10 +16701,22 @@ html, body {
   font-family: UTM-intel-Bold;
 }
 
+@media only screen and (max-width: 500px) {
+  .online__header h4 {
+    margin-bottom: 8px;
+  }
+}
+
 .online__header p {
   color: #777777;
   font-size: 12px;
   font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .online__header p {
+    font-size: .9rem;
+  }
 }
 
 .online__content {
@@ -16712,7 +16785,6 @@ html, body {
 }
 
 .product {
-  padding: 20px 0 30px;
   background-color: #ffffff;
 }
 
@@ -16720,11 +16792,10 @@ html, body {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  margin-bottom: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .product__header .header__title {
@@ -16763,7 +16834,7 @@ html, body {
 
 @media only screen and (max-width: 767px) {
   .product__content {
-    padding-bottom: 25px;
+    padding-bottom: 35px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -16820,6 +16891,10 @@ html, body {
   .product__content .content__slider .slider__list .list__item .top__item:nth-child(4) {
     display: none;
   }
+}
+
+.product__content .content__slider .slider__list .slick-dots {
+  margin-bottom: 15px;
 }
 
 .product__content .content__right {

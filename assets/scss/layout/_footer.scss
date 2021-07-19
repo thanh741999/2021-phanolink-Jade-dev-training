@@ -126,8 +126,13 @@
         }
     }
     &__contact {
-        padding-top: 72px;
-        padding-bottom: 82px;
+        padding: 72px 0 82px;
+        @media #{$info-tablet-vertical} {
+            padding: 72px 0 20px;
+        }
+        @media #{$info-phone} {
+            padding: 72px 15px 20px;
+        }
         @include flex();
         flex-wrap: wrap;
         a {

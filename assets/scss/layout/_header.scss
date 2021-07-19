@@ -93,11 +93,14 @@
         padding: 6.6px 8px 6.5px;
         border-radius: 5px;
         position: relative;
-        @include flex();
-        width: 145px;
-        align-items: center;
-        @media #{$info-tablet-vertical} {
-          width: 120px;
+        
+        a {
+          @include flex();
+          width: 130px;
+          align-items: center;
+          @media #{$info-tablet-vertical} {
+            width: 110px;
+          }
         }
         &:first-child {
           margin-right: 10px;
@@ -276,14 +279,15 @@
     }
     .nav__bar {
       position: fixed;
-      top: 21%;
+      top: 20%;
       left: 0;
       height: 80vh;
       width: 0;
+      opacity: 0;
       padding: 15px 10px;
       background-color: $color-main;
-      display: none;
       overflow: scroll;
+      transition: .3s linear;
       .bar__control {
         border-bottom: 1px solid #838383;
         padding-bottom: 10px;
@@ -312,12 +316,15 @@
         padding: 15px 0 ;
         .nav__item {
           margin-bottom: 15px;
+          @include flex();
+          align-items: center;
           a {
             text-transform: uppercase;
             @include font-size(15.75px);
             font-family: UTM-intel-Bold;
             color: #FFFFFF;
             cursor: pointer;
+            margin-left: 8px;
             @media #{$info-phone-4} {
               font-size: .7rem;
             }
@@ -326,9 +333,9 @@
       }
     }
     .change {
-      display: block;
-      width: 30%;
+      width: 50%;
       z-index: 2;
+      opacity: 1;
       @media screen and (max-width: 350px) {
         width: 45%;
       }

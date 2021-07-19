@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="container header__middle">
-        <h1 class="middle__logo"><img src="assets/img/Logo.png" alt="logo"></h1>
+        <h1 class="middle__logo"><a href="index.html"><img src="assets/img/Logo.png" alt="logo"></a></h1>
         <form action="" class="middle__search">
             <input type="text" placeholder="Bạn đang tìm thuốc gì...">
             <button class="search__btn">
@@ -52,13 +52,17 @@
         </form>
         <div class="middle__btn">
             <button class="btn__item">
-                <img src="assets/img/toa2x.png" alt="toa">
-                <span>Tạo toa thuốc</span>
+                <a href="">
+                    <img src="assets/img/toa2x.png" alt="toa">
+                    <span>Tạo toa thuốc</span>
+                </a>
             </button>
             <button class="btn__item">
-                <img src="assets/img/cart2x.png" alt="cart">
-                <span>Giỏ hàng</span>
-                <span class="item__bard">69</span>
+                <a href="cart.html">
+                    <img src="assets/img/cart2x.png" alt="cart">
+                    <span>Giỏ hàng</span>
+                    <span class="item__bard">69</span>
+                </a>
             </button>
         </div>
     </div>
@@ -200,19 +204,19 @@
             <div class="content__right">
                 <div class="right__item">
                     <img src="./assets/img/banner_icon1-2x.png" alt="banner">
-                    <p>Dược sĩ tư vấn</p>
+                    <p>Dược sĩ <br> tư vấn</p>
                 </div>
                 <div class="right__item">
                     <img src="./assets/img/banner_icon2-2x.png" alt="banner">
-                    <p>Sản phẩm chính hãng</p>
+                    <p>Sản phẩm <br> chính hãng</p>
                 </div>
                 <div class="right__item">
                     <img src="./assets/img/banner_icon3-2x.png" alt="banner">
-                    <p>Giao hàng toàn quốc</p>
+                    <p>Giao hàng <br> toàn quốc</p>
                 </div>
                 <div class="right__item">
                     <img src="./assets/img/banner_icon4-2x.png" alt="banner">
-                    <p>Tích lũy đổi quà</p>
+                    <p>Tích lũy <br> đổi quà</p>
                 </div>
             </div>
         </div>
@@ -221,23 +225,23 @@
     <div class="main__home container">
     <!-- ============Menu========== -->
     <section class="menu">
-        <a class="menu__item" style="background-image: url(./assets/img/control_page-1-2x.png);">
+        <a href="#medicine" class="menu__item" style="background-image: url(./assets/img/control_page-1-2x.png);">
                 <img src="./assets/img/thuoc-2x.png" alt="iconmedicine">
                 <p>Thuốc Không Kê Đơn</p> 
         </a>
-        <a class="menu__item" style="background-image: url(./assets/img/control_page-2-2x.png);">
+        <a href="#food" class="menu__item" style="background-image: url(./assets/img/control_page-2-2x.png);">
                 <img src="./assets/img/thucpham-2x.png" alt="iconfood">
                 <p>Thực Phẩm Chức Năng</p> 
         </a>
-        <a class="menu__item" style="background-image: url(./assets/img/control_page-3-2x.png);">
+        <a href="#consumers" class="menu__item" style="background-image: url(./assets/img/control_page-3-2x.png);">
                 <img src="./assets/img/tieudung-2x.png" alt="icontieudung">
                 <p>Hàng Tiêu Dùng</p>
         </a>
-        <a class="menu__item" style="background-image: url(./assets/img/control_page-4-2x.png);">
+        <a href="#headlth" class="menu__item" style="background-image: url(./assets/img/control_page-4-2x.png);">
                 <img src="./assets/img/mypham-2x.png" alt="controlmypham">
                 <p>Mỹ Phẩm</p>
         </a>
-        <a class="menu__item" style="background-image: url(./assets/img/control_page-5-2x.png);">
+        <a href="#trademark" class="menu__item" style="background-image: url(./assets/img/control_page-5-2x.png);">
                 <img src="./assets/img/yte-2x.png" alt="controlyte">
                 <p>Dụng Cụ Y Tế</p>
         </a>
@@ -273,7 +277,7 @@
     <!-- =============End Online ============== -->
 
     <!-- ============= Hot sale =============== -->
-    <section class="hot ">
+    <section class="hot">
             <div class="hot__header">
                 <div class="header__title">
                     <img src="./assets/img/hot-icon-fire.png" alt="fire">
@@ -351,7 +355,7 @@
     <!-- =============End Product =============== -->
 
     <!-- ============Medicine============= -->
-    <section class="medicine">
+    <section class="medicine" id="medicine">
             <div class="medicine__header">
                 <img src="./assets/img/thuoc-green2x.png" alt="thuoc">
                 <span>Thuốc Không Kê Toa</span>
@@ -506,7 +510,7 @@
     <!-- ============End Medicine============ -->
 
     <!-- ============Food============== -->
-    <section class="food">
+    <section class="food" id="food">
             <div class="medicine__header">
                 <img src="./assets/img/thucpham-green2x.png" alt="food">
                 <span>Thực Phẩm Chức Năng</span>
@@ -661,7 +665,7 @@
     <!-- ============End Food ============= -->
 
     <!-- ============CONSUMERS=========== -->
-    <section class="consumers">
+    <section class="consumers" id="consumers">
             <div class="medicine__header">
                 <img src="./assets/img/consumers2x.png" alt="">
                 <span>Hàng Tiêu Dùng</span>
@@ -816,7 +820,7 @@
     <!-- ============End CONSUMERS=========== -->
 
     <!-- ===========HEADLTH============= -->
-    <section class="headlth">
+    <section class="headlth" id="headlth">
             <div class="headlth__header">
                 <p>Góc Sức Khỏe</p>
                 <a href="">Xem tất cả<img src="./assets/img/arrow-right2x.png" alt="arrowright"></a>
@@ -902,7 +906,7 @@
     <!-- ===========End HEADLTH ==============-->
 
     <!-- ===========HOT TradeMark=============-->
-    <section class="trademark">
+    <section class="trademark" id="trademark">
             <div class="trademark__header">
                 <img src="./assets/img/trademark_icon2x.png" alt="trademark">
                 <span>THƯƠNG HIỆU NỔI BẬT</span>
