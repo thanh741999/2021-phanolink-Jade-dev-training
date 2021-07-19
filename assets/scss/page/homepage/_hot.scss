@@ -9,12 +9,15 @@
     @media screen and (max-width: 375px) {
       padding: 15px 20px;
     }
+
     .header__title {
       @include flex();
       align-items: center;
+
       img {
         height: 40px;
       }
+
       span {
         @include font-size(22px);
         font-family: UTM-intel-Bold;
@@ -32,9 +35,11 @@
   &__slider {
     @include flex();
     padding-bottom: 25px;
+
     .slider__item {
       width: calc(100% / 3);
     }
+
     .slick-dots {
       margin-bottom: 15px;
     }

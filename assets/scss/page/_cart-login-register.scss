@@ -1,283 +1,329 @@
 main {
-    .line-state {
-        @include flex();
-        justify-content: space-between;
-        align-items: center;
-        background-color: unset;
-        width: 650px;
+  .line-state {
+    @include flex();
+    justify-content: space-between;
+    align-items: center;
+    background-color: unset;
+    width: 650px;
+    margin: 0 auto;
+    @media #{$info-tablet-vertical} {
+      width: 625px;
+    }
+    @media #{$info-phone} {
+      width: 340px;
+    }
+    @media screen and (max-width: 475px) {
+      width: 240px;
+    }
+
+    .state__item {
+      text-align: center;
+
+      p {
+        color: #434343;
+        @include font-size(14px);
+        margin-bottom: 10px;
+      }
+
+      .circle {
+        display: inline-block;
+        @include font-size(14px);
+        font-weight: bold;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        background-color: #808081;
+        border-radius: 50%;
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+
+        &::before {
+          content: "";
+          height: 5px;
+          width: 270px;
+          background-color: #808081;
+          position: absolute;
+          top: 50%;
+          left: 24px;
+          margin-top: -2.5px;
+          @media #{$info-phone} {
+            width: 130px;
+          }
+          @media screen and (max-width: 475px) {
+            width: 75px;
+          }
+        }
+      }
+
+      .active {
+        background-color: $color-main;
+      }
+
+      &:last-child {
+        .circle::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .main__content {
+    .content__cart {
+      .cart__header {
+        text-align: center;
+
+        p {
+          cursor: pointer;
+        }
+
+        span {
+          display: block;
+          margin-top: 8px;
+          @include font-size(11px);
+        }
+      }
+
+      .cart__login, .cart__register {
+        max-width: 468px;
         margin: 0 auto;
-        @media #{$info-tablet-vertical} {
-            width: 625px;
+        @media screen and (max-width: 520px) {
+          width: 100%;
+          margin: 0;
+          padding: 15px;
         }
-        @media #{$info-phone} {
-            width: 340px;
+
+        p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4;
+          overflow: hidden;
+          @include font-size(16px);
+          color: #434343;
+          line-height: 24px;
         }
-        @media screen and (max-width: 475px) {
-            width: 240px;
-        }
-        .state__item {
-            text-align: center;
-            p {
-                color: #434343;
-                @include font-size(14px);
-                margin-bottom: 10px;
+
+        .login__form, .register__form {
+          .form__input {
+            margin-bottom: 41px;
+
+            label {
+              width: 100%;
+              color: #434343;
+              @include font-size(16px);
+              margin-bottom: 8px;
+              font-weight: 400;
             }
-            .circle {
-                display: inline-block;
-                @include font-size(14px);
+
+            input {
+              width: 100%;
+              padding: 8px 18px 12px;
+              outline: unset;
+              border-radius: 6px;
+              border: 1px solid #E2E3E4;
+              margin-bottom: 8px;
+              @include placeholder {
+                color: #808081;
+                @include font-size(14.39px);
+              }
+
+              &:nth-child(2) {
+                margin-bottom: 14px;
+              }
+
+            }
+
+            span {
+              color: #434343;
+              @include font-size(14px);
+
+              a {
+                color: #EA4036;
                 font-weight: bold;
-                height: 25px;
-                width: 25px;
-                line-height: 25px;
-                background-color: #808081;
-                border-radius: 50%;
-                color: #ffffff;
-                text-align: center;
-                position: relative;
-                &::before {
-                    content: "";
-                    height: 5px;
-                    width: 270px;
-                    background-color: #808081;
-                    position: absolute;
-                    top: 50%;
-                    left: 24px;
-                    margin-top: -2.5px;
-                    @media #{$info-phone} {
-                        width: 130px;
-                    }
-                    @media screen and (max-width: 475px) {
-                        width: 75px;
-                    }
-                }
+              }
             }
-            .active {
-                background-color: $color-main;
+          }
+
+          .form__btn {
+            @include flex();
+            justify-content: center;
+            flex-flow: column;
+            margin-bottom: 53px;
+
+            .btn__checkbox {
+              color: #808081;
+              @include font-size(14px);
+              margin-bottom: 12px;
             }
+
+            button {
+              background-color: $color-main;
+              width: 100%;
+              color: #ffffff;
+              @include font-size(16px);
+              font-weight: bold;
+              padding: 12px 20px;
+              text-align: center;
+              border-radius: 6px;
+              margin-bottom: 11px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+
+            .btn--fb {
+              background-color: #3B5998;
+            }
+
+            .btn--gg {
+              background-color: #E94A32;
+            }
+
+            span {
+              color: #434343;
+              @include font-size(14px);
+
+              a {
+                color: #EA4036;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+      .cart__register {
+        display: none;
+
+      }
+    }
+
+    .content__sidebar {
+      .sidebar__bill {
+        background-color: #ffffff;
+        padding: 15px 25px;
+
+        .bill__header {
+          @include flex();
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 15px;
+
+          h4 {
+            color: $color-main-text;
+            @include font-size(14px);
+          }
+
+          button {
+            color: #838383;
+            @include font-size(14.39px);
+            font-weight: bold;
+            padding: 8px 12px;
+            background-color: unset;
+            border: 1px solid #EBEBEB;
+          }
+        }
+
+        .bill__product {
+          padding: 15px 0;
+          border-top: 1px solid #E2E3E4;
+
+          .product__info {
+            @include flex();
+            justify-content: space-between;
+            align-items: center;
+            @include font-size(14px);
+            padding: 0;
+            margin-bottom: 20px;
+            @media #{$info-phone} {
+              font-size: 1.2rem;
+            }
+
             &:last-child {
-                .circle::before {
-                    display: none;
-                }
+              margin-bottom: 0px;
             }
-        }
-    }
-    .main__content {
-        .content__cart {
-            .cart__header {
-                text-align: center;
-                p {
-                    cursor: pointer;
-                }
-                span {
-                    display: block;
-                    margin-top: 8px;
-                    @include font-size(11px);
-                }
-            }
-            .cart__login,.cart__register {
-                max-width: 468px;
-                margin: 0 auto;
-                @media screen and (max-width: 520px) {
-                    width: 100%;
-                    margin: 0;
-                    padding: 15px;
-                }
-                p {
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 4;
-                    overflow: hidden;
-                    @include font-size(16px);
-                    color: #434343;
-                    line-height: 24px;
-                }
-                .login__form,.register__form {
-                    .form__input {
-                        margin-bottom: 41px;
-                        label {
-                            width: 100%;
-                            color: #434343;
-                            @include font-size(16px);
-                            margin-bottom: 8px;
-                            font-weight: 400;
-                        }
-                        input {
-                            width: 100%;
-                            padding: 8px 18px 12px;
-                            outline: unset;
-                            border-radius: 6px;
-                            border: 1px solid #E2E3E4;
-                            margin-bottom: 8px;
-                            @include placeholder {
-                                color: #808081;
-                                @include font-size(14.39px);
-                            }
-                            &:nth-child(2) {
-                                margin-bottom: 14px;
-                            }
 
-                        }
-                        span {
-                            color: #434343;
-                            @include font-size(14px);
-                            a {
-                                color: #EA4036;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                    .form__btn {
-                        @include flex();
-                        justify-content: center;
-                        flex-flow: column;
-                        margin-bottom: 53px;
-                        .btn__checkbox {
-                            color: #808081;
-                            @include font-size(14px);
-                            margin-bottom: 12px;
-                        }
-                        button {
-                            background-color: $color-main;
-                            width: 100%;
-                            color: #ffffff;
-                            @include font-size(16px);
-                            font-weight: bold;
-                            padding: 12px 20px;
-                            text-align: center;
-                            border-radius: 6px;
-                            margin-bottom: 11px;
-                            &:last-child {
-                                margin-bottom: 0;
-                            }
-                        }
-                        .btn--fb {
-                            background-color: #3B5998;
-                        }
-                        .btn--gg {
-                            background-color: #E94A32;
-                        }
-                        span {
-                            color: #434343;
-                            @include font-size(14px);
-                            a {
-                                color: #EA4036;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                }
-            }
-            .cart__register {
-                display: none;
+            .info__quantity {
+              @include flex();
 
+              span {
+                color: #505050;
+                margin-top: -4px;
+              }
+
+              p {
+                color: #838383;
+                line-height: 16.8px;
+                margin-left: 10px;
+                @media screen and (max-width: 1200px) {
+                  font-size: .8rem;
+                }
+                @media #{$info-phone} {
+                  font-size: 1.2rem;
+                }
+                @media screen and (max-width: 475px) {
+                  font-size: .8rem;
+                }
+              }
             }
-        }
-        .content__sidebar {
-            .sidebar__bill {
-                background-color: #ffffff;
-                padding: 15px 25px;
-                .bill__header {
-                    @include flex();
-                    align-items: center;
-                    justify-content: space-between;
-                    margin-bottom: 15px;
-                    h4 {
-                        color: $color-main-text;
-                        @include font-size(14px);
-                    }
-                    button {
-                        color: #838383;
-                        @include font-size(14.39px);
-                        font-weight: bold;
-                        padding: 8px 12px;
-                        background-color: unset;
-                        border: 1px solid #EBEBEB;
-                    }
-                }
-                .bill__product {
-                    padding: 15px 0;
-                    border-top: 1px solid #E2E3E4;
-                    .product__info {
-                        @include flex();
-                        justify-content: space-between;
-                        align-items: center;
-                        @include font-size(14px);
-                        padding: 0;
-                        margin-bottom: 20px;
-                        @media #{$info-phone} {
-                            font-size: 1.2rem;
-                        }
-                        &:last-child {
-                            margin-bottom: 0px;
-                        }
-                        .info__quantity {
-                            @include flex();
-                            span {
-                                color: #505050;
-                                margin-top: -4px;
-                            }
-                            p {
-                                color: #838383;
-                                line-height: 16.8px;
-                                margin-left: 10px;
-                                @media screen and (max-width: 1200px) {
-                                    font-size: .8rem;
-                                }
-                                @media #{$info-phone} {
-                                    font-size: 1.2rem;
-                                }
-                                @media screen and (max-width: 475px) {
-                                    font-size: .8rem;
-                                }
-                            }
-                        }
-                        span {
-                            color: #838383;
-                        }
-                    }
-                }
-                .bill__ship {
-                    padding: 15px 0;
-                    border-top: 1px solid #E2E3E4;
-                    p {
-                        @include flex();
-                        justify-content: space-between;
-                        @include font-size(14px);
-                        color: $color-main-text;
-                        &:first-child {
-                            margin-bottom: 5px;
-                        }
-                        span {
-                            color: #838383;
-                        }
-                    }
-                    
-                }
-                .bill__total {
-                    padding: 15px 0;
-                    border-top: 1px solid #E2E3E4;
-                    @include flex();
-                    justify-content: space-between;
-                    align-items: center;
-                    span {
-                        color: $color-main-text;
-                        font-weight: bold
-                    }
-                    .total__price {
-                        @include flex();
-                        align-items: flex-end;
-                        flex-flow: column;
-                        b {
-                            color: #FA434E;
-                            @include font-size(24.29px);
-                        }
-                        p {
-                            color: $color-main-text;
-                            @include font-size(12px);
-                        }
-                    }
-                }
+
+            span {
+              color: #838383;
             }
+          }
         }
+
+        .bill__ship {
+          padding: 15px 0;
+          border-top: 1px solid #E2E3E4;
+
+          p {
+            @include flex();
+            justify-content: space-between;
+            @include font-size(14px);
+            color: $color-main-text;
+
+            &:first-child {
+              margin-bottom: 5px;
+            }
+
+            span {
+              color: #838383;
+            }
+          }
+
+        }
+
+        .bill__total {
+          padding: 15px 0;
+          border-top: 1px solid #E2E3E4;
+          @include flex();
+          justify-content: space-between;
+          align-items: center;
+
+          span {
+            color: $color-main-text;
+            font-weight: bold
+          }
+
+          .total__price {
+            @include flex();
+            align-items: flex-end;
+            flex-flow: column;
+
+            b {
+              color: #FA434E;
+              @include font-size(24.29px);
+            }
+
+            p {
+              color: $color-main-text;
+              @include font-size(12px);
+            }
+          }
+        }
+      }
     }
+  }
 }

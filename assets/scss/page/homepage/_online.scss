@@ -4,6 +4,7 @@
   @media #{$info-phone} {
     padding: 17px 15px 38px;
   }
+
   &__header {
     h4 {
       color: #505050;
@@ -47,6 +48,7 @@
         margin: 16px 0;
       }
     }
+
     .content__middle {
       border-left: 1px solid #E5E5E4;
       border-right: 1px solid #E5E5E4;
@@ -67,6 +69,7 @@
     border-radius: 5px;
     padding: 6px 15px 9px;
     margin: 0 auto;
+
     img {
       margin-right: 10px;
     }

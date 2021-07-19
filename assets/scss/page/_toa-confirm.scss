@@ -1,0 +1,56 @@
+main {
+  .toa-page {
+    .page__content {
+      .content__form {
+        .form__img {
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+
+        .form__group {
+          .info__comsumer {
+            p {
+              color: #808081;
+              @include font-size(16px);
+
+              b {
+                color: #434343;
+              }
+            }
+          }
+        }
+      }
+
+      // toa-successful scss
+      .content__toa {
+        text-align: center;
+        margin-bottom: 40px;
+
+        h2 {
+          color: $color-main;
+          @include font-size(20px);
+          font-weight: bold;
+          margin: 0 0 8px 0;
+        }
+
+        p {
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          @include font-size(14px);
+          line-height: 22px;
+          text-align: left;
+          margin-bottom: 15px;
+        }
+
+        a {
+          color: $color-main;
+          @include font-size(14px);
+        }
+      }
+    }
+  }
+}

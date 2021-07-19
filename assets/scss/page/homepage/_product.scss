@@ -1,10 +1,11 @@
 .product {
   background-color: #ffffff;
-  
+
   &__header {
     @include flex();
     align-items: center;
     padding: 20px;
+
     .header__title {
       @include flex();
       flex-direction: column;
@@ -32,6 +33,7 @@
       padding-bottom: 35px;
       justify-content: space-around;
     }
+
     .content__slider {
       width: 70%;
       @include flex();
@@ -39,29 +41,32 @@
       @media #{$info-500} {
         width: 50%;
       }
-      
+
       .slider__list {
         @include flex();
         flex-wrap: wrap;
         position: unset;
+
         .list__item {
           @include flex();
           align-items: center;
           flex-wrap: wrap;
+
           .top__item {
             width: 50%;
             @media #{$info-500} {
               width: 100%;
               &:nth-child(3) {
-              display: none;
+                display: none;
               }
               &:nth-child(4) {
                 display: none;
               }
             }
-            
+
           }
         }
+
         .slick-dots {
           margin-bottom: 15px;
         }

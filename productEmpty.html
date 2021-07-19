@@ -12,37 +12,119 @@
 </head>
 <body>
 <!--============= header ===============-->
-    <header class="header" id="header">
-        <div class="container header__top">
-            <div class="header__top__hot header__top--group">
-                <img src="assets/img/fire2x.png" alt="fire">
-                <p class="title"> Khuyến mãi HOT</p>
-            </div>
-            <div class="header__top__nofication header__top--group">
-                <img src="assets/img/message2x.png" alt="nofication">
-                <div class="text">
-                    <p class="title">Thông báo</p>
-                    <span>của tôi</span>
-                </div>
-            </div>
-            <div class="header__top__login header__top--group">
-                <img src="assets/img/login2x.png" alt="login">
-                <div class="text">
-                    <p class="title">Đăng nhập </p>
-                    <span>Tài khoản</span>
-                </div>
+<header class="header" id="header">
+    <div class="container header__top">
+        <div class="header__top__hot header__top--group">
+            <img src="assets/img/fire2x.png" alt="fire">
+            <p class="title"> Khuyến mãi HOT</p>
+        </div>
+        <div class="header__top__nofication header__top--group">
+            <img src="assets/img/message2x.png" alt="nofication">
+            <div class="text">
+                <p class="title">Thông báo</p>
+                <span>của tôi</span>
             </div>
         </div>
-        <div class="container header__middle">
-            <h1 class="middle__logo"> <a href="index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
+        <div class="header__top__login header__top--group">
+            <img src="assets/img/login2x.png" alt="login">
+            <div class="text">
+                <p class="title">Đăng nhập </p>
+                <span>Tài khoản</span>
+            </div>
+        </div>
+    </div>
+    <div class="container header__middle">
+        <h1 class="middle__logo"><a href="index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
+        <form action="" class="middle__search">
+            <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+            <button class="search__btn">
+                <i class="fas fa-search"></i>
+                <span>Tìm Kiếm</span>
+            </button>
+        </form>
+        <div class="middle__btn">
+            <button class="btn__item">
+                <a href="toa.html">
+                    <img src="assets/img/toa2x.png" alt="toa">
+                 <span>Tạo toa thuốc</span>
+                </a>
+            </button>
+            <button class="btn__item">
+                <a href="cart.html">
+                    <img src="assets/img/cart2x.png" alt="cart">
+                    <span>Giỏ hàng</span>
+                    <span class="item__bard">69</span>
+                </a>
+            </button>
+        </div>
+    </div>
+    <nav class="container header__bottom">
+        <ul>
+            <li class="bottom__item">
+                <img src="assets/img/menu2x.png" alt="menu">
+                <a>DANH MỤC SẢN PHẨM</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/fire-red2x.png" alt="fire">
+                <a>KHUYẾN MÃI HOT</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/localtion2x.png" alt="location">
+                <a>HỆ THỐNG NHÀ THUỐC</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/heart2x.png" alt="heart">
+                <a>GÓC SỨC KHỎE</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/home2x.png" alt="home">
+                <a>GIỚI THIỆU</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/question2x.png" alt="question">
+                <a>HƯỚNG DẪN</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ======header scrolll======= -->
+    <div class="header--scroll">
+        <div class="header__middle container">
+            <h1 class="middle__logo"><a href="index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
             <form action="" class="middle__search">
+                <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+                <button class="search__btn">
+                    <i class="fas fa-search"></i>
+                    <span>Tìm Kiếm</span>
+                </button>
+            </form>
+            <div class="middle__btn">
+                <button class="btn__item">
+                    <a href="toa.html"><img src="assets/img/toa2x.png" alt="toa">
+                    <span>Tạo toa thuốc</span></a>
+                </button>
+                <button class="btn__item">
+                    <a href="cart.html">
+                        <img src="assets/img/cart2x.png" alt="cart">
+                        <span>Giỏ hàng</span>
+                        <span class="item__bard">69</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Sub header 767px responsive -->
+    <div class="container sub__header">
+        <h1><img src="assets/img/Logo.png" alt="logo"></h1>
+        <div class="header__nav">
+            <button class="nav__burger"><img src="assets/img/menu2x.png" alt="menu"></button>
+            <form action="" class="nav__search">
                 <input type="text" placeholder="Bạn đang tìm thuốc gì...">
                 <button class="search__btn">
                     <img src="assets/img/search2x.png" alt="search">
                     <span>Tìm Kiếm</span>
                 </button>
             </form>
-            <div class="middle__btn">
+            <div class="nav__btn">
                 <button class="btn__item">
                     <img src="assets/img/toa2x.png" alt="toa">
                     <span>Tạo toa thuốc</span>
@@ -54,209 +136,133 @@
                 </button>
             </div>
         </div>
-        <div class="container header__bottom">
+        <div class="nav__bar">
+            <div class="bar__control">
+                <div class="control__item">
+                    <img src="assets/img/fire2x.png" alt="fire">
+                    <p class="title"> Khuyến mãi HOT</p>
+                </div>
+                <div class="control__item">
+                    <img src="assets/img/message2x.png" alt="nofication">
+                    <div class="text">
+                        <p class="title">Thông báo</p>
+                        <span>của tôi</span>
+                    </div>
+                </div>
+                <div class="control__item">
+                    <img src="assets/img/login2x.png" alt="login">
+                    <div class="text">
+                        <p class="title">Đăng nhập </p>
+                        <span>Tài khoản</span>
+                    </div>
+                </div>
+            </div>
             <ul>
-                <li class="bottom__item">
+                <li class="nav__item">
                     <img src="assets/img/menu2x.png" alt="menu">
                     <a>DANH MỤC SẢN PHẨM</a>
                 </li>
-                <li class="bottom__item">
+                <li class="nav__item">
                     <img src="assets/img/fire-red2x.png" alt="fire">
                     <a>KHUYẾN MÃI HOT</a>
                 </li>
-                <li class="bottom__item">
+                <li class="nav__item">
                     <img src="assets/img/localtion2x.png" alt="location">
                     <a>HỆ THỐNG NHÀ THUỐC</a>
                 </li>
-                <li class="bottom__item">
+                <li class="nav__item">
                     <img src="assets/img/heart2x.png" alt="heart">
                     <a>GÓC SỨC KHỎE</a>
                 </li>
-                <li class="bottom__item">
+                <li class="nav__item">
                     <img src="assets/img/home2x.png" alt="home">
                     <a>GIỚI THIỆU</a>
                 </li>
-                <li class="bottom__item">
+                <li class="nav__item">
                     <img src="assets/img/question2x.png" alt="question">
                     <a>HƯỚNG DẪN</a>
                 </li>
             </ul>
-        </div>
-        <!-- Sub header 767px responsive -->
-        <div class="container sub__header">
-            <h1><img src="assets/img/Logo.png" alt="logo"></h1>
-            <div class="header__nav">
-                <button class="nav__burger"><img src="assets/img/menu2x.png" alt="menu"></button>
-                <form action="" class="nav__search">
-                    <input type="text" placeholder="Bạn đang tìm thuốc gì...">
-                    <button class="search__btn">
-                        <img src="assets/img/search2x.png" alt="search">
-                        <span>Tìm Kiếm</span>
-                    </button>
-                </form>
-                <div class="nav__btn">
-                    <button class="btn__item">
-                        <img src="assets/img/toa2x.png" alt="toa">
-                        <span>Tạo toa thuốc</span>
-                    </button>
-                    <button class="btn__item">
-                        <img src="assets/img/cart2x.png" alt="cart">
-                        <span>Giỏ hàng</span>
-                        <span class="item__bard">69</span>
-                    </button>
-                </div>
-            </div>
-            <div class="nav__bar">
-                <div class="bar__control">
-                    <div class="control__item">
-                        <img src="assets/img/fire2x.png" alt="fire">
-                        <p class="title"> Khuyến mãi HOT</p>
-                    </div>
-                    <div class="control__item">
-                        <img src="assets/img/message2x.png" alt="nofication">
-                        <div class="text">
-                            <p class="title">Thông báo</p>
-                            <span>của tôi</span>
-                        </div>
-                    </div>
-                    <div class="control__item">
-                        <img src="assets/img/login2x.png" alt="login">
-                        <div class="text">
-                            <p class="title">Đăng nhập </p>
-                            <span>Tài khoản</span>
-                        </div>
-                    </div>
-                </div>
-                <ul>
-                    <li class="nav__item">
-                        <img src="assets/img/menu2x.png" alt="menu">
-                        <a>DANH MỤC SẢN PHẨM</a>
+            <div class="sidebar__item">
+                <h4 class="sidebar__title">Danh Mục Sản Phẩm</h4>
+                <ul class="sidebar__list">
+                    <li class="list--active">
+                        <i class="fas fa-angle-right"></i>
+                        Mẹ & bé
+                        <ul class="sub__list">
+                            <li>Sữa bột</li>
+                            <li>Chăm sóc em bé</li>
+                            <li>Tã giấy & khăn ướt em bé</li>
+                        </ul>
                     </li>
-                    <li class="nav__item">
-                        <img src="assets/img/fire-red2x.png" alt="fire">
-                        <a>KHUYẾN MÃI HOT</a>
-                    </li>
-                    <li class="nav__item">
-                        <img src="assets/img/localtion2x.png" alt="location">
-                        <a>HỆ THỐNG NHÀ THUỐC</a>
-                    </li>
-                    <li class="nav__item">
-                        <img src="assets/img/heart2x.png" alt="heart">
-                        <a>GÓC SỨC KHỎE</a>
-                    </li>
-                    <li class="nav__item">
-                        <img src="assets/img/home2x.png" alt="home">
-                        <a>GIỚI THIỆU</a>
-                    </li>
-                    <li class="nav__item">
-                        <img src="assets/img/question2x.png" alt="question">
-                        <a>HƯỚNG DẪN</a>
-                    </li>
+                    <li>Thực phẩm chức năng</li>
+                    <li>Chăm sóc cá nhân</li>
+                    <li>Chăm sóc sức khỏe</li>
+                    <li>Tủ thuốc gia đình</li>
+                    <li>Chăm sóc phụ nữ</li>
+                    <li>Chăm sóc sắc đẹp</li>
+                    <li>Sức khỏe giới tính</li>
                 </ul>
-                <div class="sidebar__item">
-                    <h4 class="sidebar__title">Danh Mục Sản Phẩm</h4>
-                    <ul class="sidebar__list">
-                        <li class="list--active">
-                            <i class="fas fa-angle-right"></i>
-                            Mẹ & bé
-                            <ul class="sub__list">
-                                <li>Sữa bột</li>
-                                <li>Chăm sóc em bé</li>
-                                <li>Tã giấy & khăn ướt em bé</li>
-                            </ul>
-                        </li>
-                        <li>Thực phẩm chức năng</li>
-                        <li>Chăm sóc cá nhân</li>
-                        <li>Chăm sóc sức khỏe</li>
-                        <li>Tủ thuốc gia đình</li>
-                        <li>Chăm sóc phụ nữ</li>
-                        <li>Chăm sóc sắc đẹp</li>
-                        <li>Sức khỏe giới tính</li>
-                    </ul>
-                </div>
             </div>
         </div>
-    </header>
-    <!-- Header scroll -->
-    <header class="header--scroll header">
-        <div class="container scroll__content">
-            <h1 class="middle__logo"> <a href="./index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
-            <form action="" class="middle__search">
-                <input type="text" placeholder="Bạn đang tìm thuốc gì...">
-                <button class="search__btn">
-                    <img src="assets/img/search2x.png" alt="search">
-                    <span>Tìm Kiếm</span>
-                </button>
-            </form>
-            <div class="middle__btn">
-                <button class="btn__item">
-                    <img src="assets/img/toa2x.png" alt="toa">
-                    <span>Tạo toa thuốc</span>
-                </button>
-                <button class="btn__item">
-                    <img src="assets/img/cart2x.png" alt="cart">
-                    <span>Giỏ hàng</span>
-                    <span class="item__bard">69</span>
-                </button>
-            </div>
-        </div>
-    </header>
+    </div>
+</header>
 <!-- =========== End header ============= -->
 <!--============== Main =============-->
-    <main>
-        <section class="path">
-            <div class="container">
-                <ul class="path__content">
-                    <li>Trang chủ</li>
-                    <li><i class="fas fa-angle-right"></i> Mẹ và bé</li>
+<main>
+    <section class="path">
+        <div class="container">
+            <ul class="path__content">
+                <li>Trang chủ</li>
+                <li><i class="fas fa-angle-right"></i> Mẹ và bé</li>
+            </ul>
+        </div>
+    </section>
+    <section class="main container">
+        <div class="main__sidebar">
+            <div class="sidebar__item">
+                <h4 class="sidebar__title">Danh Mục Sản Phẩm</h4>
+                <ul class="sidebar__list">
+                    <li class="list--active">
+                        <i class="fas fa-angle-right"></i>
+                        Mẹ & bé
+                        <ul class="sub__list">
+                            <li>Sữa bột</li>
+                            <li>Chăm sóc em bé</li>
+                            <li>Tã giấy & khăn ướt em bé</li>
+                        </ul>
+                    </li>
+                    <li>Thực phẩm chức năng</li>
+                    <li>Chăm sóc cá nhân</li>
+                    <li>Chăm sóc sức khỏe</li>
+                    <li>Tủ thuốc gia đình</li>
+                    <li>Chăm sóc phụ nữ</li>
+                    <li>Chăm sóc sắc đẹp</li>
+                    <li>Sức khỏe giới tính</li>
                 </ul>
             </div>
-        </section>
-        <section class="main container">
-            <div class="main__sidebar">
-                <div class="sidebar__item">
-                    <h4 class="sidebar__title">Danh Mục Sản Phẩm</h4>
-                    <ul class="sidebar__list">
-                        <li class="list--active">
-                            <i class="fas fa-angle-right"></i>
-                            Mẹ & bé
-                            <ul class="sub__list">
-                                <li>Sữa bột</li>
-                                <li>Chăm sóc em bé</li>
-                                <li>Tã giấy & khăn ướt em bé</li>
-                            </ul>
-                        </li>
-                        <li>Thực phẩm chức năng</li>
-                        <li>Chăm sóc cá nhân</li>
-                        <li>Chăm sóc sức khỏe</li>
-                        <li>Tủ thuốc gia đình</li>
-                        <li>Chăm sóc phụ nữ</li>
-                        <li>Chăm sóc sắc đẹp</li>
-                        <li>Sức khỏe giới tính</li>
-                    </ul>
-                </div>
+        </div>
+        <div class="main__section">
+            <p>Kết quả tìm kiếm cho <span>'Thực phẩm chức năng'</span>: 1156 kết quả</p>
+            <div class="section__filter">
+                <span>Ưu tiên xem: </span>
+                <button><a href="#.">HÀNG MỚI</a></button>
+                <button><a href="#.">BÁN CHẠY</a></button>
+                <button><a href="#.">GIÁ THẤP</a></button>
+                <button><a href="#.">GIÁ CAO</a></button>
+                <button><a href="#.">GIẢM GIÁ</a></button>
+                <button class="active"><a href="#.">KHUYẾN MÃI</a></button>
             </div>
-            <div class="main__section">
-                <p>Kết quả tìm kiếm cho <span>'Thực phẩm chức năng'</span>: 1156 kết quả</p>
-                <div class="section__filter">
-                    <span>Ưu tiên xem: </span>
-                    <button><a href="#.">HÀNG MỚI</a></button>
-                    <button><a href="#.">BÁN CHẠY</a></button>
-                    <button><a href="#.">GIÁ THẤP</a></button>
-                    <button><a href="#.">GIÁ CAO</a></button>
-                    <button><a href="#.">GIẢM GIÁ</a></button>
-                    <button class="active"><a href="#.">KHUYẾN MÃI</a></button>
-                </div>
-                <div class="section__notfound">
-                    <p>Không tìm thấy kết quả cho "Thực phẩm chức năng dành cho trẻ em"</p>
-                </div>
+            <div class="section__notfound">
+                <p>Không tìm thấy kết quả cho "Thực phẩm chức năng dành cho trẻ em"</p>
             </div>
-            
-        </section>
-    </main>
+        </div>
+
+    </section>
+</main>
 <!--============== End Main ==========-->
- <!-- =========== footer ================-->
-    <footer class="footer" id="footer">
+<!-- =========== footer ================-->
+<footer class="footer" id="footer">
     <div class="container footer__top">
         <div class="top__item">
             <img src="assets/img/percent2x.png" alt="percent">
@@ -278,15 +284,21 @@
     </div>
     <div class="footer__line">
         <div class="container line__content">
-            <span>BẠN ĐANG CẦN ĐƯỢC TƯ VẤN</span>
             <div class="content__item">
-                <img src="assets/img/telephone2x.png" alt="telephone">
-                <span>Gọi ngay <span class="item--red">1800 6768</span>(miễn phí)</span>
+                <span>BẠN ĐANG CẦN ĐƯỢC TƯ VẤN</span>
+                <div class="item__support">
+                    <img src="assets/img/telephone2x.png" alt="telephone">
+                    <span>Gọi ngay <span class="item--red">1800 6768</span>(miễn phí)</span>
+                </div>
             </div>
-            <span>NHẬP EMAIL NHẬN MÃ GIẢM GIÁ</span>
             <div class="content__item">
-                <img src="assets/img/mail2x.png" alt="mail">
-                <span>Nhập email của bạn</span>
+                <span>NHẬP EMAIL NHẬN MÃ GIẢM GIÁ</span>
+                <form class="item__form">
+                    <button>
+                        <img src="assets/img/mail2x.png" alt="mail">
+                    </button>
+                    <input type="text" placeholder="Nhập email của bạn">
+                </form>
             </div>
         </div>
     </div>
@@ -301,7 +313,7 @@
                 <p>Tel: 1800 6768</p>
             </div>
         </div>
-        <div class="contact__group contact__support">
+        <div class="contact__support contact__group">
             <h4 class="group__title">HỖ TRỢ KHÁCH HÀNG</h4>
             <ul>
                 <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách đổi trả</span></li>
@@ -313,7 +325,7 @@
                 <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Giấy phép kinh doanh</span></li>
             </ul>
         </div>
-        <div class="contact__group contact__support">
+        <div class="contact__account contact__group">
             <h4 class="group__title">TÀI KHOẢN</h4>
             <ul>
                 <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Đăng ký</span></li>
@@ -321,7 +333,7 @@
                 <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Kiểm tra đơn hàng</span></li>
             </ul>
         </div>
-        <div class="contact__group contact__support">
+        <div class="contact__social contact__group">
             <h4 class="group__title">KẾT NỐI VỚI CHÚNG TÔI</h4>
             <ul>
                 <li><img src="assets/img/zalo2x.png" alt="zalo"></li>
@@ -332,14 +344,14 @@
         </div>
     </div>
     <div class="container footer__bottom">
-        <p><sup>&copy</sup> <span>2019</span> - Bản quyền thuộc về Công ty CP Dược Phẩm Phano</p>
+        <p><span>&copy 2019</span> - Bản quyền thuộc về Công ty CP Dược Phẩm Phano</p>
         <img src="assets/img/bct_icon2x.png" alt="certification">
     </div>
-    </footer>
+</footer>
 <!-- =========== End footer ============ -->
 </body>
-    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
 </html>

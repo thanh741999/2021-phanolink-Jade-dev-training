@@ -6,6 +6,7 @@
   padding: 25px 30px;
   background-color: unset;
   margin: 0 -15px;
+
   &__item {
     width: calc(100% / 5 - 20px);
     height: 147px;
@@ -20,10 +21,12 @@
     align-items: center;
     justify-content: center;
     flex-flow: column;
+
     p {
       @include font-size(16.79px);
       color: #FFFFFF;
     }
+
     @media #{$info-tablet-vertical} {
       width: calc(100% / 3 - 20px);
       margin-bottom: 15px;
@@ -34,6 +37,7 @@
     @media screen and (max-width: 375px) {
       height: 120px;
     }
+
     .item__content {
       @include center-inside-element();
       color: #FFFFFF;

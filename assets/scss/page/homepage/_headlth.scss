@@ -1,18 +1,21 @@
 .headlth {
-    background-color: #ffffff;
-    padding: 17px 20px 50px;
-    @media #{$info-phone} {
-      padding: 17px 20px;
-    }
+  background-color: #ffffff;
+  padding: 17px 20px 50px;
+  @media #{$info-phone} {
+    padding: 17px 20px;
+  }
+
   &__header {
     @include flex();
     justify-content: space-between;
     align-items: center;
     margin-bottom: 18px;
+
     p {
       font-weight: bold;
       @include font-size(21.99px);
     }
+
     a {
       color: #01ADAB;
       @include font-size(18.5px);
@@ -43,6 +46,7 @@
           flex-wrap: wrap;
           justify-content: center;
         }
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -64,6 +68,7 @@
           @media screen and (max-width: 375px) {
             text-align: center;
           }
+
           h4 {
             color: #505050;
             @include font-size(21.99px);

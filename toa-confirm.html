@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Language" content="en-us"/>
-    <title>Cart buy</title>
+    <title>Toa</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
@@ -217,114 +217,41 @@
         <div class="container">
             <ul class="path__content">
                 <li>Trang chủ</li>
-                <li><i class="fas fa-angle-right"></i> Giỏ hàng</li>
+                <li><i class="fas fa-angle-right"></i> Tạo đơn thuốc</li>
             </ul>
         </div>
     </section>
     <div class="container">
-        <section class="line-state location-line buy-line">
-            <div class="state__item">
-                <p>Đăng Nhập</p>
-                <span class="circle active">
-                        1
-                    </span>
-            </div>
-            <div class="state__item">
-                <p>Địa Chỉ Giao Hàng</p>
-                <span class="circle active">
-                        2
-                    </span>
-            </div>
-            <div class="state__item">
-                <p>Thanh Toán</p>
-                <span class="circle active">
-                        3
-                    </span>
-            </div>
-        </section>
-        <section class="main__content cart-buy">
-            <div class="content__cart">
+        <section class="main__content cart-buy toa-page">
+            <div class="content__cart page__content">
                 <h2 class="cart__header buy__header">
                     <p class="active">
-                        PHƯƠNG THỨC THANH TOÁN
+                        TẠO ĐƠN THUỐC
                     </p>
                 </h2>
-                <div class="buy__content">
-                    <form class="buy__form">
-                        <div class="form__group">
-                            <input type="radio" name="buyfor" id="money">
-                            <label for="money">Thanh toán tiền mặt khi nhận hàng (COD)</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="radio" name="buyfor" id="atm">
-                            <label for="atm">Thanh toán bằng thẻ ATM nội địa</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="radio" name="buyfor" id="bank">
-                            <label for="bank">Thanh toán qua ví ngân lượng</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="radio" name="buyfor" id="visa">
-                            <label for="visa">Thanh toán bằng thẻ quốc tế Visa, Master, JCB</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="radio" name="buyfor" id="banking">
-                            <label for="banking">Thanh toán bằng QR Pay Mobile Banking</label>
-                        </div>
-                    </form>
-                    <button>
-                        THANH TOÁN
-                    </button>
-                    <p>(Xin vui lòng kiểm tra lại đơn hàng trước khi Đặt Mua)</p>
-                </div>
-            </div>
-            <div class="content__sidebar">
-                <div class="sidebar__bill">
-                    <div class="bill__header">
-                        <h4>Đơn Hàng (3 Sản Phẩm)</h4>
-                        <button>Sửa</button>
+                <form class="content__form">
+                    <div class="form__group form__img">
+                        <h3 class="group__title"><i class="fas fa-angle-right"></i> Upload Đơn Thuốc</h3>
+                        <img src="assets/img/decine__icon-1-2x.png" alt="medicine">
                     </div>
-                    <div class="bill__product">
-                        <div class="product__info">
-                            <div class="info__quantity">
-                                <span>1x</span>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                            </div>
-                            <span>
-                                    800.000đ
-                                </span>
-                        </div>
-                        <div class="product__info">
-                            <div class="info__quantity">
-                                <span>1x</span>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                            </div>
-                            <span>
-                                    800.000đ
-                                </span>
-                        </div>
-                        <div class="product__info">
-                            <div class="info__quantity">
-                                <span>1x</span>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                            </div>
-                            <span>
-                                    800.000đ
-                                </span>
+                    <div class="form__group form__info">
+                        <h3 class="group__title"><i class="fas fa-angle-right"></i> Thông Tin Khách Hàng</h3>
+                        <div class="info__consumer">
+                            <p>Họ Tên:<b> Lê Duy Lân</b></p>
+                            <p>Số Điện Thoại:<b> 0767555888</b></p>
+                            <p>Địa chỉ Email:<b> lan.le@phanopharmacy.com</b></p>
                         </div>
                     </div>
-                    <div class="bill__ship">
-                        <p>Tạm Tính <span>800.000đ</span></p>
-                        <p>Phí Vận Chuyển <span>800.000đ</span></p>
-                    </div>
-                    <div class="bill__total">
-                        <span>Thành Tiền</span>
-                        <div class="total__price">
-                            <b>800.000đ</b>
-                            <p>(Đã bao gồm VAT nếu có)</p>
+                    <div class="form__group form__ship">
+                        <h3 class="group__title"><i class="fas fa-angle-right"></i> Thông Tin Giao Hàng</h3>
+                        <div class="info__consumer">
+                            <p>Địa chỉ:<b> 149 Nguyễn Thị Minh Khai</b></p>
+                            <p>Quận/ Huyện:<b> Quận 2</b></p>
+                            <p>Tỉnh/ Thành Phố:<b> Hồ Chí Minh</b></p>
                         </div>
                     </div>
-                </div>
+                </form>
+                <button><a href="toa-successful.html"><i class="fas fa-paper-plane"></i> GỬI ĐƠN THUỐC</a></button>
             </div>
         </section>
     </div>
