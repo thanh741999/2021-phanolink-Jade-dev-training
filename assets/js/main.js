@@ -189,4 +189,13 @@ $(document).ready(function () {
         }
     })
 
+    // ======= check buy ======== 
+    $('.buy__content > button').click(function() {
+        if($("input:radio").is(":checked")) {
+            window.location.href = "cart-buy--successful.html";
+        }
+        else {
+            window.location.href = "cart-buy-error.html";
+        }
+    })
 })

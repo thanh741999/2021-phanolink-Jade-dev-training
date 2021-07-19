@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Language" content="en-us"/>
-    <title>Cart Location</title>
+    <title>Cart buy</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
@@ -216,7 +216,7 @@
             </div>
         </section>
         <div class="container">
-            <section class="line-state location-line">
+            <section class="line-state location-line buy-line">
                 <div class="state__item">
                     <p>Đăng Nhập</p>
                     <span class="circle active">
@@ -231,58 +231,26 @@
                 </div>
                 <div class="state__item">
                     <p>Thanh Toán</p>
-                    <span class="circle">
+                    <span class="circle active">
                         3
                     </span>
                 </div>
             </section>
-            <section class="main__content cart-location">
+            <section class="main__content cart-buy cart-successful">
                 <div class="content__cart">
-                    <h2 class="cart__header location__header">
+                    <h2 class="cart__header buy__header">
                         <p class="active">
-                            ĐỊA CHỈ GIAO HÀNG
+                            PHƯƠNG THỨC THANH TOÁN
                         </p>
                     </h2>
-                    <div class="location__content">
-                        <div class="content__item">
-                            <div class="item__info">
-                                <h2>LÊ DUY LÂN <i class="far fa-check-circle"></i> <span>Địa chỉ mặc định</span></h2>
-                                <p>Địa chỉ:<span> 149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span></p>
-                                <p>Điện thoại:<span> 0767543789</span></p>
-                                <button class="active">
-                                    Giao Đến Địa Chỉ Này
-                                </button>
-                            </div>
-                            <button class="item__btn" data-toggle="modal" data-target="#exampleModal">
-                                Chỉnh sửa
-                            </button>
-                        </div>
-                        <div class="content__item">
-                            <div class="item__info">
-                                <h2>LÊ DUY LÂN</h2>
-                                <p>Địa chỉ:<span> 149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span></p>
-                                <p>Điện thoại:<span> 0767543789</span></p>
-                                <button>
-                                    Giao Đến Địa Chỉ Này
-                                </button>
-                            </div>
-                            <button class="item__btn" data-toggle="modal" data-target="#exampleModal">
-                                Chỉnh sửa
-                            </button>
-                        </div>
-                        <div class="content__item">
-                            <div class="item__info">
-                                <h2>LÊ DUY LÂN</h2>
-                                <p>Địa chỉ:<span> 149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span></p>
-                                <p>Điện thoại:<span> 0767543789</span></p>
-                                <button>
-                                    Giao Đến Địa Chỉ Này
-                                </button>
-                            </div>
-                            <button class="item__btn" data-toggle="modal" data-target="#exampleModal">
-                                Chỉnh sửa
-                            </button>
-                        </div>
+                    <div class="buy__content">
+                        <p>Xin cám ơn qúy khách đã mua hàng tại Phanolink</p>
+                        <p>Đơn hàng <b>#34817</b> của bạn đã được đặt thành công!</p>
+                        <a href="index.html"><i class="fas fa-angle-left"></i>Quay lại trang chủ</a>
+                    </div>
+                    <div class="check__message">
+                        <p>Để việc xử lý đơn hàng nhanh và thuận tiện hơn PHANOLINK sẽ xác nhận đơn hàng qua tin nhắn SMS và EMAIL.</p>
+                        <p>Xin Quý khách vui lòng thường xuyên kiểm tra email và điện thoại.</p>
                     </div>
                 </div>
                 <div class="content__sidebar">
@@ -428,87 +396,6 @@
 </footer>
 <!-- =========== End footer ============ -->
 
-<!-- ========modal========= -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>TẠO MỚI ĐỊA CHỈ GIAO HÀNG</h2>
-        <button data-dismiss="modal">close</button>
-      </div>
-      <div class="modal-body">
-          <form action="">
-              <div class="form__name form__group">
-                  <label for="name"><span>*</span> Họ tên</label>
-                  <input type="text" id="name" placeholder="Lê Duy Lân">
-              </div>
-              <div class="form__mail form__group">
-                  <label for="mail"><span>*</span> Email</label>
-                  <input type="text" id="mail" placeholder="lan@phanopharmacy.com">
-              </div>
-              <div class="form__group form__phone-number">
-                  <label for="phone-number"><span>*</span> Số điện thoại</label>
-                  <input type="text" id="phone-number" placeholder="0767543789">
-              </div>
-              <div class="form__group form__select">
-                  <label for="city">Tỉnh/ Thành Phố</label>
-                  <input type="text" id="city" placeholder="Hồ Chí Minh">
-                  <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li class="dropdown-item">Ha Noi</li>
-                    <li class="dropdown-item">Da Nang</li>
-                    <li class="dropdown-item">Hue</li>
-                  </ul>
-              </div>
-              <div class="form__group form__select">
-                  <label for="commune">Tỉnh/ Thành Phố</label>
-                  <input type="text" id="commune" placeholder="Nguyễn Văn Trỗi">
-                  <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li class="dropdown-item">Nguyễn Văn Trỗi</li>
-                    <li class="dropdown-item">Nguyễn Văn Trỗi</li>
-                    <li class="dropdown-item">Nguyễn Văn Trỗi</li>
-                  </ul>
-              </div>
-              <div class="form__group form__select">
-                  <label for="district">Quận Huyện</label>
-                  <input type="text" id="district" placeholder="Quận 3">
-                  <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li class="dropdown-item">Quận 4</li>
-                    <li class="dropdown-item">Quận 5</li>
-                    <li class="dropdown-item">Quận 6</li>
-                  </ul>
-              </div>
-              <div class="form__group">
-                  <label for="address">Địa Chỉ</label>
-                  <textarea rows="4" cols="0" placeholder="184 Nguyễn Văn Trỗi, quận 3, HCM"></textarea>
-              </div>
-          </form>
-          <div class="address">
-              <span>Loại Địa Chỉ</span>
-              <div class="address__btn">
-                  <button class="house">
-                      Nhà Riêng
-                  </button>
-                  <button>
-                      Công Ty
-                  </button>
-              </div>
-              <form action="">
-                  <input type="checkbox" id="default">
-                  <label for="default">Sử dụng làm địa chỉ mặc định</label>
-              </form>
-          </div>
-      </div>
-      <div class="modal-footer">
-          <button><i class="far fa-save"></i> CẬP NHẬT THAY ĐỔI</button>
-          <p> <span>*</span> Bắt buộc</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ========End modal======= -->
 </body>
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
