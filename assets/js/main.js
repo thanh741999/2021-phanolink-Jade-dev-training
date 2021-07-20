@@ -163,13 +163,10 @@ $(document).ready(function () {
         const scroll_top = document.documentElement.scrollTop;
         const header_width = $('#header').innerWidth();
         const header_hight = $('#header').innerHeight();
-        console.log(scroll_top);
         if (scroll_top >= header_hight && header_width >= 767) {
             $('.header--scroll').css('display', 'block');
-            console.log('a');
         } else {
             $('.header--scroll').css('display', 'none');
-            console.log('b');
 
         }
     })
@@ -177,7 +174,7 @@ $(document).ready(function () {
 
     // ========= cart ========
 
-    // ======== login and register ======
+    // ========Cart login and register ======
     $('.cart__header p').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
         let status = $(this).attr('status');
@@ -198,5 +195,30 @@ $(document).ready(function () {
         } else {
             window.location.href = "cart-buy-error.html";
         }
+    })
+
+    // ======== user login and register =====
+    $('.user__modal > h2').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        let status = $(this).attr('state');
+        if (status === 'register') {
+            $('.modal__register').css('display', 'block');
+            $('.modal-backdrop').css('height', '980px');
+            $('.modal__login').css('display', 'none');
+
+        } else {
+            $('.modal__register').css('display', 'none');
+            $('.modal__login').css('display', 'block');
+        }
+    })
+    $('.btn--modal > button').click(function () {
+        setTimeout(function () {
+            $("body").addClass("modal-open");
+        }, 500)
+    })
+    $('.main__form a').click(function () {
+        setTimeout(function () {
+            $("body").addClass("modal-open");
+        }, 500)
     })
 })

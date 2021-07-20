@@ -29,15 +29,15 @@
         <div class="header__top__nofication header__top--group">
             <img src="assets/img/message2x.png" alt="nofication">
             <div class="text">
-                <p class="title">Thông báo</p>
+                <a class="title">Thông báo</a>
                 <span>của tôi</span>
             </div>
         </div>
         <div class="header__top__login header__top--group">
             <img src="assets/img/login2x.png" alt="login">
             <div class="text">
-                <p class="title">Đăng nhập </p>
-                <span>Tài khoản</span>
+                <button class="title" data-toggle="modal" data-target="#Modal-Login-Register">Đăng nhập</button>
+                <a href="">Tài khoản</a>
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
             <button class="btn__item">
                 <a href="toa.html">
                     <img src="assets/img/toa2x.png" alt="toa">
-                 <span>Tạo toa thuốc</span>
+                    <span>Tạo toa thuốc</span>
                 </a>
             </button>
             <button class="btn__item">
@@ -70,27 +70,27 @@
         <ul>
             <li class="bottom__item">
                 <img src="assets/img/menu2x.png" alt="menu">
-                <a>DANH MỤC SẢN PHẨM</a>
+                <a href="#.">DANH MỤC SẢN PHẨM</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/fire-red2x.png" alt="fire">
-                <a>KHUYẾN MÃI HOT</a>
+                <a href="#.">KHUYẾN MÃI HOT</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/localtion2x.png" alt="location">
-                <a>HỆ THỐNG NHÀ THUỐC</a>
+                <a href="#.">HỆ THỐNG NHÀ THUỐC</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/heart2x.png" alt="heart">
-                <a>GÓC SỨC KHỎE</a>
+                <a href="#.">GÓC SỨC KHỎE</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/home2x.png" alt="home">
-                <a>GIỚI THIỆU</a>
+                <a href="#.">GIỚI THIỆU</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/question2x.png" alt="question">
-                <a>HƯỚNG DẪN</a>
+                <a href="#.">HƯỚNG DẪN</a>
             </li>
         </ul>
     </nav>
@@ -108,7 +108,7 @@
             <div class="middle__btn">
                 <button class="btn__item">
                     <a href="toa.html"><img src="assets/img/toa2x.png" alt="toa">
-                    <span>Tạo toa thuốc</span></a>
+                        <span>Tạo toa thuốc</span></a>
                 </button>
                 <button class="btn__item">
                     <a href="cart.html">
@@ -160,8 +160,8 @@
                 <div class="control__item">
                     <img src="assets/img/login2x.png" alt="login">
                     <div class="text">
-                        <p class="title">Đăng nhập </p>
-                        <span>Tài khoản</span>
+                        <button class="title" data-toggle="modal" data-target="#Modal-Login-Register">Đăng nhập</button>
+                        <a href="">Tài khoản</a>
                     </div>
                 </div>
             </div>
@@ -1086,6 +1086,167 @@
     </div>
 </footer>
 <!-- =========== End footer ============ -->
+
+<!-- =========== Modal Login and Register page -->
+<div class="modal fade" id="Modal-Login-Register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header user__modal">
+                <h2 class="active" state="login">
+                    ĐĂNG NHẬP
+                </h2>
+                <h2 state="register">
+                    ĐĂNG KÝ
+                </h2>
+                <button data-dismiss="modal">Close</button>
+            </div>
+            <div class="modal__main modal__login">
+                <p class="line__clamp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum </p>
+                <form action="" class="main__form">
+                    <div class="form__group">
+                        <label for="username">Email / SĐT</label>
+                        <input type="text" id="username" placeholder="Nhập Email hoặc số điện thoại">
+                    </div>
+                    <div class="form__group">
+                        <label for="password_login">Mật Khẩu</label>
+                        <input type="text" id="password_login" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                    </div>
+                    <span>Quên mật khẩu? Nhấn vào <a href="#." data-dismiss="modal" data-toggle="modal"
+                                                     data-target="#Modal-password">đây</a> </span>
+                </form>
+                <div class="main__btn">
+                    <button>Đăng nhập</button>
+                    <button class="btn--fb">Đăng nhập bằng Facebook</button>
+                    <button class="btn--gg">Đăng nhập bằng Google</button>
+                </div>
+            </div>
+            <div class="modal__main modal__register">
+                <p class="line__clamp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt
+                    ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                    tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                    eum </p>
+                <form action="" class="main__form">
+                    <div class="form__group">
+                        <div class="group__name group__info">
+                            <label for="name">Họ tên</label>
+                            <input type="text" id="name" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="group__mail group__info">
+                            <label for="mail">Email</label>
+                            <input type="text" id="mail" placeholder="Nhập Email">
+                        </div>
+                        <div class="group__password group__info">
+                            <label for="password_register">Mật Khẩu</label>
+                            <input type="text" id="password_register" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                        </div>
+                        <div class="group__phone group__info">
+                            <label for="phone_number">Số điện thoại</label>
+                            <input type="text" id="phone_number" placeholder="Nhập số điện thoại">
+                        </div>
+                    </div>
+                </form>
+                <div class="main__btn btn--modal">
+                    <div class="btn__checkbox">
+                        <input type="checkbox"> Nhận các thông tin và chương trình khuyến mãi qua email
+                    </div>
+                    <button data-dismiss="modal" data-toggle="modal" data-target="#Modal-Register-successful">Đăng ký
+                    </button>
+                    <button class="btn--fb">Đăng ký bằng Facebook</button>
+                    <button class="btn--gg">Đăng ký bằng Google</button>
+                    <span>Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo điều kiện sử dụng và chính sách của <a
+                            href="">PHANOLINK</a> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =========== End =============-->
+
+<!-- =========== Modal Register successfull -->
+<div class="modal fade" id="Modal-Register-successful" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header user__modal">
+                <h2 state="login">
+                    ĐĂNG NHẬP
+                </h2>
+                <h2 class="active" state="register">
+                    ĐĂNG KÝ
+                </h2>
+            </div>
+            <div class="modal__main">
+                <div class="main__success">
+                    <p>Tài khoản của bạn đã được khởi tạo thành công.</p>
+                    <p>Vui lòng đăng nhập vào email <b>abc@gmail.com</b> để tiếp sử dụng dịch vụ tại Phanolink.</p>
+                </div>
+                <div class="main__btn btn--modal">
+                    <button data-dismiss="modal" data-toggle="modal" data-target="#Modal-Login-Register">ĐĂNG NHẬP
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =========== End =============-->
+
+<!-- =========== Modal Password ===========-->
+<div class="modal fade" id="Modal-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header user__modal">
+                <h2 class="active">
+                    QUÊN MẬT KHẨU
+                </h2>
+            </div>
+            <div class="modal__main">
+                <div class="main__password">
+                    <p>Vui lòng cung cấp email hoặc số điện thoại đăng nhập để lấy lại mật khẩu.</p>
+                    <form>
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại">
+                    </form>
+                </div>
+                <div class="main__btn btn--modal">
+                    <button data-dismiss="modal" data-toggle="modal" data-target="#Modal-password-successful">Tạo tài
+                        khoản
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =========== End ============ -->
+
+<!-- =========== Modal Password successfull ========== -->
+<div class="modal fade" id="Modal-password-successful" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header user__modal">
+                <h2 class="active">
+                    QUÊN MẬT KHẨU
+                </h2>
+            </div>
+            <div class="modal__main">
+                <div class="main__password">
+                    <p>Hệ thống đã gửi Email đến <b>lan@phanopharamacy.com</b>, vui lòng kiểm tra hộp thư để cập nhật
+                        thông tin.</p>
+                </div>
+                <div class="main__btn">
+                    <button class="btn--block" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =========== End ============== -->
+<!-- Modal -->
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>

@@ -30,11 +30,22 @@
       }
 
       .text {
+        @include flex();
+        justify-content: center;
+        flex-flow: column;
+        align-items: flex-start;
         span {
           @include font-size(11.58px);
           text-align: left;
           line-height: 14.06px;
           display: block;
+        }
+        button {
+          background-color: unset;
+        }
+        a {
+          @include font-size(11.58px);
+          color: #FFFFFF;
         }
       }
 
@@ -347,11 +358,22 @@
           }
 
           .text {
+            @include flex();
+            justify-content: center;
+            flex-flow: column;
+            align-items: flex-start;
             span {
               @include font-size(11.58px);
               text-align: left;
               line-height: 14.06px;
               display: block;
+            }
+            button {
+              background-color: unset;
+            }
+            a {
+              @include font-size(11.58px);
+              color: #FFFFFF;
             }
           }
 
