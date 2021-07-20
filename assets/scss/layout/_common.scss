@@ -23,25 +23,32 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%;
 }
-button , input {
+
+button, input {
   border: unset;
   padding: 0;
 }
+
 section {
   margin-bottom: 20px;
   background-color: #FFFFFF;
+
   &:last-child {
     margin-bottom: 0;
   }
 }
+
 .container {
   &::before, &::after {
     display: none;
   }
+
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
+
+// slick custim
 .slick-dots {
   list-style-type: none;
   @include flex;
@@ -53,7 +60,7 @@ section {
   transform: translateX(-50%);
 
   .slick-active {
-    background-color:#36B88C;
+    background-color: #36B88C;
   }
 
   li {
@@ -71,16 +78,21 @@ section {
     display: none;
   }
 }
+
+// end
+
+
 main {
-    background-color: #EBEBEB;
-    padding-bottom: 76px;
-    @media #{$info-phone} {
-      padding-top: 137px;
-    }
-    @media screen and (max-width: 430px) {
-      padding-top: 134px;
-    }
+  background-color: #EBEBEB;
+  padding-bottom: 76px;
+  @media #{$info-phone} {
+    padding-top: 134px;
+  }
+  @media screen and (max-width: 500px) {
+    padding-top: 131px;
+  }
 }
+
 // ===== custom header responsive 767px =====
 .header {
   // header on scroll
@@ -89,28 +101,34 @@ main {
     z-index: 2;
     width: 100%;
   }
+
   &--scroll {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 3;
   }
+
   // end header scroll
   .sub__header {
     .change {
       .sidebar__item {
         padding-top: 15px;
         border-top: 1px solid #838383;
-         .sidebar__list {
-           padding: 10px 0 0 0;
-           li {
-             color: #FFFFFF;
-             margin-bottom: 10px;
-             .sub__list {
-               padding: 10px 0 0 15px;
-             }
-           }
-         }
+
+        .sidebar__list {
+          padding: 10px 0 0 0;
+
+          li {
+            color: #FFFFFF;
+            margin-bottom: 10px;
+
+            .sub__list {
+              padding: 10px 0 0 15px;
+            }
+          }
+        }
+
         .sidebar__title {
           font-size: 1.2rem;
           color: #FFFFFF;
@@ -119,4 +137,21 @@ main {
     }
   }
 }
+
 // ===== end custom ======
+
+// dropdown-menu custom
+.dropdown-menu {
+  width: 100%;
+  padding: 10px 15px;
+
+  li {
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// end

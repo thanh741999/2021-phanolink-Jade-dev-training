@@ -2,8 +2,8 @@ $(document).ready(function () {
     $('.nav__burger').click(function () {
         $('.nav__bar').toggleClass('change');
     })
-    $('menu__item').click(function () {
-
+    $('.medicine__content > .content__item').click(function () {
+        window.location.href = "productDetail.html";
     })
     // ======= slick carousel =========
     $('.content__left').slick({
@@ -22,20 +22,23 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
+                    dots: false,
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: false,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: false,
                 }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -156,19 +159,44 @@ $(document).ready(function () {
     });
 
     // scroll change header 
-    $(window).scroll(function(e) {
+    $(window).scroll(function (e) {
         const scroll_top = document.documentElement.scrollTop;
         const header_width = $('#header').innerWidth();
         const header_hight = $('#header').innerHeight();
+        console.log(scroll_top);
         if (scroll_top >= header_hight && header_width >= 767) {
-            $('.header__top').addClass("header--hidden");
-            $('.header__bottom').addClass("header--hidden");
-            $('.header').addClass("header--scroll");
+            $('.header--scroll').css('display', 'block');
+            console.log('a');
+        } else {
+            $('.header--scroll').css('display', 'none');
+            console.log('b');
+
         }
-        else {
-            $('.header__top').removeClass("header--hidden");
-            $('.header__bottom').removeClass("header--hidden");
-            $('.header').removeClass("header--scroll");
+    })
+
+
+    // ========= cart ========
+
+    // ======== login and register ======
+    $('.cart__header p').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        let status = $(this).attr('status');
+        if (status === 'register') {
+            $('.cart__register').css('display', 'block');
+            $('.cart__login').css('display', 'none');
+
+        } else {
+            $('.cart__register').css('display', 'none');
+            $('.cart__login').css('display', 'block');
+        }
+    })
+
+    // ======= check buy ======== 
+    $('.buy__content > button').click(function () {
+        if ($("input:radio").is(":checked")) {
+            window.location.href = "cart-buy--successful.html";
+        } else {
+            window.location.href = "cart-buy-error.html";
         }
     })
 })

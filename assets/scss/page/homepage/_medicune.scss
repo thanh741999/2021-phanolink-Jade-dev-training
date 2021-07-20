@@ -1,8 +1,9 @@
 .medicine {
   background-color: #ffffff;
+
   &__header {
-    margin-bottom: 19px;
-    padding: 20px 0 0 38px;
+    padding: 20px 38px;
+
     span {
       margin-left: 10px;
       color: #505050;
@@ -19,14 +20,16 @@
       overflow: scroll;
       width: 250px;
       margin: 0 auto;
+      padding: 5px 0;
     }
+
     .content__item {
       width: calc(100% / 5);
       position: relative;
       padding: 40px 20px 20px;
       outline: 1px solid #E5E5E4;
       @media screen and (max-width: 1200px) {
-          width: calc(100% / 4);
+        width: calc(100% / 4);
       }
       @media #{$info-tablet-vertical} {
         width: calc(100% / 3);
@@ -48,34 +51,40 @@
           border-right: unset;
         }
       }
+
       .item__img {
         @include flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
+
         .sale {
           position: absolute;
           top: 0;
           left: 10px;
         }
+
         .ship {
           position: absolute;
           top: 10px;
           right: 10px;
         }
+
         .gift {
           position: absolute;
           top: 60px;
           right: 10px;
         }
+
         .img__size {
           height: 120px;
+
           img {
-              height: 100%;
-            }
+            height: 100%;
+          }
         }
       }
-      
+
 
       .item__info {
         text-align: left;
@@ -101,7 +110,7 @@
         }
       }
 
-      
+
     }
   }
 }

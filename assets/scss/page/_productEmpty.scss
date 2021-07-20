@@ -1,21 +1,24 @@
 .main {
-    &__section {
-        p {
-            color: #808081;
-            @include font-size(16px);
-            margin-bottom: 28px;
-            span {
-                color: #434343;
-                font-family: UTM-intel-Bold;
-            }
-        }
-        .section__notfound {
-            background-color: #ffffff;
-            padding: 45px 0 50px 0;
-            text-align: center;
-            p {
-                color: $color-main-text;
-            }
-        }
+  &__section {
+    p {
+      color: #808081;
+      @include font-size(16px);
+      margin-bottom: 28px;
+
+      span {
+        color: #434343;
+        font-family: UTM-intel-Bold;
+      }
     }
+
+    .section__notfound {
+      background-color: #ffffff;
+      padding: 45px 0 50px 0;
+      text-align: center;
+
+      p {
+        color: $color-main-text;
+      }
+    }
+  }
 }

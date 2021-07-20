@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Language" content="en-us"/>
-    <title>Cart page</title>
+    <title>Cart buy</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
@@ -221,122 +221,113 @@
             </ul>
         </div>
     </section>
-    <section class="main__content container">
-        <div class="content__cart">
-            <h2 class="cart__header">
-                <p class="active">
-                    GIỎ HÀNG
-                    <b>(8 Sản Phẩm)</b>
-                </p>
-            </h2>
-            <div class="cart__table">
-                <div class="table__header">
-                    <p class="header__product">Sản Phẩm</p>
-                    <p class="header__price">Giá</p>
-                    <p class="header__quantity">Số lượng</p>
+    <div class="container">
+        <section class="line-state location-line buy-line">
+            <div class="state__item">
+                <p>Đăng Nhập</p>
+                <span class="circle active">
+                        1
+                    </span>
+            </div>
+            <div class="state__item">
+                <p>Địa Chỉ Giao Hàng</p>
+                <span class="circle active">
+                        2
+                    </span>
+            </div>
+            <div class="state__item">
+                <p>Thanh Toán</p>
+                <span class="circle active">
+                        3
+                    </span>
+            </div>
+        </section>
+        <section class="main__content cart-buy">
+            <div class="content__cart">
+                <h2 class="cart__header buy__header">
+                    <p class="active">
+                        PHƯƠNG THỨC THANH TOÁN
+                    </p>
+                </h2>
+                <div class="buy__content">
+                    <form class="buy__form">
+                        <div class="form__group">
+                            <input type="radio" name="buyfor" id="money">
+                            <label for="money">Thanh toán tiền mặt khi nhận hàng (COD)</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="radio" name="buyfor" id="atm">
+                            <label for="atm">Thanh toán bằng thẻ ATM nội địa</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="radio" name="buyfor" id="bank">
+                            <label for="bank">Thanh toán qua ví ngân lượng</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="radio" name="buyfor" id="visa">
+                            <label for="visa">Thanh toán bằng thẻ quốc tế Visa, Master, JCB</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="radio" name="buyfor" id="banking">
+                            <label for="banking">Thanh toán bằng QR Pay Mobile Banking</label>
+                        </div>
+                    </form>
+                    <button>
+                        THANH TOÁN
+                    </button>
+                    <p>(Xin vui lòng kiểm tra lại đơn hàng trước khi Đặt Mua)</p>
                 </div>
-                <div class="table__content">
-                    <div class="table__item">
-                        <div class="item__info">
-                            <img src="./assets/img/cart-img-01.png" alt="decine">
-                            <div class="info__description">
-                                <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
-                                <button>Xóa</button>
+            </div>
+            <div class="content__sidebar">
+                <div class="sidebar__bill">
+                    <div class="bill__header">
+                        <h4>Đơn Hàng (3 Sản Phẩm)</h4>
+                        <button>Sửa</button>
+                    </div>
+                    <div class="bill__product">
+                        <div class="product__info">
+                            <div class="info__quantity">
+                                <span>1x</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
                             </div>
+                            <span>
+                                    800.000đ
+                                </span>
                         </div>
-                        <div class="item__price">
-                            <b>
-                                800.000đ
-                            </b>
-                            <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
+                        <div class="product__info">
+                            <div class="info__quantity">
+                                <span>1x</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                            </div>
+                            <span>
+                                    800.000đ
+                                </span>
                         </div>
-                        <div class="item__quantity">
-                            <form action="">
-                                <button class="minus"><i class="fas fa-minus"></i></button>
-                                <input type="text" value="1">
-                                <button class="plus"><i class="fas fa-plus"></i></button>
-                            </form>
+                        <div class="product__info">
+                            <div class="info__quantity">
+                                <span>1x</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                            </div>
+                            <span>
+                                    800.000đ
+                                </span>
                         </div>
                     </div>
-                    <div class="table__item">
-                        <div class="item__info">
-                            <img src="./assets/img/cart-img-01.png" alt="decine">
-                            <div class="info__description">
-                                <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
-                                <button>Xóa</button>
-                            </div>
-                        </div>
-                        <div class="item__price">
-                            <b>
-                                800.000đ
-                            </b>
-                            <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
-                        </div>
-                        <div class="item__quantity">
-                            <form action="">
-                                <button class="minus"><i class="fas fa-minus"></i></button>
-                                <input type="text" value="1">
-                                <button class="plus"><i class="fas fa-plus"></i></button>
-                            </form>
-                        </div>
+                    <div class="bill__ship">
+                        <p>Tạm Tính <span>800.000đ</span></p>
+                        <p>Phí Vận Chuyển <span>800.000đ</span></p>
                     </div>
-                    <div class="table__item">
-                        <div class="item__info">
-                            <img src="./assets/img/cart-img-01.png" alt="decine">
-                            <div class="info__description">
-                                <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
-                                <button>Xóa</button>
-                            </div>
-                        </div>
-                        <div class="item__price">
-                            <b>
-                                800.000đ
-                            </b>
-                            <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
-                        </div>
-                        <div class="item__quantity">
-                            <form action="">
-                                <button class="minus"><i class="fas fa-minus"></i></button>
-                                <input type="text" value="1">
-                                <button class="plus"><i class="fas fa-plus"></i></button>
-                            </form>
+                    <div class="bill__total">
+                        <span>Thành Tiền</span>
+                        <div class="total__price">
+                            <b>800.000đ</b>
+                            <p>(Đã bao gồm VAT nếu có)</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content__sidebar">
-            <div class="sidebar__voucher">
-                <h2>Mã Giảm Giá:</h2>
-                <form action="" class="voucher__form">
-                    <input type="text" placeholder="Nhập mã giảm giá....">
-                    <button>ÁP DỤNG</button>
-                </form>
-            </div>
-            <div class="sidebar__price">
-                <div class="price__discount">
-                    <div class="discount__item">
-                        Tạm Tính:
-                        <span>1.080.000 đ</span>
-                    </div>
-                    <div class="discount__item">
-                        Giảm Giá:
-                        <span>80.000 đ</span>
-                    </div>
-                </div>
-                <div class="price__total">
-                    Thành Tiền:
-                    <div class="total">
-                        <b>1.000.000 đ</b>
-                        <span>(Đã bao gồm VAT nếu có)</span>
-                    </div>
-                </div>
-            </div>
-            <button class="sidebar__btn">
-                <a href="">TIẾN HÀNH ĐẶT HÀNG</a>
-            </button>
-        </div>
-    </section>
+        </section>
+    </div>
 </main>
 <!--============== End Main ==========-->
 
@@ -429,6 +420,7 @@
     </div>
 </footer>
 <!-- =========== End footer ============ -->
+
 </body>
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Language" content="en-us"/>
-    <title>Product</title>
+    <title>Cart Location</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -216,301 +217,136 @@
         <div class="container">
             <ul class="path__content">
                 <li>Trang chủ</li>
-                <li><i class="fas fa-angle-right"></i> Mẹ và bé</li>
+                <li><i class="fas fa-angle-right"></i> Giỏ hàng</li>
             </ul>
         </div>
     </section>
-    <section class="main container">
-        <div class="main__sidebar">
-            <div class="sidebar__item">
-                <h4 class="sidebar__title">Danh Mục Sản Phẩm</h4>
-                <ul class="sidebar__list">
-                    <li class="list--active">
-                        <i class="fas fa-angle-right"></i>
-                        Mẹ & bé
-                        <ul class="sub__list">
-                            <li>Sữa bột</li>
-                            <li>Chăm sóc em bé</li>
-                            <li>Tã giấy & khăn ướt em bé</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right"></i>
-                        Thực phẩm chức năng
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right"></i>
-                        Chăm sóc cá nhân
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right"></i>
-                        Chăm sóc sức khỏe
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right"></i>
-                        Tủ thuốc gia đình
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right"></i>
-                        Chăm sóc phụ nữ
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right"></i>
-                        Chăm sóc sắc đẹp
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right"></i>
-                        Sức khỏe giới tính
-                    </li>
-                </ul>
+    <div class="container">
+        <section class="line-state location-line">
+            <div class="state__item">
+                <p>Đăng Nhập</p>
+                <span class="circle active">
+                        1
+                    </span>
             </div>
-            <div class="sidebar__item">
-                <h4 class="sidebar__title"><img src="./assets/img/fire-red2x.png" alt="fire"> Sản Phẩm Khuyến Mãi</h4>
-                <div class="sidebar__img">
-                    <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
-                    <img src="./assets/img/hot-sale-slide-2-2x.png" alt="hotsale">
-                    <img src="./assets/img/hot-sale-slide-1-2x.png" alt="hotsale">
-                </div>
+            <div class="state__item">
+                <p>Địa Chỉ Giao Hàng</p>
+                <span class="circle active">
+                        2
+                    </span>
             </div>
-        </div>
-        <div class="main__section">
-            <div class="section__slider content__left">
-                <div class="left__item">
-                    <img src="./assets/img/banner-img.png" alt="slider">
-                </div>
-                <div class="left__item">
-                    <img src="./assets/img/banner-img.png" alt="slider">
-                </div>
-                <div class="left__item">
-                    <img src="./assets/img/banner-img.png" alt="slider">
-                </div>
-                <div class="left__item">
-                    <img src="./assets/img/banner-img.png" alt="slider">
-                </div>
-                <div class="left__item">
-                    <img src="./assets/img/banner-img.png" alt="slider">
-                </div>
-                <div class="left__item">
-                    <img src="./assets/img/banner-img.png" alt="slider">
-                </div>
-                <div class="left__item">
-                    <img src="./assets/img/banner-img.png" alt="slider">
-                </div>
-                <div class="left__item">
-                    <img src="./assets/img/banner-img.png" alt="slider">
+            <div class="state__item">
+                <p>Thanh Toán</p>
+                <span class="circle">
+                        3
+                    </span>
+            </div>
+        </section>
+        <section class="main__content cart-location">
+            <div class="content__cart">
+                <h2 class="cart__header location__header">
+                    <p class="active">
+                        ĐỊA CHỈ GIAO HÀNG
+                    </p>
+                </h2>
+                <div class="location__content">
+                    <div class="content__item">
+                        <div class="item__info">
+                            <h2>LÊ DUY LÂN <i class="far fa-check-circle"></i> <span>Địa chỉ mặc định</span></h2>
+                            <p>Địa
+                                chỉ:<span> 149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span>
+                            </p>
+                            <p>Điện thoại:<span> 0767543789</span></p>
+                            <button class="active">
+                                Giao Đến Địa Chỉ Này
+                            </button>
+                        </div>
+                        <button class="item__btn" data-toggle="modal" data-target="#exampleModal">
+                            Chỉnh sửa
+                        </button>
+                    </div>
+                    <div class="content__item">
+                        <div class="item__info">
+                            <h2>LÊ DUY LÂN</h2>
+                            <p>Địa
+                                chỉ:<span> 149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span>
+                            </p>
+                            <p>Điện thoại:<span> 0767543789</span></p>
+                            <button>
+                                Giao Đến Địa Chỉ Này
+                            </button>
+                        </div>
+                        <button class="item__btn" data-toggle="modal" data-target="#exampleModal">
+                            Chỉnh sửa
+                        </button>
+                    </div>
+                    <div class="content__item">
+                        <div class="item__info">
+                            <h2>LÊ DUY LÂN</h2>
+                            <p>Địa
+                                chỉ:<span> 149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span>
+                            </p>
+                            <p>Điện thoại:<span> 0767543789</span></p>
+                            <button>
+                                Giao Đến Địa Chỉ Này
+                            </button>
+                        </div>
+                        <button class="item__btn" data-toggle="modal" data-target="#exampleModal">
+                            Chỉnh sửa
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="section__filter">
-                <span>Ưu tiên xem: </span>
-                <button><a href="#.">HÀNG MỚI</a></button>
-                <button><a href="#.">BÁN CHẠY</a></button>
-                <button><a href="#.">GIÁ THẤP</a></button>
-                <button><a href="#.">GIÁ CAO</a></button>
-                <button><a href="#.">GIẢM GIÁ</a></button>
-                <button class="active"><a href="#.">KHUYẾN MÃI</a></button>
-            </div>
-            <div class="section__content">
-                <div class="medicine__content">
-                    <div class="content__item">
-                        <div class="item__img">
-                            <img src="./assets/img/sale2x.png" alt="sale" class="sale">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
+            <div class="content__sidebar">
+                <div class="sidebar__bill">
+                    <div class="bill__header">
+                        <h4>Đơn Hàng (3 Sản Phẩm)</h4>
+                        <button>Sửa</button>
+                    </div>
+                    <div class="bill__product">
+                        <div class="product__info">
+                            <div class="info__quantity">
+                                <span>1x</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
                             </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
+                            <span>
+                                    800.000đ
+                                </span>
                         </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
+                        <div class="product__info">
+                            <div class="info__quantity">
+                                <span>1x</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                            </div>
+                            <span>
+                                    800.000đ
+                                </span>
+                        </div>
+                        <div class="product__info">
+                            <div class="info__quantity">
+                                <span>1x</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                            </div>
+                            <span>
+                                    800.000đ
+                                </span>
                         </div>
                     </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-2-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
+                    <div class="bill__ship">
+                        <p>Tạm Tính <span>800.000đ</span></p>
+                        <p>Phí Vận Chuyển <span>800.000đ</span></p>
                     </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-3-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <img src="./assets/img/sale2x.png" alt="sale" class="sale">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-4-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <img src="./assets/img/sale2x.png" alt="sale" class="sale">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-2-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-3-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <img src="./assets/img/sale2x.png" alt="sale" class="sale">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-4-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="section__pagination">
-                <nav aria-label="...">
-                    <ul class="pagination pagination-sm">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#." tabindex="-1">1</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#.">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#.">3</a></li>
-                        <li class="page-item"><a href="#.">4</a></li>
-                        <li class="page-item"><a href="#.">5</a></li>
-                        <li class="page-item"><a href=""><i class="fas fa-angle-right"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="section__seen">
-                <h4>SẢN PHẨM BẠN ĐÃ XEM</h4>
-                <div class="section__content medicine__content">
-                    <div class="content__item">
-                        <div class="item__img">
-                            <img src="./assets/img/sale2x.png" alt="sale" class="sale">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-1-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-2-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-3-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <div class="item__img">
-                            <img src="./assets/img/sale2x.png" alt="sale" class="sale">
-                            <div class="img__size">
-                                <img src="./assets/img/decine__icon-4-2x.png" alt="medicine1">
-                            </div>
-                            <img src="./assets/img/ship2x.png" alt="ship" class="ship">
-                            <img src="./assets/img/gift-green.png" alt="gift" class="gift">
-                        </div>
-                        <div class="item__info">
-                            <p>Thực Phẩm Chức Năng Bổ Não Giảm Triệu Chứng....</p>
-                            <span>999.000đ</span>
-                            <span class="old-price">800.000đ</span>
+                    <div class="bill__total">
+                        <span>Thành Tiền</span>
+                        <div class="total__price">
+                            <b>800.000đ</b>
+                            <p>(Đã bao gồm VAT nếu có)</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </section>
-
+        </section>
+    </div>
 </main>
 <!--============== End Main ==========-->
 
@@ -603,6 +439,92 @@
     </div>
 </footer>
 <!-- =========== End footer ============ -->
+
+<!-- ========modal========= -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>TẠO MỚI ĐỊA CHỈ GIAO HÀNG</h2>
+                <button data-dismiss="modal">close</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form__name form__group">
+                        <label for="name"><span>*</span> Họ tên</label>
+                        <input type="text" id="name" placeholder="Lê Duy Lân">
+                    </div>
+                    <div class="form__mail form__group">
+                        <label for="mail"><span>*</span> Email</label>
+                        <input type="text" id="mail" placeholder="lan@phanopharmacy.com">
+                    </div>
+                    <div class="form__group form__phone-number">
+                        <label for="phone-number"><span>*</span> Số điện thoại</label>
+                        <input type="text" id="phone-number" placeholder="0767543789">
+                    </div>
+                    <div class="form__group form__select">
+                        <label for="city">Tỉnh/ Thành Phố</label>
+                        <input type="text" id="city" placeholder="Hồ Chí Minh">
+                        <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li class="dropdown-item">Ha Noi</li>
+                            <li class="dropdown-item">Da Nang</li>
+                            <li class="dropdown-item">Hue</li>
+                        </ul>
+                    </div>
+                    <div class="form__group form__select">
+                        <label for="commune">Tỉnh/ Thành Phố</label>
+                        <input type="text" id="commune" placeholder="Nguyễn Văn Trỗi">
+                        <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li class="dropdown-item">Nguyễn Văn Trỗi</li>
+                            <li class="dropdown-item">Nguyễn Văn Trỗi</li>
+                            <li class="dropdown-item">Nguyễn Văn Trỗi</li>
+                        </ul>
+                    </div>
+                    <div class="form__group form__select">
+                        <label for="district">Quận Huyện</label>
+                        <input type="text" id="district" placeholder="Quận 3">
+                        <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li class="dropdown-item">Quận 4</li>
+                            <li class="dropdown-item">Quận 5</li>
+                            <li class="dropdown-item">Quận 6</li>
+                        </ul>
+                    </div>
+                    <div class="form__group">
+                        <label for="address">Địa Chỉ</label>
+                        <textarea rows="4" cols="0" placeholder="184 Nguyễn Văn Trỗi, quận 3, HCM"></textarea>
+                    </div>
+                </form>
+                <div class="address">
+                    <span>Loại Địa Chỉ</span>
+                    <div class="address__btn">
+                        <button class="house">
+                            Nhà Riêng
+                        </button>
+                        <button>
+                            Công Ty
+                        </button>
+                    </div>
+                    <form action="">
+                        <input type="checkbox" id="default">
+                        <label for="default">Sử dụng làm địa chỉ mặc định</label>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button><i class="far fa-save"></i> CẬP NHẬT THAY ĐỔI</button>
+                <p><span>*</span> Bắt buộc</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ========End modal======= -->
 </body>
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>

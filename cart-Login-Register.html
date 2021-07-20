@@ -221,122 +221,147 @@
             </ul>
         </div>
     </section>
-    <section class="main__content container">
-        <div class="content__cart">
-            <h2 class="cart__header">
-                <p class="active">
-                    GIỎ HÀNG
-                    <b>(8 Sản Phẩm)</b>
-                </p>
-            </h2>
-            <div class="cart__table">
-                <div class="table__header">
-                    <p class="header__product">Sản Phẩm</p>
-                    <p class="header__price">Giá</p>
-                    <p class="header__quantity">Số lượng</p>
+    <div class="container">
+        <section class="line-state">
+            <div class="state__item">
+                <p>Đăng Nhập</p>
+                <span class="circle active">
+                        1
+                    </span>
+            </div>
+            <div class="state__item">
+                <p>Địa Chỉ Giao Hàng</p>
+                <span class="circle">
+                        2
+                    </span>
+            </div>
+            <div class="state__item">
+                <p>Thanh Toán</p>
+                <span class="circle">
+                        3
+                    </span>
+            </div>
+        </section>
+        <section class="main__content">
+            <div class="content__cart">
+                <h2 class="cart__header">
+                    <p class="active" status="login">
+                        ĐĂNG NHẬP
+                        <span>Đã là thành viên Phanolink</span>
+                    </p>
+                    <p status="register">
+                        ĐĂNG KÝ
+                        <span>Dành cho khách hàng mới</span>
+                    </p>
+                </h2>
+                <div class="cart__login">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                        eum </p>
+                    <form action="" class="login__form">
+                        <div class="form__input">
+                            <label for="user__login">Email / SĐT</label>
+                            <input type="text" id="user__login" placeholder="Nhập Email hoặc số điện thoại">
+                            <label for="password__login">Mật Khẩu</label>
+                            <input type="text" id="password__login" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                            <span>Quên mật khẩu? Nhấn vào <a href="">đây</a> </span>
+                        </div>
+                        <div class="form__btn">
+                            <button>Đăng nhập</button>
+                            <button class="btn--fb">Đăng nhập bằng Facebook</button>
+                            <button class="btn--gg">Đăng nhập bằng Google</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="table__content">
-                    <div class="table__item">
-                        <div class="item__info">
-                            <img src="./assets/img/cart-img-01.png" alt="decine">
-                            <div class="info__description">
-                                <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
-                                <button>Xóa</button>
+                <div class="cart__register">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                        eum </p>
+                    <form action="" class="register__form">
+                        <div class="form__input">
+                            <div class="input__name">
+                                <label for="user__login">Họ tên</label>
+                                <input type="text" id="user__login" placeholder="Nhập họ tên">
+                            </div>
+                            <div class="input__mail">
+                                <label for="user__login">Email</label>
+                                <input type="text" id="user__login" placeholder="Nhập Email">
+                            </div>
+                            <div class="input__password">
+                                <label for="password__login">Mật Khẩu</label>
+                                <input type="text" id="password__login" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                            </div>
+                            <div class="input__phone">
+                                <label for="user__login">Số điện thoại</label>
+                                <input type="text" id="user__login" placeholder="Nhập số điện thoại">
                             </div>
                         </div>
-                        <div class="item__price">
-                            <b>
-                                800.000đ
-                            </b>
-                            <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
+                        <div class="form__btn">
+                            <div class="btn__checkbox">
+                                <input type="checkbox"> Nhận các thông tin và chương trình khuyến mãi qua email
+                            </div>
+                            <button>Đăng ký</button>
+                            <button class="btn--fb">Đăng ký bằng Facebook</button>
+                            <button class="btn--gg">Đăng ký bằng Google</button>
+                            <span>Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo điều kiện sử dụng và chính sách của <a
+                                    href="">PHANOLINK</a> </span>
                         </div>
-                        <div class="item__quantity">
-                            <form action="">
-                                <button class="minus"><i class="fas fa-minus"></i></button>
-                                <input type="text" value="1">
-                                <button class="plus"><i class="fas fa-plus"></i></button>
-                            </form>
+                    </form>
+                </div>
+            </div>
+            <div class="content__sidebar">
+                <div class="sidebar__bill">
+                    <div class="bill__header">
+                        <h4>Đơn Hàng (3 Sản Phẩm)</h4>
+                        <button>Sửa</button>
+                    </div>
+                    <div class="bill__product">
+                        <div class="product__info">
+                            <div class="info__quantity">
+                                <span>1x</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                            </div>
+                            <span>
+                                    800.000đ
+                                </span>
+                        </div>
+                        <div class="product__info">
+                            <div class="info__quantity">
+                                <span>1x</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                            </div>
+                            <span>
+                                    800.000đ
+                                </span>
+                        </div>
+                        <div class="product__info">
+                            <div class="info__quantity">
+                                <span>1x</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                            </div>
+                            <span>
+                                    800.000đ
+                                </span>
                         </div>
                     </div>
-                    <div class="table__item">
-                        <div class="item__info">
-                            <img src="./assets/img/cart-img-01.png" alt="decine">
-                            <div class="info__description">
-                                <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
-                                <button>Xóa</button>
-                            </div>
-                        </div>
-                        <div class="item__price">
-                            <b>
-                                800.000đ
-                            </b>
-                            <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
-                        </div>
-                        <div class="item__quantity">
-                            <form action="">
-                                <button class="minus"><i class="fas fa-minus"></i></button>
-                                <input type="text" value="1">
-                                <button class="plus"><i class="fas fa-plus"></i></button>
-                            </form>
-                        </div>
+                    <div class="bill__ship">
+                        <p>Tạm Tính <span>800.000đ</span></p>
+                        <p>Phí Vận Chuyển <span>800.000đ</span></p>
                     </div>
-                    <div class="table__item">
-                        <div class="item__info">
-                            <img src="./assets/img/cart-img-01.png" alt="decine">
-                            <div class="info__description">
-                                <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin Bocalex Multi Tuýp 20 Viên</p>
-                                <button>Xóa</button>
-                            </div>
-                        </div>
-                        <div class="item__price">
-                            <b>
-                                800.000đ
-                            </b>
-                            <span><img src="./assets/img/cart-img-sale.png" alt="sale"> 999.000đ</span>
-                        </div>
-                        <div class="item__quantity">
-                            <form action="">
-                                <button class="minus"><i class="fas fa-minus"></i></button>
-                                <input type="text" value="1">
-                                <button class="plus"><i class="fas fa-plus"></i></button>
-                            </form>
+                    <div class="bill__total">
+                        <span>Thành Tiền</span>
+                        <div class="total__price">
+                            <b>800.000đ</b>
+                            <p>(Đã bao gồm VAT nếu có)</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content__sidebar">
-            <div class="sidebar__voucher">
-                <h2>Mã Giảm Giá:</h2>
-                <form action="" class="voucher__form">
-                    <input type="text" placeholder="Nhập mã giảm giá....">
-                    <button>ÁP DỤNG</button>
-                </form>
-            </div>
-            <div class="sidebar__price">
-                <div class="price__discount">
-                    <div class="discount__item">
-                        Tạm Tính:
-                        <span>1.080.000 đ</span>
-                    </div>
-                    <div class="discount__item">
-                        Giảm Giá:
-                        <span>80.000 đ</span>
-                    </div>
-                </div>
-                <div class="price__total">
-                    Thành Tiền:
-                    <div class="total">
-                        <b>1.000.000 đ</b>
-                        <span>(Đã bao gồm VAT nếu có)</span>
-                    </div>
-                </div>
-            </div>
-            <button class="sidebar__btn">
-                <a href="">TIẾN HÀNH ĐẶT HÀNG</a>
-            </button>
-        </div>
-    </section>
+        </section>
+    </div>
+
 </main>
 <!--============== End Main ==========-->
 
