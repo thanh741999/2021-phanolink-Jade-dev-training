@@ -1,0 +1,608 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Language" content="en-us"/>
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<!--============= header ===============-->
+<header class="header" id="header">
+    <div class="container header__top">
+        <div class="header__top__hot header__top--group">
+            <img src="assets/img/fire2x.png" alt="fire">
+            <p class="title"> Khuyến mãi HOT</p>
+        </div>
+        <div class="header__top__nofication header__top--group">
+            <img src="assets/img/message2x.png" alt="nofication">
+            <div class="text">
+                <a class="title">Thông báo</a>
+                <span>của tôi</span>
+            </div>
+        </div>
+        <div class="header__top__login header__top--group">
+            <img src="assets/img/login2x.png" alt="login">
+            <div class="text">
+                <button class="title" data-toggle="modal" data-target="#Modal-Login-Register">Đăng nhập</button>
+                <a href="user-info.html">Tài khoản</a>
+            </div>
+        </div>
+    </div>
+    <div class="container header__middle">
+        <h1 class="middle__logo"><a href="index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
+        <form action="" class="middle__search">
+            <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+            <button class="search__btn">
+                <i class="fas fa-search"></i>
+                <span>Tìm Kiếm</span>
+            </button>
+        </form>
+        <div class="middle__btn">
+            <button class="btn__item">
+                <a href="toa.html">
+                    <img src="assets/img/toa2x.png" alt="toa">
+                    <span>Tạo toa thuốc</span>
+                </a>
+            </button>
+            <button class="btn__item">
+                <a href="cart.html">
+                    <img src="assets/img/cart2x.png" alt="cart">
+                    <span>Giỏ hàng</span>
+                    <span class="item__bard">69</span>
+                </a>
+            </button>
+        </div>
+    </div>
+    <nav class="container header__bottom">
+        <ul>
+            <li class="bottom__item">
+                <img src="assets/img/menu2x.png" alt="menu">
+                <a href="#.">DANH MỤC SẢN PHẨM</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/fire-red2x.png" alt="fire">
+                <a href="#.">KHUYẾN MÃI HOT</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/localtion2x.png" alt="location">
+                <a href="#.">HỆ THỐNG NHÀ THUỐC</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/heart2x.png" alt="heart">
+                <a href="#.">GÓC SỨC KHỎE</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/home2x.png" alt="home">
+                <a href="#.">GIỚI THIỆU</a>
+            </li>
+            <li class="bottom__item">
+                <img src="assets/img/question2x.png" alt="question">
+                <a href="#.">HƯỚNG DẪN</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ======header scrolll======= -->
+    <div class="header--scroll">
+        <div class="header__middle container">
+            <h1 class="middle__logo"><a href="index.html"> <img src="assets/img/Logo.png" alt="logo"></a></h1>
+            <form action="" class="middle__search">
+                <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+                <button class="search__btn">
+                    <i class="fas fa-search"></i>
+                    <span>Tìm Kiếm</span>
+                </button>
+            </form>
+            <div class="middle__btn">
+                <button class="btn__item">
+                    <a href="toa.html"><img src="assets/img/toa2x.png" alt="toa">
+                        <span>Tạo toa thuốc</span></a>
+                </button>
+                <button class="btn__item">
+                    <a href="cart.html">
+                        <img src="assets/img/cart2x.png" alt="cart">
+                        <span>Giỏ hàng</span>
+                        <span class="item__bard">69</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Sub header 767px responsive -->
+    <div class="container sub__header">
+        <h1><img src="assets/img/Logo.png" alt="logo"></h1>
+        <div class="header__nav">
+            <button class="nav__burger"><img src="assets/img/menu2x.png" alt="menu"></button>
+            <form action="" class="nav__search">
+                <input type="text" placeholder="Bạn đang tìm thuốc gì...">
+                <button class="search__btn">
+                    <img src="assets/img/search2x.png" alt="search">
+                    <span>Tìm Kiếm</span>
+                </button>
+            </form>
+            <div class="nav__btn">
+                <button class="btn__item">
+                    <img src="assets/img/toa2x.png" alt="toa">
+                    <span>Tạo toa thuốc</span>
+                </button>
+                <button class="btn__item">
+                    <img src="assets/img/cart2x.png" alt="cart">
+                    <span>Giỏ hàng</span>
+                    <span class="item__bard">69</span>
+                </button>
+            </div>
+        </div>
+        <div class="nav__bar">
+            <div class="bar__control">
+                <div class="control__item">
+                    <img src="assets/img/fire2x.png" alt="fire">
+                    <p class="title"> Khuyến mãi HOT</p>
+                </div>
+                <div class="control__item">
+                    <img src="assets/img/message2x.png" alt="nofication">
+                    <div class="text">
+                        <p class="title">Thông báo</p>
+                        <span>của tôi</span>
+                    </div>
+                </div>
+                <div class="control__item">
+                    <img src="assets/img/login2x.png" alt="login">
+                    <div class="text">
+                        <button class="title" data-toggle="modal" data-target="#Modal-Login-Register">Đăng nhập</button>
+                        <a href="user-info.html">Tài khoản</a>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li class="nav__item">
+                    <img src="assets/img/menu2x.png" alt="menu">
+                    <a>DANH MỤC SẢN PHẨM</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/fire-red2x.png" alt="fire">
+                    <a>KHUYẾN MÃI HOT</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/localtion2x.png" alt="location">
+                    <a>HỆ THỐNG NHÀ THUỐC</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/heart2x.png" alt="heart">
+                    <a>GÓC SỨC KHỎE</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/home2x.png" alt="home">
+                    <a>GIỚI THIỆU</a>
+                </li>
+                <li class="nav__item">
+                    <img src="assets/img/question2x.png" alt="question">
+                    <a>HƯỚNG DẪN</a>
+                </li>
+            </ul>
+            <div class="sidebar__item">
+                <h4 class="sidebar__title">Danh Mục Sản Phẩm</h4>
+                <ul class="sidebar__list">
+                    <li class="list--active">
+                        <i class="fas fa-angle-right"></i>
+                        Mẹ & bé
+                        <ul class="sub__list">
+                            <li>Sữa bột</li>
+                            <li>Chăm sóc em bé</li>
+                            <li>Tã giấy & khăn ướt em bé</li>
+                        </ul>
+                    </li>
+                    <li>Thực phẩm chức năng</li>
+                    <li>Chăm sóc cá nhân</li>
+                    <li>Chăm sóc sức khỏe</li>
+                    <li>Tủ thuốc gia đình</li>
+                    <li>Chăm sóc phụ nữ</li>
+                    <li>Chăm sóc sắc đẹp</li>
+                    <li>Sức khỏe giới tính</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- =========== End header ============= -->
+
+
+<main>
+    <section class="path">
+        <div class="container">
+            <ul class="path__content">
+                <li>Trang chủ</li>
+                <li><i class="fas fa-angle-right"></i> Thông Tin Tài Khoản</li>
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+        <section class="user">
+            <div class="user__sidebar">
+                <div class="sidebar__top">
+                    <h2>Quản Lý Tài Khoản</h2>
+                    <ul class="sidebar__list">
+                        <li class="active"><i class="fas fa-angle-right"></i>Thông tin tài khoản</li>
+                        <li><i class="fas fa-angle-right"></i>Quản Lý Đơn Hàng</li>
+                        <li><i class="fas fa-angle-right"></i>Sản phẩm yêu thích</li>
+                        <li><i class="fas fa-angle-right"></i>Sản phẩm đã xem</li>
+                        <li><i class="fas fa-angle-right"></i>Sổ địa chỉ</li>
+                        <li><i class="fas fa-angle-right"></i>Thông báo của tôi</li>
+                    </ul>
+                </div>
+                <div class="sidebar__bottom">
+                    <div class="bottom__header">
+                        <h2 class="header__title active active--yellow">
+                            ĐƯỢC TÀI TRỢ
+                        </h2>
+                    </div>
+                    <div class="bottom__product">
+                        <img src="assets/img/hot-sale-slide-1-2x.png" alt="hot side img">
+                        <div class="product__info">
+                            <h2>Sức khỏe giới tính</h2>
+                            <b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</b>
+                            <a href="#.">Xem Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user__info">
+                <div class="info__header">
+                    <h2 class="header__title active--green active">THÔNG TIN TÀI KHOẢN</h2>
+                </div>
+                <!-- ======== user info ======= -->
+                <div class="info__content">
+                    <form class="content__form">
+                        <div class="form__group">
+                            <label for="name"> <b>*</b>Họ tên</label>
+                            <input type="text" id="name" placeholder="Lê Duy Lân">
+                        </div>
+                        <div class="form__group">
+                            <label for="mail"> <b>*</b>Email</label>
+                            <input type="text" id="mail" placeholder="lan@phanopharmacy.com">
+                        </div>
+                        <div class="form__group">
+                            <label for="phone-number"> <b>*</b>Số điện thoại</label>
+                            <input type="text" id="phone-number" placeholder="0767543789">
+                        </div>
+                        <div class="form__group form__sex">
+                            <label for="">Giới tính</label>
+                            <div class="sex__state">
+                                <button class="male"><i class="fas fa-male"></i> Nam</button>
+                                <button><i class="fas fa-female"></i> Nữ</button>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="">Ngày sinh</label>
+                            <div class="birthday">
+                                <div class="birthday__group">
+                                    <input type="text" placeholder="30">
+                                    <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li class="dropdown-item">1</li>
+                                        <li class="dropdown-item">2</li>
+                                        <li class="dropdown-item">3</li>
+                                    </ul>
+
+                                </div>
+                                <div class="birthday__group">
+                                    <input type="text" placeholder="Tháng 9">
+                                    <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li class="dropdown-item">Tháng 8</li>
+                                        <li class="dropdown-item">Tháng 7</li>
+                                        <li class="dropdown-item">Tháng 6</li>
+                                    </ul>
+                                </div>
+                                <div class="birthday__group">
+                                    <input type="text" placeholder="1990">
+                                    <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li class="dropdown-item">1991</li>
+                                        <li class="dropdown-item">1992</li>
+                                        <li class="dropdown-item">1993</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p><span>*</span>Bắt buộc</p>
+                    </form>
+                    <div class="content__change-password">
+                        <div class="check-box">
+                            <input type="checkbox"> Thay đổi mật khẩu
+                        </div>
+                        <form action="" class="password__form">
+                            <div class="form__group">
+                                <label for="change-password">Mật khẩu cũ</label>
+                                <input type="text" id="change-password" placeholder="Nhập mật khẩu cũ">
+                            </div>
+                            <div class="form__group">
+                                <label for="new-password">Mật khẩu mới</label>
+                                <input type="text" id="new-password" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                            </div>
+                            <div class="form__group">
+                                <label for="re-password">Xác nhận mật khẩu mới</label>
+                                <input type="text" id="re-password" placeholder="Nhập lại mật khẩu mới">
+                            </div>
+                        </form>
+                    </div>
+                    <button class="btn--save"><i class="far fa-save"></i>CẬP NHẬT THAY ĐỔI</button>
+                </div>
+                <!-- ======== end user info========= -->
+            </div>
+        </section>
+    </div>
+</main>
+<!-- =========== footer ================-->
+<footer class="footer" id="footer">
+    <div class="container footer__top">
+        <div class="top__item">
+            <img src="assets/img/percent2x.png" alt="percent">
+            <span>Sản phẩm chính hãng</span>
+        </div>
+        <div class="top__item">
+            <img src="assets/img/car2x.png" alt="car">
+            <span>Giao hàng toàn quốc</span>
+        </div>
+        <div class="top__item">
+            <img src="assets/img/phone2x.png" alt="phone">
+            <span>Thanh toán linh hoạt</span>
+        </div>
+        <div class="top__item">
+            <img src="assets/img/gift2x.png" alt="gift">
+            <span>Tích điểm đổi quà</span>
+            <img src="assets/img/message_icon.png" alt="message" class="message__icon">
+        </div>
+    </div>
+    <div class="footer__line">
+        <div class="container line__content">
+            <div class="content__item">
+                <span>BẠN ĐANG CẦN ĐƯỢC TƯ VẤN</span>
+                <div class="item__support">
+                    <img src="assets/img/telephone2x.png" alt="telephone">
+                    <span>Gọi ngay <span class="item--red">1800 6768</span>(miễn phí)</span>
+                </div>
+            </div>
+            <div class="content__item">
+                <span>NHẬP EMAIL NHẬN MÃ GIẢM GIÁ</span>
+                <form class="item__form">
+                    <button>
+                        <img src="assets/img/mail2x.png" alt="mail">
+                    </button>
+                    <input type="text" placeholder="Nhập email của bạn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container footer__contact">
+        <div class="contact__address contact__group">
+            <a href=""><img src="assets/img/logo_green2x.png" alt="logo"></a>
+            <div class="address">
+                <h5>CÔNG TY CỔ PHẦN DƯỢC PHẨM PHANO</h5>
+                <address>Địa chỉ: 31 Hồ Biểu Chánh, P.12, Q.Phú Nhuận, TP.HCM</address>
+                <p>MST: 0304860663</p>
+                <p>Email: cskh@phanolink.com</p>
+                <p>Tel: 1800 6768</p>
+            </div>
+        </div>
+        <div class="contact__support contact__group">
+            <h4 class="group__title">HỖ TRỢ KHÁCH HÀNG</h4>
+            <ul>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách đổi trả</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách giao hàng</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Chính sách bảo mật</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Hướng dẫn thanh toán</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Hướng dẫn đặt hàng</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Giải quyết phản hồi</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Giấy phép kinh doanh</span></li>
+            </ul>
+        </div>
+        <div class="contact__account contact__group">
+            <h4 class="group__title">TÀI KHOẢN</h4>
+            <ul>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Đăng ký</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Đăng nhập</span></li>
+                <li><img src="assets/img/arrow-right2x.png" alt="arrowright"><span>Kiểm tra đơn hàng</span></li>
+            </ul>
+        </div>
+        <div class="contact__social contact__group">
+            <h4 class="group__title">KẾT NỐI VỚI CHÚNG TÔI</h4>
+            <ul>
+                <li><img src="assets/img/zalo2x.png" alt="zalo"></li>
+                <li><img src="assets/img/fb2x.png" alt="facebook"></li>
+                <li><img src="assets/img/gg-plus2x.png" alt="google"></li>
+                <li><img src="assets/img/youtube2x.png" alt="youtube"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer__bottom">
+        <p><span>&copy 2019</span> - Bản quyền thuộc về Công ty CP Dược Phẩm Phano</p>
+        <img src="assets/img/bct_icon2x.png" alt="certification">
+    </div>
+</footer>
+<!-- =========== End footer ============ -->
+
+<!-- =========== Modal Login and Register page -->
+<div class="modal fade" id="Modal-Login-Register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header user__modal">
+                <h2 class="active" state="login">
+                    ĐĂNG NHẬP
+                </h2>
+                <h2 state="register">
+                    ĐĂNG KÝ
+                </h2>
+                <button data-dismiss="modal">Close</button>
+            </div>
+            <div class="modal__main modal__login">
+                <p class="line__clamp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum </p>
+                <form action="" class="main__form">
+                    <div class="form__group">
+                        <label for="username">Email / SĐT</label>
+                        <input type="text" id="username" placeholder="Nhập Email hoặc số điện thoại">
+                    </div>
+                    <div class="form__group">
+                        <label for="password_login">Mật Khẩu</label>
+                        <input type="text" id="password_login" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                    </div>
+                    <span>Quên mật khẩu? Nhấn vào <a href="#." data-dismiss="modal" data-toggle="modal"
+                                                     data-target="#Modal-password">đây</a> </span>
+                </form>
+                <div class="main__btn">
+                    <button>Đăng nhập</button>
+                    <button class="btn--fb">Đăng nhập bằng Facebook</button>
+                    <button class="btn--gg">Đăng nhập bằng Google</button>
+                </div>
+            </div>
+            <div class="modal__main modal__register">
+                <p class="line__clamp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt
+                    ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                    tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                    eum </p>
+                <form action="" class="main__form">
+                    <div class="form__group">
+                        <div class="group__name group__info">
+                            <label for="name">Họ tên</label>
+                            <input type="text" id="name" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="group__mail group__info">
+                            <label for="mail">Email</label>
+                            <input type="text" id="mail" placeholder="Nhập Email">
+                        </div>
+                        <div class="group__password group__info">
+                            <label for="password_register">Mật Khẩu</label>
+                            <input type="text" id="password_register" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                        </div>
+                        <div class="group__phone group__info">
+                            <label for="phone_number">Số điện thoại</label>
+                            <input type="text" id="phone_number" placeholder="Nhập số điện thoại">
+                        </div>
+                    </div>
+                </form>
+                <div class="main__btn btn--modal">
+                    <div class="btn__checkbox">
+                        <input type="checkbox"> Nhận các thông tin và chương trình khuyến mãi qua email
+                    </div>
+                    <button data-dismiss="modal" data-toggle="modal" data-target="#Modal-Register-successful">Đăng ký
+                    </button>
+                    <button class="btn--fb">Đăng ký bằng Facebook</button>
+                    <button class="btn--gg">Đăng ký bằng Google</button>
+                    <span>Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo điều kiện sử dụng và chính sách của <a
+                            href="">PHANOLINK</a> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =========== End =============-->
+
+<!-- =========== Modal Register successfull -->
+<div class="modal fade" id="Modal-Register-successful" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header user__modal">
+                <h2 state="login">
+                    ĐĂNG NHẬP
+                </h2>
+                <h2 class="active" state="register">
+                    ĐĂNG KÝ
+                </h2>
+            </div>
+            <div class="modal__main">
+                <div class="main__success">
+                    <p>Tài khoản của bạn đã được khởi tạo thành công.</p>
+                    <p>Vui lòng đăng nhập vào email <b>abc@gmail.com</b> để tiếp sử dụng dịch vụ tại Phanolink.</p>
+                </div>
+                <div class="main__btn btn--modal">
+                    <button data-dismiss="modal" data-toggle="modal" data-target="#Modal-Login-Register">ĐĂNG NHẬP
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =========== End =============-->
+
+<!-- =========== Modal Password ===========-->
+<div class="modal fade" id="Modal-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header user__modal">
+                <h2 class="active">
+                    QUÊN MẬT KHẨU
+                </h2>
+            </div>
+            <div class="modal__main">
+                <div class="main__password">
+                    <p>Vui lòng cung cấp email hoặc số điện thoại đăng nhập để lấy lại mật khẩu.</p>
+                    <form>
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại">
+                    </form>
+                </div>
+                <div class="main__btn btn--modal">
+                    <button data-dismiss="modal" data-toggle="modal" data-target="#Modal-password-successful">Tạo tài
+                        khoản
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =========== End ============ -->
+
+<!-- =========== Modal Password successfull ========== -->
+<div class="modal fade" id="Modal-password-successful" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header user__modal">
+                <h2 class="active">
+                    QUÊN MẬT KHẨU
+                </h2>
+            </div>
+            <div class="modal__main">
+                <div class="main__password">
+                    <p>Hệ thống đã gửi Email đến <b>lan@phanopharamacy.com</b>, vui lòng kiểm tra hộp thư để cập nhật
+                        thông tin.</p>
+                </div>
+                <div class="main__btn">
+                    <button class="btn--block" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =========== End ============== -->
+<!-- Modal -->
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
+

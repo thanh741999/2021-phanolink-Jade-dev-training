@@ -211,6 +211,9 @@ $(document).ready(function () {
             $('.modal__login').css('display', 'block');
         }
     })
+
+
+    // custom modal
     $('.btn--modal > button').click(function () {
         setTimeout(function () {
             $("body").addClass("modal-open");
@@ -221,4 +224,16 @@ $(document).ready(function () {
             $("body").addClass("modal-open");
         }, 500)
     })
+    // end
+
+    // ==== check change-password ====
+    $('.content__change-password  input[type="checkbox"]').click(function () {
+        if ($(this).is(":checked")) {
+            $('.password__form').css('display','block');
+            console.log('a');
+        } else {
+            $('.password__form').css('display','none'); 
+        }
+    })
+    // ==== end ====
 })
