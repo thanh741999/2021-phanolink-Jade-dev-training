@@ -1,0 +1,167 @@
+// ======== custom modal =========
+.modal {
+  .modal-dialog {
+    width: 470px;
+    @media #{$info-phone} {
+      margin: 30px auto;
+    }
+    @media #{$info-500}  {
+      width: 90%;
+
+    }
+
+    .modal-content {
+      @media #{$info-500} {
+        padding: 0 15px;
+      }
+
+      .user__modal {
+        h2 {
+          cursor: pointer;
+          @media #{$info-500} {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .modal__main {
+        p {
+          @include font-size(16px);
+          line-height: 24px;
+          color: #434343;
+          margin-bottom: 3px;
+
+          b {
+            color: #EA4036;
+          }
+        }
+
+        .main__form {
+          margin-bottom: 35px;
+
+          .form__group {
+            margin-bottom: 8px;
+
+            label {
+              width: 100%;
+              color: #434343;
+              @include font-size(16px);
+              margin-bottom: 8px;
+              font-weight: 400;
+            }
+
+            input {
+              width: 100%;
+              padding: 8px 18px 12px;
+              outline: unset;
+              border-radius: 6px;
+              border: 1px solid #E2E3E4;
+              @include placeholder {
+                color: #808081;
+                @include font-size(14.39px);
+              }
+            }
+
+            .group__info {
+              margin-bottom: 8px;
+            }
+          }
+
+          span {
+            color: #434343;
+            @include font-size(14px);
+
+            a {
+              color: #EA4036;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .main__btn {
+          @include flex();
+          justify-content: center;
+          flex-flow: column;
+          margin-bottom: 40px;
+
+          .btn__checkbox {
+            color: #808081;
+            @include font-size(14px);
+            margin-bottom: 12px;
+          }
+
+          button {
+            background-color: $color-main;
+            width: 100%;
+            color: #ffffff;
+            @include font-size(16px);
+            font-weight: bold;
+            padding: 12px 20px;
+            text-align: center;
+            border-radius: 6px;
+            margin-bottom: 11px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          .btn--fb {
+            background-color: #3B5998;
+          }
+
+          .btn--gg {
+            background-color: #E94A32;
+          }
+
+          .btn--block {
+            background-color: #808081;
+          }
+
+          span {
+            color: #434343;
+            @include font-size(14px);
+
+            a {
+              color: #EA4036;
+              font-weight: bold;
+            }
+          }
+        }
+
+        // ======= Modal register successful ======
+        .main__success {
+          margin-bottom: 32px;
+        }
+
+        // ====== End ==============
+
+        // ====== Modal password ========
+        .main__password {
+          p {
+            margin-bottom: 25px;
+          }
+
+          input {
+            width: 100%;
+            padding: 8px 18px 12px;
+            outline: unset;
+            border-radius: 6px;
+            border: 1px solid #E2E3E4;
+            margin-bottom: 15px;
+            @include placeholder {
+              color: #808081;
+              @include font-size(14.39px);
+            }
+          }
+        }
+
+        // ====== end ==========
+      }
+
+      .modal__register {
+        display: none;
+      }
+    }
+  }
+}

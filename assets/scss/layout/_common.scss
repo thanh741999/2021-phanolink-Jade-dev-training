@@ -28,7 +28,6 @@ button, input {
   border: unset;
   padding: 0;
 }
-
 section {
   margin-bottom: 20px;
   background-color: #FFFFFF;
@@ -155,3 +154,11 @@ main {
 }
 
 // end
+
+//======= line clamp ========
+.line__clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
