@@ -35,9 +35,10 @@
                 }
                 li {
                     @include font-size(14px);
-                    color: $color-main-text;
                     margin-bottom: 13px;
-                    cursor: pointer;
+                    a {
+                        color: $color-main-text;
+                    }
                     i {
                         opacity: 0;
                         margin-right: 5px;
@@ -218,8 +219,8 @@
         // ====== end =====
 
         // ====== user product like =====
-        .product__like {
-            padding: 0;
+        .info__product {
+            padding: 15px 0 0;
             .content__item {
                 width: calc(100% / 4);
             }
