@@ -175,8 +175,8 @@ $(document).ready(function () {
     // ========= cart ========
 
     // ========Cart login and register ======
-    $('.cart__header p').click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
+    $('.cart-login-register > h2').click(function () {
+        $(this).addClass('active active--green').siblings().removeClass('active').removeClass("active--green");
         let status = $(this).attr('status');
         if (status === 'register') {
             $('.cart__register').css('display', 'block');
@@ -236,4 +236,16 @@ $(document).ready(function () {
         }
     })
     // ==== end ====
+
+
+    // ======= add new address =====
+    $('.address-pagination button').click(function() {
+        $('.info__address').css('display','none');
+        $('.info__address--new').css('display','flex');
+    })
+    $('.address__bottom .back').click(function() {
+        $('.info__address').css('display','block');
+        $('.info__address--new').css('display','none');
+    })
+    // ======= end ======
 })

@@ -70,17 +70,15 @@ main {
 
   .main__content {
     .content__cart {
-      .cart__header {
+      .cart-login-register {
         text-align: center;
-
-        p {
+        h2 {
           cursor: pointer;
-        }
-
-        span {
-          display: block;
-          margin-top: 8px;
-          @include font-size(11px);
+          span {
+            display: block;
+            margin-top: 8px;
+            @include font-size(11px);
+          }
         }
       }
 
