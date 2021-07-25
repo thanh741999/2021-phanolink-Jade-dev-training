@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Language" content="en-us"/>
-    <title>Cart Location</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
@@ -22,15 +29,15 @@
         <div class="header__top__nofication header__top--group">
             <img src="assets/img/message2x.png" alt="nofication">
             <div class="text">
-                <p class="title">Thông báo</p>
+                <a class="title">Thông báo</a>
                 <span>của tôi</span>
             </div>
         </div>
         <div class="header__top__login header__top--group">
             <img src="assets/img/login2x.png" alt="login">
             <div class="text">
-                <p class="title">Đăng nhập </p>
-                <span>Tài khoản</span>
+                <button class="title" data-toggle="modal" data-target="#Modal-Login-Register">Đăng nhập</button>
+                <a href="user-info.html">Tài khoản</a>
             </div>
         </div>
     </div>
@@ -63,27 +70,27 @@
         <ul>
             <li class="bottom__item">
                 <img src="assets/img/menu2x.png" alt="menu">
-                <a>DANH MỤC SẢN PHẨM</a>
+                <a href="#.">DANH MỤC SẢN PHẨM</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/fire-red2x.png" alt="fire">
-                <a>KHUYẾN MÃI HOT</a>
+                <a href="#.">KHUYẾN MÃI HOT</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/localtion2x.png" alt="location">
-                <a>HỆ THỐNG NHÀ THUỐC</a>
+                <a href="#.">HỆ THỐNG NHÀ THUỐC</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/heart2x.png" alt="heart">
-                <a>GÓC SỨC KHỎE</a>
+                <a href="#.">GÓC SỨC KHỎE</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/home2x.png" alt="home">
-                <a>GIỚI THIỆU</a>
+                <a href="#.">GIỚI THIỆU</a>
             </li>
             <li class="bottom__item">
                 <img src="assets/img/question2x.png" alt="question">
-                <a>HƯỚNG DẪN</a>
+                <a href="#.">HƯỚNG DẪN</a>
             </li>
         </ul>
     </nav>
@@ -153,8 +160,8 @@
                 <div class="control__item">
                     <img src="assets/img/login2x.png" alt="login">
                     <div class="text">
-                        <p class="title">Đăng nhập </p>
-                        <span>Tài khoản</span>
+                        <button class="title" data-toggle="modal" data-target="#Modal-Login-Register">Đăng nhập</button>
+                        <a href="user-info.html">Tài khoản</a>
                     </div>
                 </div>
             </div>
@@ -211,146 +218,120 @@
 <!-- =========== End header ============= -->
 
 
-<!--============== Main =============-->
 <main>
     <section class="path">
         <div class="container">
             <ul class="path__content">
                 <li>Trang chủ</li>
-                <li><i class="fas fa-angle-right"></i> Giỏ hàng</li>
+                <li><i class="fas fa-angle-right"></i> Thông Tin Tài Khoản</li>
             </ul>
         </div>
     </section>
     <div class="container">
-        <section class="line-state location-line">
-            <div class="state__item">
-                <p>Đăng Nhập</p>
-                <span class="circle active">
-                        1
-                    </span>
-            </div>
-            <div class="state__item">
-                <p>Địa Chỉ Giao Hàng</p>
-                <span class="circle active">
-                        2
-                    </span>
-            </div>
-            <div class="state__item">
-                <p>Thanh Toán</p>
-                <span class="circle">
-                        3
-                    </span>
-            </div>
-        </section>
-        <section class="main__content cart-location">
-            <div class="content__cart">
-                <div class="location__header">
-                    <h2 class="header__title active--green active location__header">
-                        ĐỊA CHỈ GIAO HÀNG
-                    </h2>
+        <section class="user">
+            <div class="user__sidebar">
+                <div class="sidebar__top">
+                    <h2>Quản Lý Tài Khoản</h2>
+                    <ul class="sidebar__list">
+                        <li><i class="fas fa-angle-right"></i> <a href="user-info.html">Thông tin tài khoản</a></li>
+                        <li class="active"><i class="fas fa-angle-right"></i> <a href="#.">Quản Lý Đơn Hàng</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a href="user-product-like.html">Sản phẩm yêu thích</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a href="user-product-view.html">Sản phẩm đã xem</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a href="user-address.html">Sổ địa chỉ</a></li>
+                        <li><i class="fas fa-angle-right"></i> <a href="my-info.html">Thông báo của tôi</a></li>
+                    </ul>
                 </div>
-                <div class="location__content">
-                    <div class="content__item">
-                        <div class="item__info">
-                            <h2>LÊ DUY LÂN <i class="far fa-check-circle"></i> <span>Địa chỉ mặc định</span></h2>
-                            <p>Địa
-                                chỉ:<span> 149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span>
-                            </p>
-                            <p>Điện thoại:<span> 0767543789</span></p>
-                            <button class="active">
-                                Giao Đến Địa Chỉ Này
-                            </button>
-                        </div>
-                        <button class="item__btn" data-toggle="modal" data-target="#exampleModal">
-                            Chỉnh sửa
-                        </button>
+                <div class="sidebar__bottom">
+                    <div class="bottom__header">
+                        <h2 class="header__title active active--yellow">
+                            ĐƯỢC TÀI TRỢ
+                        </h2>
                     </div>
-                    <div class="content__item">
-                        <div class="item__info">
-                            <h2>LÊ DUY LÂN</h2>
-                            <p>Địa
-                                chỉ:<span> 149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span>
-                            </p>
-                            <p>Điện thoại:<span> 0767543789</span></p>
-                            <button>
-                                Giao Đến Địa Chỉ Này
-                            </button>
+                    <div class="bottom__product">
+                        <img src="assets/img/hot-sale-slide-1-2x.png" alt="hot side img">
+                        <div class="product__info">
+                            <h2>Sức khỏe giới tính</h2>
+                            <b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</b>
+                            <a href="#.">Xem Thêm</a>
                         </div>
-                        <button class="item__btn" data-toggle="modal" data-target="#exampleModal">
-                            Chỉnh sửa
-                        </button>
-                    </div>
-                    <div class="content__item">
-                        <div class="item__info">
-                            <h2>LÊ DUY LÂN</h2>
-                            <p>Địa
-                                chỉ:<span> 149 Nguyễn Thị Định, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Việt Nam</span>
-                            </p>
-                            <p>Điện thoại:<span> 0767543789</span></p>
-                            <button>
-                                Giao Đến Địa Chỉ Này
-                            </button>
-                        </div>
-                        <button class="item__btn" data-toggle="modal" data-target="#exampleModal">
-                            Chỉnh sửa
-                        </button>
                     </div>
                 </div>
             </div>
-            <div class="content__sidebar">
-                <div class="sidebar__bill">
-                    <div class="bill__header">
-                        <h4>Đơn Hàng (3 Sản Phẩm)</h4>
-                        <button>Sửa</button>
-                    </div>
-                    <div class="bill__product">
-                        <div class="product__info">
-                            <div class="info__quantity">
-                                <span>1x</span>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                            </div>
-                            <span>
-                                    800.000đ
-                                </span>
-                        </div>
-                        <div class="product__info">
-                            <div class="info__quantity">
-                                <span>1x</span>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                            </div>
-                            <span>
-                                    800.000đ
-                                </span>
-                        </div>
-                        <div class="product__info">
-                            <div class="info__quantity">
-                                <span>1x</span>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                            </div>
-                            <span>
-                                    800.000đ
-                                </span>
-                        </div>
-                    </div>
-                    <div class="bill__ship">
-                        <p>Tạm Tính <span>800.000đ</span></p>
-                        <p>Phí Vận Chuyển <span>800.000đ</span></p>
-                    </div>
-                    <div class="bill__total">
-                        <span>Thành Tiền</span>
-                        <div class="total__price">
-                            <b>800.000đ</b>
-                            <p>(Đã bao gồm VAT nếu có)</p>
-                        </div>
+            <div class="user__info">
+                <div class="info__header">
+                    <h2 class="header__title active--green active">SỔ ĐỊA CHỈ</h2>
+                    <div class="header__btn">
+                        <button>Xoá bộ lọc</button>
+                        <button class="btn__search header__title active active--grey" data-toggle="modal" data-target="#Modal-bill-search"><i class="fas fa-search"></i> Tìm Kiếm</button>
                     </div>
                 </div>
+                <!-- ======== user info ======= -->
+                <div class="info__bill">
+                    <p>Tìm kiếm:<span> Đơn hàng 697318275- từ 18/08/2019 đến 20/09/2019 - Sản Phẩm: blochkchain </span></p>
+                    <div class="bill__content">
+                        <div class="content__header">
+                            <h3 class="my-col-2">Mã Đơn Hàng</h3>
+                            <h3 class="my-col-2">Ngày Mua</h3>
+                            <h3 class="my-col-5">Sản Phẩm</h3>
+                            <h3 class="my-col-2">Tổng Tiền</h3>
+                            <h3 class="my-col-3">Trạng Thái</h3>
+                        </div>
+                        <div class="content__item">
+                            <div class="item__info">
+                                <b class="info__id  my-col-2 info__group">697318275</b>
+                                <span class="info__date my-col-2 info__group">18/08/2018</span>
+                                <p class="info__product my-col-5 info__group">Blockchain: Bản Chất Của Blockchain, Bitcoin, Tiền Điện Tử, Hợp Đồng Thông Minh Và Tương Lai Của Tiền Tệ...và 03 sản phẩm khác</p>
+                                <b class="info__total my-col-2 info__group">239.200 đ</b>
+                                <span class="info__state my-col-3 info__group">Giao hàng thành công</span>
+                            </div>
+                        </div>
+                        <div class="content__item">
+                            <div class="item__info">
+                                <b class="info__id  my-col-2 info__group">697318275</b>
+                                <span class="info__date my-col-2 info__group">18/08/2018</span>
+                                <p class="info__product my-col-5 info__group">Blockchain: Bản Chất Của Blockchain, Bitcoin, Tiền Điện Tử, Hợp Đồng Thông Minh Và Tương Lai Của Tiền Tệ...và 03 sản phẩm khác</p>
+                                <b class="info__total my-col-2 info__group">239.200 đ</b>
+                                <span class="info__state my-col-3 info__group">Giao hàng thành công</span>
+                            </div>
+                        </div>
+                        <!-- ========= bill responsive 575px -->
+                        <div class="content__sub">
+                            <div class="sub__item">
+                                <h2>Blockchain: Bản Chất Của Blockchain, Bitcoin, Tiền Điện Tử, Hợp Đồng Thông Minh Và Tương Lai Của Tiền Tệ...và 03 sản phẩm khác</h2>
+                                <p>Mã Đơn Hàng: <b class="info__id">697318275</b></p>
+                                <p>Ngày Mua: <span>18/08/2018</span></p>
+                                <p>Tổng Tiền: <b>239.200 đ</b></p>
+                                <p>Trạng Thái: <span>Giao hàng thành công</span></p>
+                            </div>
+                            <div class="sub__item">
+                                <h2>Blockchain: Bản Chất Của Blockchain, Bitcoin, Tiền Điện Tử, Hợp Đồng Thông Minh Và Tương Lai Của Tiền Tệ...và 03 sản phẩm khác</h2>
+                                <p>Mã Đơn Hàng: <b class="info__id">697318275</b></p>
+                                <p>Ngày Mua: <span>18/08/2018</span></p>
+                                <p>Tổng Tiền: <b>239.200 đ</b></p>
+                                <p>Trạng Thái: <span>Giao hàng thành công</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__pagination bill__pagination">
+                        <nav aria-label="...">
+                            <ul class="pagination pagination-sm">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#." tabindex="-1">1</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#.">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#.">3</a></li>
+                                <li class="page-item"><a href="#.">4</a></li>
+                                <li class="page-item"><a href="#.">5</a></li>
+                                <li class="page-item"><a href=""><i class="fas fa-angle-right"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- ======== end user info========= -->
             </div>
         </section>
     </div>
 </main>
-<!--============== End Main ==========-->
-
-
 <!-- =========== footer ================-->
 <footer class="footer" id="footer">
     <div class="container footer__top">
@@ -440,93 +421,81 @@
 </footer>
 <!-- =========== End footer ============ -->
 
-<!-- ========modal========= -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<!-- =========== Modal search bill ==========-->
+<div class="modal fade" id="Modal-bill-search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="header__title active--green active">TẠO MỚI ĐỊA CHỈ GIAO HÀNG</h2>
+            <div class="modal-header user__modal">
+                <h2 class="header__title active active--green">
+                    TÌM KIẾM ĐƠN HÀNG
+                </h2>
             </div>
-            <div class="modal-body">
-                <form action="">
-                    <div class="form__name form__group">
-                        <label for="name"><span>*</span> Họ tên</label>
-                        <input type="text" id="name" placeholder="Lê Duy Lân">
+            <div class="modal__main">
+                <form action="" class="main__form">
+                    <div class="form__group">
+                        <label for="">Mã Đơn Hàng</label>
+                        <input type="text" placeholder="Nhập mã đơn hàng">
                     </div>
-                    <div class="form__mail form__group">
-                        <label for="mail"><span>*</span> Email</label>
-                        <input type="text" id="mail" placeholder="lan@phanopharmacy.com">
-                    </div>
-                    <div class="form__group form__phone-number">
-                        <label for="phone-number"><span>*</span> Số điện thoại</label>
-                        <input type="text" id="phone-number" placeholder="0767543789">
-                    </div>
-                    <div class="form__group form__select">
-                        <label for="city">Tỉnh/ Thành Phố</label>
-                        <input type="text" id="city" placeholder="Hồ Chí Minh">
-                        <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false"></i>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li class="dropdown-item">Ha Noi</li>
-                            <li class="dropdown-item">Da Nang</li>
-                            <li class="dropdown-item">Hue</li>
-                        </ul>
-                    </div>
-                    <div class="form__group form__select">
-                        <label for="commune">Tỉnh/ Thành Phố</label>
-                        <input type="text" id="commune" placeholder="Nguyễn Văn Trỗi">
-                        <i class="fas fa-sort" id="dropdownMenuButton-city" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false"></i>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-city">
-                            <li class="dropdown-item">Nguyễn Văn Trỗi</li>
-                            <li class="dropdown-item">Nguyễn Văn Trỗi</li>
-                            <li class="dropdown-item">Nguyễn Văn Trỗi</li>
-                        </ul>
-                    </div>
-                    <div class="form__group form__select">
-                        <label for="district">Quận Huyện</label>
-                        <input type="text" id="district" placeholder="Quận 3">
-                        <i class="fas fa-sort" id="dropdownMenuButton-district" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false"></i>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-district">
-                            <li class="dropdown-item">Quận 4</li>
-                            <li class="dropdown-item">Quận 5</li>
-                            <li class="dropdown-item">Quận 6</li>
-                        </ul>
+                    <div class="day__book">
+                        <div class="book__form form__group">
+                            <label for="">Ngày Đặt Hàng Từ</label>
+                            <input type="text" placeholder="01/08/2019">
+                            <i class="fas fa-sort" id="dropdownMenuButton-book" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></i>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-book">
+                                <li class="dropdown-item">02/08/2019</li>
+                                <li class="dropdown-item">03/08/2019</li>
+                                <li class="dropdown-item">04/08/2019</li>
+                            </ul>
+                        </div>
+                        <div class="book__form form__group">
+                            <label for="">Ngày Đặt Hàng Đến</label>
+                            <input type="text" placeholder="10/11/2019">
+                            <i class="fas fa-sort" id="dropdownMenuButton-end" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></i>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-end">
+                                <li class="dropdown-item">11/11/2019</li>
+                                <li class="dropdown-item">12/11/2019</li>
+                                <li class="dropdown-item">13/11/2019</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="form__group">
-                        <label for="address">Địa Chỉ</label>
-                        <textarea rows="4" cols="0" placeholder="184 Nguyễn Văn Trỗi, quận 3, HCM"></textarea>
+                        <label for="">Tên Sản Phẩm</label>
+                        <input type="text" placeholder="Nhập tên sản phẩm">
+                    </div>
+                    <div class="form__group">
+                        <label for="">Trạng Thái</label>
+                        <input type="text" placeholder="Chọn trạng thái đơn hàng">
+                        <i class="fas fa-sort" id="dropdownMenuButton-state" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-state">
+                            <li class="dropdown-item">Kho</li>
+                            <li class="dropdown-item">Đang vận chuyển</li>
+                            <li class="dropdown-item">Giao hàng thành công</li>
+                        </ul>
                     </div>
                 </form>
-                <div class="address">
-                    <span>Loại Địa Chỉ</span>
-                    <div class="address__btn">
-                        <button class="house">
-                            Nhà Riêng
-                        </button>
-                        <button>
-                            Công Ty
-                        </button>
-                    </div>
-                    <form action="">
-                        <input type="checkbox" id="default">
-                        <label for="default">Sử dụng làm địa chỉ mặc định</label>
-                    </form>
+                <div class="main__btn">
+                    <button><i class="fas fa-search"></i>Tìm Kiếm</button>
+                    <button class="black" data-dismiss="modal">Xoá tìm kiếm</button>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button><i class="far fa-save"></i> CẬP NHẬT THAY ĐỔI</button>
-                <p><span>*</span> Bắt buộc</p>
             </div>
         </div>
     </div>
 </div>
-<!-- ========End modal======= -->
-</body>
+<!-- ===== End  ======= -->
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
 <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
+
+</body>
 </html>
+

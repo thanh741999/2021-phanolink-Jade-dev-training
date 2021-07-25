@@ -283,6 +283,14 @@ main {
   }
 }
 
+.active--grey {
+  padding: 12px 28px 12px 20px;
+
+  &::before {
+    border-bottom: 5px solid #58595B;
+    border-left: 5px solid transparent;    
+  }
+}
 // ======== Modal header title =======
 .modal {
   .modal-content {
