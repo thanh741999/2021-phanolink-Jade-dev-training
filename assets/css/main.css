@@ -20922,4 +20922,58 @@ main .user__info .back {
   font-size: 16px;
   font-size: 1rem;
 }
+
+main .user__info .info__notifition {
+  padding-top: 17px;
+}
+
+main .user__info .info__notifition .notifition__item {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 40px 40px;
+  border-top: 1px solid #E5E5E4;
+}
+
+@media screen and (max-width: 475px) {
+  main .user__info .info__notifition .notifition__item {
+    display: block;
+  }
+  main .user__info .info__notifition .notifition__item img {
+    display: block;
+    margin: 0 auto 15px;
+  }
+}
+
+main .user__info .info__notifition .notifition__item .item__description {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 475px) {
+  main .user__info .info__notifition .notifition__item .item__description {
+    margin-left: 0;
+  }
+}
+
+main .user__info .info__notifition .notifition__item .item__description h4 {
+  font-weight: bold;
+  color: #434343;
+}
+
+main .user__info .info__notifition .notifition__item .item__description p {
+  color: #808081;
+}
+
+main .user__info .info__notifition .notifition__item .item__description a {
+  color: #01ADAB;
+}
+
+main .user__info .notifition-pagination {
+  background-color: #ebebeb;
+}
 /*# sourceMappingURL=main.css.map */
