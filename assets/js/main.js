@@ -248,4 +248,28 @@ $(document).ready(function () {
         $('.info__address--new').css('display','none');
     })
     // ======= end ======
+
+
+    // ======= user bil detail =====
+    $('.bill__content .info__id').click(function() {
+        $('.info__bill').css('display','none');
+        $('.info__bill-detail').css('display','block');
+        $('.info__bill-ship').css('display','flex');
+        $('.info__bill-product').css('display','block');
+        $('.back').css('display','inline-block');
+        $('.user__info').css('background-color','unset');
+        $('.info__header').css('background-color','#ffffff');
+        $('.header__btn').css('display','none');
+    })
+    $('.back').click(function() {
+        $('.info__bill').css('display','block');
+        $('.info__bill-detail').css('display','none');
+        $('.info__bill-ship').css('display','none');
+        $('.info__bill-product').css('display','none');
+        $('.back').css('display','none');
+        $('.user__info').css('background-color','#ffffff');
+        $('.info__header').css('background-color','unset');
+        $('.header__btn').css('display','block');
+    })
+    //  ====== end ======
 })

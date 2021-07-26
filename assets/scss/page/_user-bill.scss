@@ -5,6 +5,14 @@ main {
                 @include flex();
                 align-items: center;
                 justify-content: space-between;
+                @media #{$info-tablet-vertical} {
+                    padding: 0 15px;
+                }
+                h2 {
+                    @media screen and (max-width: 375px) {
+                        padding: 12px;
+                    }
+                }
                 .header__btn {
                     button {
                         color: #EA4036;
@@ -100,6 +108,7 @@ main {
                             }
                             .info__id {
                                 color: $color-main;
+                                cursor: pointer;
                             }
                             .info__product {
                                 margin: 0;
@@ -146,6 +155,192 @@ main {
                     background-color: #EBEBEB;
                 }
             }
+
+            // ======= user info bill-detial =======
+            .info__bill-detail {
+                display: none;
+                padding: 10px 32px 27px;
+                margin-bottom: 15px;
+                background-color: #FFFFFF;
+                @media screen and (max-width: 575px) {
+                    padding: 15px;
+                }
+                p {
+                    color: #808081;
+                    @include font-size(20px);
+                    margin-bottom: 11px;
+                    b {
+                        color: #434343;
+                    }
+                    &:last-child {
+                        b {
+                            color: #EA4036
+                        }
+                    }
+                    &:first-child {
+                        b {
+                            color: $color-main;
+                        }
+                    }
+                }
+            }
+            .info__bill-ship {
+                display: none;
+                background-color: #EBEBEB;
+                flex-wrap: wrap;
+                margin: 0 -8px 15px;
+                @media screen and (max-width: 575px) {
+                    margin: 0 0 15px;
+                }
+                .ship__item {
+                    background-color: #FFFFFF;
+                    width: calc((100% / 3) - 16px);
+                    margin: 0 8px;
+                    @media screen and (max-width: 575px) {
+                        width: 100%;
+                        margin: 0 0 15px;
+                    }
+                    h4.ship--title {
+                        padding: 15px 23px;
+                        color: #808081;
+                        @include font-size(15px);
+                        border-bottom: 1px solid #E5E5E4;
+                        @media screen and (max-width: 575px) {
+                            padding: 15px;
+                        }
+                    }
+                    .item__content {
+                        padding: 23px;
+                        @media screen and (max-width: 575px) {
+                            padding: 15px;
+                        }
+                        p {
+                            @include font-size(14px);
+                            color: #434343;
+                            &:first-child {
+                                margin-bottom: 16px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .info__bill-product {
+                display: none;
+                background-color: #FFFFFF;
+                .bil-product__header {
+                    @include flex();
+                    @media screen and (max-width: 575px) {
+                        display: none;
+                    }
+                    p {
+                        padding: 10px 23px;
+                        color: #808081;
+                        @include font-size(14px);
+                        width: calc(100% / 12 * 2);
+                        text-align: center;
+                        &:first-child {
+                            width: calc(100% / 12 * 7);
+                            text-align: left;
+                        }
+                    }
+                }
+                .bill-product__content {
+                    .content__item {
+                        @include flex();
+                        @include font-size(14px);
+                        align-items: center;
+                        border-top: 1px solid #E5E5E4;
+                        @media screen and (max-width: 575px) {
+                            display: block;
+                        }
+                        .item__product {
+                            @include flex();
+                            align-items: center;
+                            width: calc(100% / 12 * 7);
+                            padding: 15px 23px;
+                            @media screen and (max-width: 575px) {
+                                width: unset;
+                                padding: 15px;
+                            }
+                            img {
+                                height: 60px;
+                                margin-right: 18px;
+                            }
+                            .product__description {
+                                p {
+                                    color: #434343;
+                                    line-height: 20px;
+                                    white-space: pre-line;
+                                    @media screen and (max-width: 575px) {
+                                        line-height: unset;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                span {
+                                    display: none;
+                                    @media screen and (max-width: 575px) {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                        p.total,p.item__price, p.item__quantity {
+                            width: calc(100% / 12 * 2);
+                            text-align: center;
+                            padding: 15px;
+                            @media screen and (max-width: 575px) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .bill-product__total {
+                    padding: 20px 23px;
+                    @include flex();
+                    border-top: 1px solid #E5E5E4;
+                    @media screen and (max-width: 575px) {
+                        padding: 15px;
+                    }
+                    .total__name {
+                        width: calc(100% / 12 * 10);
+                        text-align: right;
+                        @media screen and (max-width: 575px) {
+                            width: calc(100% / 12 * 8);
+                            text-align: left;
+                        }
+                        p {
+                            @include font-size(14px);
+                            color: #808081;
+                            margin-bottom: 15px;
+                        }
+                    }
+                    .total__price{
+                        width: calc(100% / 12 * 2);
+                        text-align: center;
+                        @include font-size(14px);
+                        color: #808081;
+                        @media screen and (max-width: 575px) {
+                            width: calc(100% / 12 * 4);
+                        }
+                        span {
+                            margin-left: 30px;
+                            display: block;
+                            margin-bottom: 15px;
+                        }
+                        b {
+                            color: #EA4036;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+            .back {
+                display: none;
+                color: $color-main;
+                @include font-size(14px);
+            }
+            // ======= end ========
         }
     }
 }

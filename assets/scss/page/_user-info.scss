@@ -62,6 +62,9 @@
             }
             .bottom__header {
                 padding: 0 23px;
+                @media #{$info-500} {
+                    padding: 0 15px;
+                }
             }
             .bottom__product {
                 padding: 15px 23px;
