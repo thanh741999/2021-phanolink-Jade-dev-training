@@ -175,8 +175,8 @@ $(document).ready(function () {
     // ========= cart ========
 
     // ========Cart login and register ======
-    $('.cart__header p').click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
+    $('.cart-login-register > h2').click(function () {
+        $(this).addClass('active active--green').siblings().removeClass('active').removeClass("active--green");
         let status = $(this).attr('status');
         if (status === 'register') {
             $('.cart__register').css('display', 'block');
@@ -211,6 +211,9 @@ $(document).ready(function () {
             $('.modal__login').css('display', 'block');
         }
     })
+
+
+    // custom modal
     $('.btn--modal > button').click(function () {
         setTimeout(function () {
             $("body").addClass("modal-open");
@@ -221,4 +224,52 @@ $(document).ready(function () {
             $("body").addClass("modal-open");
         }, 500)
     })
+    // end
+
+    // ==== check change-password ====
+    $('.content__change-password  input[type="checkbox"]').click(function () {
+        if ($(this).is(":checked")) {
+            $('.password__form').css('display','block');
+            console.log('a');
+        } else {
+            $('.password__form').css('display','none'); 
+        }
+    })
+    // ==== end ====
+
+
+    // ======= add new address =====
+    $('.address-pagination button').click(function() {
+        $('.info__address').css('display','none');
+        $('.info__address--new').css('display','flex');
+    })
+    $('.address__bottom .back').click(function() {
+        $('.info__address').css('display','block');
+        $('.info__address--new').css('display','none');
+    })
+    // ======= end ======
+
+
+    // ======= user bil detail =====
+    $('.bill__content .info__id').click(function() {
+        $('.info__bill').css('display','none');
+        $('.info__bill-detail').css('display','block');
+        $('.info__bill-ship').css('display','flex');
+        $('.info__bill-product').css('display','block');
+        $('.back').css('display','inline-block');
+        $('.user__info').css('background-color','unset');
+        $('.info__header').css('background-color','#ffffff');
+        $('.header__btn').css('display','none');
+    })
+    $('.back').click(function() {
+        $('.info__bill').css('display','block');
+        $('.info__bill-detail').css('display','none');
+        $('.info__bill-ship').css('display','none');
+        $('.info__bill-product').css('display','none');
+        $('.back').css('display','none');
+        $('.user__info').css('background-color','#ffffff');
+        $('.info__header').css('background-color','unset');
+        $('.header__btn').css('display','block');
+    })
+    //  ====== end ======
 })

@@ -1,0 +1,243 @@
+.info__address {
+  padding-top: 25px;
+
+  .content__item {
+    padding: 18px 25px 22px;
+    border-top: 1px solid #E5E5E4;
+    @include flex();
+    justify-content: space-between;
+    align-items: flex-start;
+    @media #{$info-500} {
+      display: block;
+    }
+
+    .item__info {
+      h2 {
+        @include flex();
+        align-items: center;
+        @include font-size(14px);
+        font-weight: bold;
+        margin: 0 0 10px;
+
+        i {
+          color: $color-main;
+          margin: 0 5px 0 4px;
+        }
+
+        span {
+          @include font-size(12px);
+          color: $color-main;
+        }
+      }
+
+      p {
+        margin-bottom: 8px;
+        color: #808081;
+        @include font-size(14px);
+
+        span {
+          color: #434343;
+        }
+      }
+
+      button {
+        color: #ffffff;
+        font-weight: bold;
+        @include font-size(13.29px);
+        padding: 8px 20px 12px 18px;
+        border-radius: 5px;
+        background-color: #808081;
+        @media #{$info-500} {
+          margin-bottom: 10px;
+        }
+      }
+
+      button.active {
+        background-color: $color-main;
+      }
+    }
+
+    .item__btn {
+      @include font-size(14px);
+
+      .btn--update {
+        color: $color-main;
+        margin-right: 20px;
+      }
+
+      button {
+        background-color: unset;
+        color: #EA4036;
+      }
+    }
+  }
+
+  .address-pagination {
+    background-color: #EBEBEB;
+
+    nav {
+      @include flex();
+      align-items: center;
+      justify-content: space-between;
+
+      ul {
+        margin: 11px 0;
+      }
+
+      button {
+        background-color: $color-main;
+        @include font-size(14px);
+        font-weight: bold;
+        color: #ffffff;
+        padding: 8px 15px;
+        text-align: center;
+        border-radius: 5px;
+
+        i {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+// modal
+#Modal-delete-address {
+  .modal-content {
+    .modal__main {
+      p {
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+// ==== End modal =======
+
+// ===== new address =====
+.user__info {
+  .info__address--new {
+    display: none;
+
+    .address__form {
+      p {
+        @include font-size(14.30px);
+        color: #808081;
+
+        span {
+          color: #EA4036;
+        }
+      }
+
+      .form__select {
+        position: relative;
+
+        i {
+          position: absolute;
+          bottom: 12px;
+          right: 8px;
+        }
+      }
+
+      .form__group {
+        textarea {
+          width: 100%;
+          resize: unset;
+        }
+      }
+    }
+
+    .address__style {
+      width: calc(40% - 60px);
+      margin-left: 60px;
+      padding-top: 40px;
+      @media screen and (max-width: 1200px) {
+        width: calc(40% - 30px);
+        margin-left: 30px;
+      }
+      @media screen and (max-width: 650px) {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+        margin-bottom: 20px;
+      }
+
+      form {
+        margin-bottom: 14px;
+      }
+
+      h3 {
+        @include font-size(16px);
+        color: #434343;
+        margin-bottom: 8px;
+      }
+
+      label {
+        width: unset;
+        color: $color-main;
+        @media screen and (max-width: 1200px) {
+          font-size: .8rem;
+        }
+      }
+
+      .address__btn {
+        @include flex();
+        align-items: center;
+        flex-wrap: wrap;
+        border: 1px solid #E2E3E4;
+        border-radius: 5px;
+        margin-bottom: 18px;
+
+        button {
+          width: 50%;
+          background-color: unset;
+          @include font-size(14.39px);
+          padding: 10px 0;
+          text-align: center;
+        }
+
+        .house {
+          color: #ffffff;
+          background-color: #808081;
+          border-bottom-left-radius: 5px;
+          border-top-left-radius: 5px;
+          @include font-size(16px);
+          font-weight: bold;
+        }
+      }
+    }
+
+    .address__bottom {
+      width: 100%;
+
+      button {
+        color: #ffffff;
+        background-color: $color-main;
+        @include font-size(18px);
+        font-weight: bold;
+        text-align: center;
+        padding: 11px 0 14px;
+        width: 100%;
+        margin-bottom: 11px;
+
+        i {
+          margin-right: 8px;
+        }
+      }
+
+      .back {
+        background-color: unset;
+        color: #434343;
+        @include font-size(16px);
+        font-weight: 400;
+        margin-bottom: 0;
+
+        i {
+          color: $color-main;
+        }
+      }
+    }
+  }
+}
+
+// ===== end =======

@@ -7,18 +7,15 @@
     @include flex();
 
     li {
+      margin-right: 12px;
+      color: #808081;
+      @include font-size(12px);
       &:last-child {
         color: #505050;
         font-family: UTM-intel-Bold;
       }
-
-      margin-right: 8px;
-      color: #808081;
-      @include font-size(12px);
-
       i {
-        color: #808081;
-        @include font-size(15.75px);
+        margin-right: 10px;
       }
     }
   }
@@ -290,50 +287,6 @@
     }
 
     // ====== end product ======
-
-    // ===== pagination=====
-    .section__pagination {
-      text-align: right;
-
-      .pagination {
-        li {
-          display: inline-block;
-
-          a {
-            @include font-size(15.75px);
-            font-family: Myriad-Pro-Regular;
-            color: #808081;
-            background-color: #EBEBEB;
-            border: unset;
-            padding: 0 6px;
-            border-radius: 5px;
-            height: 25px;
-            width: 25px;
-            line-height: 25px;
-            text-align: center;
-
-            i {
-              line-height: 25px;
-            }
-          }
-
-          &:last-child {
-            a {
-              border: 1px solid #808081;
-            }
-          }
-        }
-
-        .disabled {
-          a {
-            background-color: $color-main;
-            color: #FFFFFF;
-          }
-        }
-      }
-    }
-
-    // ===== end pagination=====
 
     // ==== seen =====
     .section__seen {

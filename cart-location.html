@@ -244,11 +244,11 @@
         </section>
         <section class="main__content cart-location">
             <div class="content__cart">
-                <h2 class="cart__header location__header">
-                    <p class="active">
+                <div class="location__header">
+                    <h2 class="header__title active--green active location__header">
                         ĐỊA CHỈ GIAO HÀNG
-                    </p>
-                </h2>
+                    </h2>
+                </div>
                 <div class="location__content">
                     <div class="content__item">
                         <div class="item__info">
@@ -446,7 +446,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="active">TẠO MỚI ĐỊA CHỈ GIAO HÀNG</h2>
+                <h2 class="header__title active--green active">TẠO MỚI ĐỊA CHỈ GIAO HÀNG</h2>
             </div>
             <div class="modal-body">
                 <form action="">
@@ -476,9 +476,9 @@
                     <div class="form__group form__select">
                         <label for="commune">Tỉnh/ Thành Phố</label>
                         <input type="text" id="commune" placeholder="Nguyễn Văn Trỗi">
-                        <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        <i class="fas fa-sort" id="dropdownMenuButton-city" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false"></i>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-city">
                             <li class="dropdown-item">Nguyễn Văn Trỗi</li>
                             <li class="dropdown-item">Nguyễn Văn Trỗi</li>
                             <li class="dropdown-item">Nguyễn Văn Trỗi</li>
@@ -487,9 +487,9 @@
                     <div class="form__group form__select">
                         <label for="district">Quận Huyện</label>
                         <input type="text" id="district" placeholder="Quận 3">
-                        <i class="fas fa-sort" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        <i class="fas fa-sort" id="dropdownMenuButton-district" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false"></i>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-district">
                             <li class="dropdown-item">Quận 4</li>
                             <li class="dropdown-item">Quận 5</li>
                             <li class="dropdown-item">Quận 6</li>

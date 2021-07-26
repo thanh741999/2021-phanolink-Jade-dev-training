@@ -9,30 +9,7 @@ main {
 
   .cart-buy {
     .buy__header {
-      p {
-        width: auto;
-        padding: 17px;
-        transform: translateY(-6px);
-        @media #{$info-phone} {
-          transform: translateY(-9px);
-        }
-      }
-
-      p.error {
-        background-color: #EA4036;
-        color: #ffffff;
-
-        &::before {
-          content: "";
-          height: 0;
-          width: 0;
-          position: absolute;
-          top: 0;
-          left: -5px;
-          border-bottom: 5px solid #8E2926;
-          border-left: 5px solid transparent;
-        }
-      }
+      text-align: center;
     }
 
     .buy__content {
@@ -56,6 +33,7 @@ main {
             color: #838383;
             @include font-size(16px);
             margin-left: 8px;
+            width: unset;
           }
         }
       }

@@ -1,0 +1,42 @@
+main {
+    .user{
+        &__info {
+            .info__notifition {
+                padding-top: 17px;
+                .notifition__item {
+                    @include flex();
+                    align-items: center;
+                    padding: 20px 40px 40px;
+                    border-top: 1px solid #E5E5E4;
+                    @media screen and (max-width: 475px) {
+                        display: block;
+                        img {
+                            display: block;
+                            margin: 0 auto 15px;
+                        }
+                    }
+                    .item__description {
+                         @include font-size(14px);
+                         margin-left: 50px;
+                         @media screen and (max-width: 475px) {
+                            margin-left: 0;
+                         }
+                        h4 {
+                            font-weight: bold;
+                            color: #434343;
+                        }
+                        p {
+                            color: #808081;
+                        }
+                        a {
+                            color: $color-main;
+                        }
+                    }
+                }
+            }
+            .notifition-pagination {
+                background-color: #ebebeb;
+            }
+        }
+    }
+}

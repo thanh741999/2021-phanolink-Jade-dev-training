@@ -1,0 +1,233 @@
+.user {
+    background-color: unset;
+    @include flex();
+    flex-wrap: wrap;
+    align-items: flex-start;
+    &__sidebar {
+        width: 25%;
+        @include flex();
+        flex-flow: column;
+        @media #{$info-tablet-vertical} {
+            width: 100%;
+            order: 2;
+            @include flex();
+            flex-wrap: wrap;
+            flex-flow: unset;
+        }
+        .sidebar__top {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            @media #{$info-tablet-vertical} {
+                width: 50%;
+                margin-bottom: 0;
+            }
+            h2 {
+                padding: 15px;
+                @include font-size(15px);
+                color: $color-main-text;
+                font-weight: bold;
+                border-bottom: 1px solid #E2E3E4;
+            }
+            .sidebar__list {
+                padding: 20px 15px 92px;
+                @media screen and (max-width: 375px) {
+                    padding: 20px 15px 40px
+                }
+                li {
+                    @include font-size(14px);
+                    margin-bottom: 13px;
+                    a {
+                        color: $color-main-text;
+                    }
+                    i {
+                        opacity: 0;
+                        margin-right: 5px;
+                    }
+                }
+                li.active {
+                    color: #434343;
+                    font-weight: bold;
+                    i {
+                        color: $color-main;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .sidebar__bottom {
+            background-color: #ffffff;
+            @media #{$info-tablet-vertical} {
+                width: calc(50% - 20px);
+                margin-left: 20px;
+            }
+            .bottom__header {
+                padding: 0 23px;
+                @media #{$info-500} {
+                    padding: 0 15px;
+                }
+            }
+            .bottom__product {
+                padding: 15px 23px;
+                @media #{$info-500} {
+                    padding: 15px;
+                }
+                .product__info {
+                    padding: 0;
+                    h2 {
+                        color: $color-main;
+                        @include font-size(14px);
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+                    b {
+                        @include font-size(20px);
+                        color: #434343;
+                        line-height: 28px;
+                        margin-bottom: 50px;
+                        display: inline-block;
+                        @media #{$info-500} {
+                            @include font-size(16px);
+                            line-height: unset;
+                        }
+                        @media screen and (max-width: 385px) {
+                            font-size: .8rem;
+                        } 
+                    }
+                    a {
+                        color: $color-main;
+                        @include font-size(12px);
+                    }
+                }
+            }
+        }
+    }
+    &__info {
+        width: calc(75% - 16px);
+        background-color: #ffffff;
+        margin-left: 16px;
+        @media #{$info-tablet-vertical} {
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+        .info__header {
+            padding: 0 23px;
+        }
+        // ====== user info ====
+        .info__content {
+            @include flex();
+            flex-wrap: wrap;
+            padding: 30px 80px 37px 71px;
+            @media #{$info-500} {
+                padding: 30px 15px 37px;
+            }
+            .content__form {
+                width: 60%;
+                margin-bottom: 35px;
+                @media screen and (max-width: 650px) {
+                    width: 100%;
+                }
+                .form__group {
+                    margin-bottom: 14px;
+                    input {
+                        padding: 8.5px 18px 11px;
+                    }
+                    .sex__state {
+                        @include flex();
+                        align-items: center;
+                        border-radius: 5px;
+                        border: 1px solid #E2E3E4;
+                        button {
+                            width: 50%;
+                            padding: 14px 0;
+                            color: #808081;
+                            @include font-size(14.39px);
+                        }
+                        button.male {
+                            background-color: #808081;
+                            color: #ffffff;
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                        }
+                    }
+                    .birthday {
+                        @include flex();
+                        align-items: center;
+                        justify-content: space-between;
+                        &__group {
+                            width: calc((100% - 30) /3) ;
+                            margin-right: 15px;
+                            position: relative;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            i {
+                                position: absolute;
+                                top: 11px;
+                                right: 9px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                p {
+                    @include font-size(14.39px);
+                    color: #808081;
+                    span {
+                        color: #EA4036;
+                    }
+                }
+            }
+            .content__change-password {
+                width: 40%;
+                padding: 35px 0 0 60px;
+                @media screen and (max-width: 1200px) {
+                    padding: 35px 0 0 20px;
+                }
+                @media screen and (max-width: 650px) {
+                    width: 100%;
+                    padding: 0;
+                    margin-bottom: 25px;
+                }
+                .check-box {
+                    margin-bottom: 30px;
+                    input[type = "checkbox"] {
+                        width: unset;
+                        @include font-size(16px);
+                        color: #434343;
+                    }
+                }
+                .password__form {
+                    display: none;
+                    .form__group {
+                        margin-bottom: 15px;
+                        input {
+                            padding: 10px 18px 12px;
+                        }
+                    }
+                }
+            }
+            .btn--save {
+                width: 100%;
+                color: #ffffff;
+                @include font-size(18px);
+                font-weight: bold;
+                background-color: $color-main;
+                padding: 12px 0 14px;
+                i {
+                    margin-right: 8px;
+                }
+            }
+        }
+        // ====== end =====
+
+        // ====== user product like =====
+        .info__product {
+            padding: 15px 0 0;
+            .content__item {
+                width: calc(100% / 4);
+            }
+        }
+        // ===== end =======
+    }
+}

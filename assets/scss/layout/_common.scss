@@ -28,6 +28,27 @@ button, input {
   border: unset;
   padding: 0;
 }
+
+input[type="text"] {
+  width: 100%;
+  outline: unset;
+  border-radius: 6px;
+  border: 1px solid #E2E3E4;
+  @include placeholder {
+    color: #808081;
+    @include font-size(14.39px);
+  }
+}
+
+label {
+  font-weight: 400;
+  width: 100%;
+  color: #434343;
+  @include font-size(16px);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
 section {
   margin-bottom: 20px;
   background-color: #FFFFFF;
@@ -138,7 +159,49 @@ main {
 }
 
 // ===== end custom ======
+// ====== pagination =====
+.section__pagination {
+  text-align: right;
 
+  .pagination {
+    li {
+      display: inline-block;
+
+      a {
+        @include font-size(15.75px);
+        font-family: Myriad-Pro-Regular;
+        color: #808081;
+        background-color: #EBEBEB;
+        border: unset;
+        padding: 0 6px;
+        border-radius: 5px;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        text-align: center;
+
+        i {
+          line-height: 25px;
+        }
+      }
+
+      &:last-child {
+        a {
+          border: 1px solid #808081;
+        }
+      }
+    }
+
+    .disabled {
+      a {
+        background-color: $color-main;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+// ====== end pagination ====
 // dropdown-menu custom
 .dropdown-menu {
   width: 100%;
@@ -161,4 +224,84 @@ main {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+// header title =======
+.header__title {
+  @include font-size(14px);
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transform: translateY(-5px);
+
+}
+
+.active {
+  color: #808081;
+
+  &::before {
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: -8px;
+  }
+}
+
+.active--yellow {
+  background-color: #EEE8A9;
+  padding: 5px 11px 8px;
+
+  &::before {
+    border-bottom: 5px solid #C6BE85;
+    border-left: 8px solid transparent;
+  }
+}
+
+.active--green {
+  background-color: $color-main;
+  padding: 12px 28px 12px 20px;
+  color: #FFFFFF;
+
+  &::before {
+    border-bottom: 5px solid #016B68;
+    border-left: 8px solid transparent;
+  }
+}
+
+.active--red {
+  background-color: #EA4036;
+  padding: 12px 28px 12px 20px;
+  color: #FFFFFF;
+
+  &::before {
+    border-bottom: 5px solid #842424;
+    border-left: 8px solid transparent;
+  }
+}
+
+.active--grey {
+  padding: 12px 28px 12px 20px;
+
+  &::before {
+    border-bottom: 5px solid #58595B;
+    border-left: 5px solid transparent;    
+  }
+}
+// ======== Modal header title =======
+.modal {
+  .modal-content {
+    .modal-header {
+      padding: 0;
+
+      .header__title {
+        @include font-size(22px);
+        font-weight: bold;
+        padding: 12px 18px 12px 20px;
+      }
+    }
+  }
 }
