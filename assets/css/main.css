@@ -20976,4 +20976,208 @@ main .user__info .info__notifition .notifition__item .item__description a {
 main .user__info .notifition-pagination {
   background-color: #ebebeb;
 }
+
+main .articles__banner {
+  background-image: url(../img/articles-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 309px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  main .articles__banner {
+    height: 175px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main .articles__banner {
+    height: 134px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main .articles__banner {
+    height: 110px;
+  }
+}
+
+main .articles__banner .banner__content {
+  width: 560px;
+  padding: 58px 80px 70px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+  main .articles__banner .banner__content {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .articles__banner .banner__content {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main .articles__banner .banner__content {
+    padding: 15px;
+  }
+}
+
+main .articles__banner .banner__content h2 {
+  font-size: 57.03px;
+  font-size: 3.56438rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  main .articles__banner .banner__content h2 {
+    font-size: 32px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main .articles__banner .banner__content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
+
+main .articles__banner .banner__content p {
+  font-size: 15.75px;
+  font-size: 0.98438rem;
+}
+
+@media only screen and (max-width: 991px) {
+  main .articles__banner .banner__content p.line__clamp {
+    -webkit-line-clamp: 3;
+  }
+}
+
+main .articles__content {
+  background-color: unset;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .articles__content .content__main {
+  width: calc(80% - 15px);
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  main .articles__content .content__main {
+    width: calc(75% - 15px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main .articles__content .content__main {
+    width: 100%;
+  }
+}
+
+main .articles__content .content__main .view {
+  color: #505050;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 25px;
+}
+
+main .articles__content .content__main .view button {
+  background-color: #ffffff;
+  padding: 8px 12px;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 355px) {
+  main .articles__content .content__main .view button {
+    margin-bottom: 10px;
+  }
+}
+
+main .articles__content .content__main .main__content {
+  background-color: #ffffff;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 600px) {
+  main .articles__content .content__main .main__content {
+    padding: 0 15px;
+  }
+}
+
+main .articles__content .content__main .main__content .content__item {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #E2E3E4;
+}
+
+@media screen and (max-width: 600px) {
+  main .articles__content .content__main .main__content .content__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  main .articles__content .content__main .main__content .content__item img {
+    margin-bottom: 15px;
+  }
+}
+
+main .articles__content .content__main .main__content .content__item .item__description {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  main .articles__content .content__main .main__content .content__item .item__description {
+    padding-left: 0;
+  }
+}
+
+main .articles__content .content__main .main__content .content__item .item__description b, main .articles__content .content__main .main__content .content__item .item__description a {
+  color: #01ADAB;
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-bottom: 3px;
+}
+
+main .articles__content .content__main .main__content .content__item .item__description h4 {
+  color: #434343;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+main .articles__content .content__main .main__content .content__item .item__description p {
+  color: #505050;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+
+main .articles__content .content__main .main__content .content__item .item__description b {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
 /*# sourceMappingURL=main.css.map */
