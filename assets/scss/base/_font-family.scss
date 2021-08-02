@@ -19,6 +19,12 @@
     font-style: italic;
 }
 @font-face {
+    font-family: 'UTM-intel-bold-italic';
+    src: url('#{$fa-font-path}/UTM-Neo-Sans-IntelBold_Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-size: italic;
+}
+@font-face {
     font-family: Myriad-Pro-Regular;
     src: url('#{$fa-font-path}/Myriad-Pro-Regular.ttf') format('truetype');
     font-weight: 400;
