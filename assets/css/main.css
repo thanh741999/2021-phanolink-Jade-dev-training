@@ -7631,6 +7631,7 @@ main {
 @media only screen and (max-width: 767px) {
   main {
     padding-top: 133px;
+    padding-bottom: 30px;
   }
 }
 
@@ -17298,7 +17299,8 @@ html, body {
 
 @media screen and (max-width: 1200px) {
   .main__sidebar .sidebar__item .sidebar__title {
-    font-size: .8rem;
+    font-size: .7rem;
+    padding: 10px;
   }
   .main__sidebar .sidebar__item .sidebar__title img {
     height: 20px;
@@ -21676,5 +21678,145 @@ main .articles-detail__content .content__main .main__post-any .post-any__content
 main .articles-detail__content .content__main .main__post-any .post-any__content .content__item .item__description b {
   font-size: 14px;
   font-size: 0.875rem;
+}
+
+main .single {
+  background-color: unset;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .single__sidebar {
+  width: 22%;
+}
+
+@media only screen and (max-width: 991px) {
+  main .single__sidebar {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main .single__sidebar {
+    width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .single__sidebar .sidebar__item {
+    width: calc(50% -15px);
+    margin-left: 15px;
+  }
+}
+
+main .single__sidebar .sidebar__control {
+  background-color: #ffffff;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  main .single__sidebar .sidebar__control {
+    width: 50%;
+  }
+}
+
+main .single__sidebar .sidebar__control h4 {
+  padding: 16px 0;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  color: #505050;
+  border-bottom: 1px solid #e5e5e4;
+}
+
+main .single__sidebar .sidebar__control .control__list {
+  padding: 20px 0 29px;
+}
+
+main .single__sidebar .sidebar__control .control__list li {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #505050;
+  margin-bottom: 16px;
+}
+
+main .single__sidebar .sidebar__control .control__list li i {
+  opacity: 0;
+  margin-right: 3px;
+}
+
+main .single__sidebar .sidebar__control .control__list li.active {
+  color: #505050;
+  font-weight: bold;
+}
+
+main .single__sidebar .sidebar__control .control__list li.active i {
+  color: #01ADAB;
+  opacity: 1;
+}
+
+main .single__content {
+  width: calc(78% - 23px);
+  margin-left: 23px;
+  background-color: #ffffff;
+  padding: 44px 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  main .single__content {
+    width: calc(75% - 23px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main .single__content {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+main .single__content h2 {
+  color: #434343;
+  font-size: 26px;
+  font-size: 1.625rem;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+
+main .single__content .content__post {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #434343;
+}
+
+main .single__content .content__post .post__description {
+  margin-bottom: 35px;
+}
+
+main .single__content .content__post .post__description h3 {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+main .single__content .content__post .post__description p {
+  margin-bottom: 35px;
+}
+
+main .single__content .content__post .post__description p:last-child {
+  margin-bottom: 0;
+}
+
+main .single__content .content__post .post__header h3 {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

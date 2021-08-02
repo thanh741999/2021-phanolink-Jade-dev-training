@@ -107,6 +107,7 @@ main {
   padding-bottom: 76px;
   @media #{$info-phone} {
     padding-top: 133px;
+    padding-bottom: 30px;
   }
   @media screen and (max-width: 500px) {
     padding-top: 131px;
