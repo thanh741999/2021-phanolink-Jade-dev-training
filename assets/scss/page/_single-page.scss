@@ -65,6 +65,7 @@ main {
             @media #{$info-phone} {
                 width: 100%;
                 margin: 0 0 20px 0;
+                padding: 15px;
             }
             h2 {
                 color: #434343;
@@ -76,14 +77,16 @@ main {
                 @include font-size(16px);
                 color: #434343;
                 .post__description {
-                    margin-bottom: 35px;
+                    margin-bottom: 30px;
                     h3 {
                         @include font-size(16px);
                         font-weight: bold;
                         margin-bottom: 5px;
+
                     }
                     p {
-                        margin-bottom: 35px;
+                        margin-bottom: 30px;
+                        line-height: 25px;
                         &:last-child {
                             margin-bottom: 0;
                         }
@@ -91,7 +94,8 @@ main {
                 }
                 .post__header {
                     h3 {
-                        margin-bottom: 30px;
+                        margin-bottom: 25px;
+                        line-height: 25px;
                     }   
                 }
             }

@@ -21780,6 +21780,7 @@ main .single__content {
   main .single__content {
     width: 100%;
     margin: 0 0 20px 0;
+    padding: 15px;
   }
 }
 
@@ -21798,7 +21799,7 @@ main .single__content .content__post {
 }
 
 main .single__content .content__post .post__description {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 main .single__content .content__post .post__description h3 {
@@ -21809,7 +21810,8 @@ main .single__content .content__post .post__description h3 {
 }
 
 main .single__content .content__post .post__description p {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  line-height: 25px;
 }
 
 main .single__content .content__post .post__description p:last-child {
@@ -21817,6 +21819,24 @@ main .single__content .content__post .post__description p:last-child {
 }
 
 main .single__content .content__post .post__header h3 {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+
+main .single-detail {
+  width: 100%;
+  padding: 0 43px 49px;
+}
+
+@media only screen and (max-width: 767px) {
+  main .single-detail {
+    padding: 0 15px;
+  }
+}
+
+main .single-detail h4 {
+  font-size: 26px;
+  font-size: 1.625rem;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
