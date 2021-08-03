@@ -1,0 +1,47 @@
+main {
+  .not-found {
+    @include flex;
+    align-items: center;
+    width: 705px;
+    background-color: unset;
+    margin: 90px auto 150px;
+    @media #{$info-phone} {
+      width: auto;
+    }
+    @media screen and (max-width: 475px) {
+      flex-flow: column;
+    }
+
+    h2 {
+      color: #808081;
+      @include font-size(150px);
+      font-weight: bold;
+    }
+
+    &__description {
+      @include flex;
+      flex-flow: column;
+      margin-left: 30px;
+
+      a {
+        color: $color-main;
+        @include font-size(25px);
+        font-weight: bold;
+
+        i {
+          margin-right: 8px;
+        }
+
+      }
+
+      p {
+        color: #808081;
+        @include font-size(30px);
+        line-height: 44px;
+        @media screen and (max-width: 475px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
